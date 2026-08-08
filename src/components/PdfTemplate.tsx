@@ -21,20 +21,17 @@ export default function PdfTemplate() {
   const containerHex = isSpecial ? '#faf8f5' : '#ffffff';
 
   return (
-    <div 
-      id="pdf-content" 
-      className="absolute"
-      style={{
-        top: '-9999px',
-        left: '-9999px',
-        width: '210mm',
-        minHeight: '297mm',
-        backgroundColor: containerHex,
-        overflow: 'hidden',
-        zIndex: -1
-      }}
-    >
-      {/* Subtle texture for my-name */}
+    <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
+      <div 
+        id="pdf-content" 
+        style={{
+          width: '210mm',
+          minHeight: '297mm',
+          backgroundColor: containerHex,
+          position: 'relative'
+        }}
+      >
+        {/* Subtle texture for my-name */}
       {isSpecial && (
         <div className="absolute inset-0 opacity-40 mix-blend-multiply" 
              style={{ 
@@ -104,6 +101,7 @@ export default function PdfTemplate() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }

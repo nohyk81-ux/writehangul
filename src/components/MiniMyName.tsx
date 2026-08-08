@@ -94,8 +94,8 @@ export default function MiniMyName() {
           <>
             <div className="text-3xl font-serif text-muk/40 select-none w-12 text-center">{hangul.charAt(0)}</div>
             <div className="flex-1">
-              <p className="text-sm font-bold text-muk">{hangul}</p>
-              <p className="text-[10px] text-muk/60">{t('resultsSub')}</p>
+              <p className="text-[10px] text-muk/60 mb-0.5">만들기 결과</p>
+              <p className="text-lg font-bold text-muk leading-none">{hangul}</p>
             </div>
             <button 
               onClick={handleSpeak}
@@ -111,10 +111,11 @@ export default function MiniMyName() {
 
       <button 
         onClick={handleGeneratePdf}
-        className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 rounded-md text-xs tracking-wider transition-colors"
+        className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 rounded-md text-xs tracking-wider transition-colors mb-2"
       >
         {t('getSheetBtn')}
       </button>
+      <p className="text-[9px] text-center text-muk/40">AI를 활용하여 제작되었습니다.</p>
     </div>
   );
 }

@@ -17,12 +17,12 @@
     "explanation": "Practice daily and track your progress to master Hangul writing."
   },
   "MyName": {
-    "title": "내 이름 쓰기",
+    "title": "내 이름 한글로 만들기",
     "titleSub": "(My Name Writing)",
     "placeholder": "Enter Your Name",
     "resultsSub": "Hangeul results with pronunciation",
     "translationWait": "Translation will appear here",
-    "getSheetBtn": "GET YOUR SHEET",
+    "getSheetBtn": "DOWNLOAD MY HANGUL NAME PRACTICE SHEET",
     "alertEmpty": "Please enter your name and translate it first."
   },
   "CategoryGrid": {

@@ -17,12 +17,12 @@
     "explanation": "毎日練習して進捗を記録し、ハングルの書き方をマスターしましょう。"
   },
   "MyName": {
-    "title": "내 이름 쓰기",
+    "title": "내 이름 한글로 만들기",
     "titleSub": "(私の名前を書く)",
     "placeholder": "お名前を入力してください",
     "resultsSub": "ハングルの結果と発音",
     "translationWait": "翻訳結果がここに表示されます",
-    "getSheetBtn": "シートを取得する",
+    "getSheetBtn": "ハングル名前練習シートをダウンロード",
     "alertEmpty": "名前を入力して翻訳ボタンを押してください。"
   },
   "CategoryGrid": {

@@ -17,12 +17,12 @@
     "explanation": "Luyện tập hàng ngày và theo dõi tiến độ của bạn."
   },
   "MyName": {
-    "title": "내 이름 쓰기",
+    "title": "내 이름 한글로 만들기",
     "titleSub": "(Viết tên tôi)",
     "placeholder": "Nhập tên của bạn",
     "resultsSub": "Kết quả Hangeul có phát âm",
     "translationWait": "Bản dịch sẽ xuất hiện ở đây",
-    "getSheetBtn": "NHẬN BẢNG CỦA BẠN",
+    "getSheetBtn": "TẢI BẢNG LUYỆN TẬP TÊN TIẾNG HÀN CỦA TÔI",
     "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước."
   },
   "CategoryGrid": {

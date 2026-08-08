@@ -17,12 +17,12 @@
     "explanation": "Berlatih setiap hari dan lacak kemajuan Anda."
   },
   "MyName": {
-    "title": "내 이름 쓰기",
+    "title": "내 이름 한글로 만들기",
     "titleSub": "(Menulis nama saya)",
     "placeholder": "Masukkan Nama Anda",
     "resultsSub": "Hasil Hangeul dengan pengucapan",
     "translationWait": "Terjemahan akan muncul di sini",
-    "getSheetBtn": "DAPATKAN LEMBAR ANDA",
+    "getSheetBtn": "UNDUH LEMBAR LATIHAN NAMA HANGEUL SAYA",
     "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu."
   },
   "CategoryGrid": {

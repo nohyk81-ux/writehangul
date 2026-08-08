@@ -17,12 +17,12 @@
     "explanation": "Practica a diario y haz un seguimiento de tu progreso."
   },
   "MyName": {
-    "title": "내 이름 쓰기",
+    "title": "내 이름 한글로 만들기",
     "titleSub": "(Escribir mi nombre)",
     "placeholder": "Introduce tu nombre",
     "resultsSub": "Resultados en coreano con pronunciación",
     "translationWait": "La traducción aparecerá aquí",
-    "getSheetBtn": "OBTÉN TU HOJA",
+    "getSheetBtn": "DESCARGAR HOJA DE PRÁCTICA DE MI NOMBRE HANGEUL",
     "alertEmpty": "Por favor, introduce tu nombre y tradúcelo primero."
   },
   "CategoryGrid": {
