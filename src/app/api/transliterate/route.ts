@@ -67,8 +67,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ hangul: cleanKoreanChars });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Transliterate Error:', error);
-    return NextResponse.json({ error: 'Failed to translate name' }, { status: 500 });
+    return NextResponse.json({ error: error.message || 'Failed to translate name' }, { status: 500 });
   }
 }

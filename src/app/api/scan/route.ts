@@ -67,7 +67,8 @@ export async function POST(req: NextRequest) {
     });
 
     if (!response.ok) {
-      throw new Error(`Gemini API Error: ${response.statusText}`);
+      const errBody = await response.text();
+      throw new Error(`Gemini API Error (${response.status}): ${errBody}`);
     }
 
     const data = await response.json();
@@ -76,8 +77,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ characters: cleanKoreanChars });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Scan Error:', error);
-    return NextResponse.json({ error: 'Failed to process image' }, { status: 500 });
+    return NextResponse.json({ error: error.message || 'Failed to analyze image' }, { status: 500 });
   }
 }
