@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
     }
 
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' }, { apiVersion: 'v1' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }, { apiVersion: 'v1' });
 
     const prompt = `Translate the following name into its phonetic Korean (Hangul) equivalent. 
     Only return the Hangul characters. No extra words, punctuation, or spaces.
