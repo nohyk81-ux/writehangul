@@ -5,7 +5,7 @@ import { usePracticeStore } from '@/store';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon } from 'lucide-react';
 
 export default function AttendanceCalendar() {
-  const { visitedDates, checkIn } = usePracticeStore();
+  const { visitedDates, checkIn, selectedDailyDate, setSelectedDailyDate } = usePracticeStore();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -45,16 +45,32 @@ export default function AttendanceCalendar() {
 
       <div className="grid grid-cols-7 gap-1">
         {calendarDays.map((day, idx) => {
+          if (day === null) {
+            return <div key={idx} className="aspect-square bg-transparent"></div>;
+          }
+          
           const isToday = day === today.getDate();
+          const isFuture = day > today.getDate();
+          const dateStr = `${String(today.getMonth() + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+          
+          // Determine if selected. If nothing selected, today is implicitly selected.
+          const isSelected = selectedDailyDate === dateStr || (!selectedDailyDate && isToday);
+
           return (
-            <div 
+            <button 
               key={idx} 
+              onClick={() => !isFuture && setSelectedDailyDate(dateStr)}
+              disabled={isFuture}
               className={`
-                aspect-square flex items-center justify-center rounded text-[11px] font-medium
-                ${day === null ? 'bg-transparent' : 'bg-white border border-muk/5'}
-                ${isToday ? 'bg-orange-200 border-orange-300 font-bold text-orange-900' : 'text-muk/80'}
+                aspect-square flex items-center justify-center rounded text-[11px] font-medium relative transition-colors
+                ${isFuture ? 'opacity-30 cursor-not-allowed bg-white border border-muk/5' : 'cursor-pointer hover:bg-orange-100'}
+                ${isSelected && !isFuture ? 'bg-orange-200 border border-orange-400 font-bold text-orange-900 shadow-sm' : ''}
+                ${!isSelected && !isFuture ? 'bg-white border border-muk/5 text-muk/80' : ''}
               `}
             >
+              {isToday && !isSelected && (
+                <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-red-400 rounded-full"></div>
+              )}
               {isToday ? (
                 <div className="flex flex-col items-center">
                   <span className="text-[12px]">👦🏻</span>
@@ -62,7 +78,7 @@ export default function AttendanceCalendar() {
               ) : (
                 day
               )}
-            </div>
+            </button>
           );
         })}
       </div>

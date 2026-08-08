@@ -1,11 +1,16 @@
 'use client';
 
 import { usePracticeStore } from '@/store';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { dailyContentMap } from '@/data/dailyContent';
 
 export default function PdfTemplate() {
-  const { characters, layout, templateStyle } = usePracticeStore();
+  const { characters, layout, templateStyle, selectedDailyDate } = usePracticeStore();
+  const locale = useLocale();
   
+  const dateToUse = selectedDailyDate || `${String(new Date().getMonth() + 1).padStart(2, '0')}-${String(new Date().getDate()).padStart(2, '0')}`;
+  const translation = dailyContentMap[dateToUse]?.[locale as keyof typeof dailyContentMap[string]] || '';
+
   // Use try-catch or optional translation since this component mounts globally 
   // but we might not have 'MyName' namespace loaded everywhere.
   // Actually, 'MyName' is loaded on the home page.
@@ -22,7 +27,7 @@ export default function PdfTemplate() {
     );
   }
 
-  const isSpecial = templateStyle === 'my-name';
+  const isSpecial = templateStyle === 'my-name' || templateStyle === 'daily-learning';
   const containerHex = isSpecial ? '#faf8f5' : '#ffffff';
 
   if (isSpecial) {
@@ -55,10 +60,10 @@ export default function PdfTemplate() {
             {/* HEADER */}
             <div className="text-center mb-[4mm] w-full flex flex-col items-center">
               <h1 className="text-2xl font-bold font-sans tracking-widest text-muk mb-1">
-                나의 한글이름 쓰기
+                {templateStyle === 'daily-learning' ? "오늘의 한국어 쓰기" : "나의 한글이름 쓰기"}
               </h1>
               <h2 className="text-[10px] font-sans tracking-widest text-muk/60 uppercase">
-                {t('pdfHeader')}
+                {templateStyle === 'daily-learning' ? "TODAY'S HANGUL PRACTICE" : t('pdfHeader')}
               </h2>
             </div>
             
@@ -85,8 +90,13 @@ export default function PdfTemplate() {
             
             {/* FOOTER */}
             <div className="flex justify-between items-end w-full mt-[4mm]">
-              <div className="text-lg font-bold font-sans text-muk tracking-widest">
-                {characters.join('')}
+              <div className="text-lg font-bold font-sans text-muk tracking-widest flex items-baseline gap-2">
+                <span>{characters.join('')}</span>
+                {templateStyle === 'daily-learning' && (
+                  <span className="text-[11px] font-medium text-muk/60 font-sans tracking-normal">
+                    {translation}
+                  </span>
+                )}
               </div>
               <div className="text-[11px] font-sans font-medium text-muk/60">
                 {t('pdfSource')}

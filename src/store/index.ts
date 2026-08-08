@@ -6,14 +6,16 @@ interface PracticeStore {
   layout: 1 | 2 | 4;
   visitedDates: string[];
   isPdfGenerating: boolean;
-  templateStyle: 'default' | 'my-name';
+  templateStyle: 'default' | 'my-name' | 'daily-learning';
+  selectedDailyDate: string | null;
   addCharacters: (chars: string) => void;
   removeCharacter: (index: number) => void;
   setLayout: (layout: 1 | 2 | 4) => void;
   clearCharacters: () => void;
   checkIn: () => void;
   setPdfGenerating: (isGenerating: boolean) => void;
-  setTemplateStyle: (style: 'default' | 'my-name') => void;
+  setTemplateStyle: (style: 'default' | 'my-name' | 'daily-learning') => void;
+  setSelectedDailyDate: (dateStr: string) => void;
 }
 
 export const usePracticeStore = create<PracticeStore>()(
@@ -24,8 +26,10 @@ export const usePracticeStore = create<PracticeStore>()(
       visitedDates: [],
       isPdfGenerating: false,
       templateStyle: 'default',
+      selectedDailyDate: null,
       setPdfGenerating: (isPdfGenerating) => set({ isPdfGenerating }),
       setTemplateStyle: (templateStyle) => set({ templateStyle }),
+      setSelectedDailyDate: (selectedDailyDate) => set({ selectedDailyDate }),
       addCharacters: (chars) => set((state) => {
         const newChars = chars.replace(/\s+/g, '').split('');
         return { characters: [...state.characters, ...newChars] };

@@ -4,6 +4,7 @@ import CategoryGrid from '@/components/CategoryGrid';
 import AttendanceCalendar from '@/components/AttendanceCalendar';
 import MiniMyName from '@/components/MiniMyName';
 import LearningLevels from '@/components/LearningLevels';
+import DailyDownloadBtn from '@/components/DailyDownloadBtn';
 import { Download } from 'lucide-react';
 
 export default async function HomePage({
@@ -52,9 +53,8 @@ export default async function HomePage({
               <AttendanceCalendar />
             </div>
             
-            <button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 mt-4 rounded-md text-xs tracking-wider transition-colors shadow-sm">
-              {td('downloadBtn')}
-            </button>
+            <DailyDownloadBtn text={td('downloadBtn')} />
+            
             <p className="text-[10px] text-muk/50 mt-4 leading-relaxed">
               {td('explanation')}
             </p>
