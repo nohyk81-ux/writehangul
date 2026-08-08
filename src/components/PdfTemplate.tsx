@@ -89,7 +89,7 @@ export default function PdfTemplate() {
             </div>
             
             {/* DIVIDER */}
-            <div className="w-full border-t-[1.5px] border-dashed my-[5mm]" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
+            <div className="w-full border-t-[1px] border-solid mt-[6mm] mb-[2mm]" style={{ borderColor: 'rgba(44, 62, 80, 0.3)' }}></div>
             
             {/* FOOTER */}
             <div className="flex justify-between items-end w-full">
