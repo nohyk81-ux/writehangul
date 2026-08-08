@@ -89,7 +89,7 @@ export default function MiniMyName() {
         </button>
       </form>
 
-      <div className="flex items-center gap-3 border border-muk/10 rounded-md p-3 mb-3 bg-gray-50 min-h-[60px]">
+      <div className="flex items-center gap-3 border border-muk/10 rounded-md p-3 mb-0.5 bg-gray-50 min-h-[60px]">
         {hangul ? (
           <>
             <div className="text-3xl font-serif text-muk/40 select-none w-12 text-center">{hangul.charAt(0)}</div>
@@ -110,9 +110,7 @@ export default function MiniMyName() {
       </div>
       
       {hangul && (
-        <div className="text-right mb-2">
-          <p className="text-[9px] text-muk/40">{t('aiGeneratedNotice')}</p>
-        </div>
+        <p className="text-[9px] text-muk/40 text-right mb-1">{t('aiGeneratedNotice')}</p>
       )}
 
       <button 
