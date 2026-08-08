@@ -49,6 +49,13 @@
     "starter": "Người mới",
     "basic": "Cơ bản",
     "advanced": "Nâng cao",
-    "master": "Thành thạo"
+    "master": "Bậc thầy"
+  },
+  "PdfModal": {
+    "title": "Đang tạo PDF...",
+    "countdown": "({sec}giây ⏳)",
+    "adPlaceholder": "Trình giữ chỗ AdSense",
+    "adDesc": "Bảng luyện tập của bạn sẽ tự động tải xuống trong vài giây. Hãy ủng hộ chúng tôi bằng cách tương tác với các nhà tài trợ!",
+    "waitDesc": "Vui lòng đợi trong khi chúng tôi chuẩn bị bảng luyện tập chất lượng cao cho bạn."
   }
 }

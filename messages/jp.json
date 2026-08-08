@@ -49,6 +49,14 @@
     "starter": "入門",
     "basic": "基礎",
     "advanced": "上級",
-    "master": "マスター"
+    "master": "マスター",
+    "selectLang": "言語を選択"
+  },
+  "PdfModal": {
+    "title": "PDFを生成しています...",
+    "countdown": "({sec}秒 ⏳)",
+    "adPlaceholder": "AdSenseプレースホルダー",
+    "adDesc": "練習シートは数秒で自動的にダウンロードされます。スポンサーにアクセスしてサポートをお願いします！",
+    "waitDesc": "高品質な練習シートを準備しています。しばらくお待ちください。"
   }
 }

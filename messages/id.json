@@ -48,7 +48,14 @@
     "titleSub": "(Tingkat Pembelajaran)",
     "starter": "Pemula",
     "basic": "Dasar",
-    "advanced": "Lanjut",
-    "master": "Master"
+    "advanced": "Lanjutan",
+    "master": "Ahli"
+  },
+  "PdfModal": {
+    "title": "Membuat PDF...",
+    "countdown": "({sec}dtk ⏳)",
+    "adPlaceholder": "Tempat AdSense",
+    "adDesc": "Lembar latihan Anda akan diunduh secara otomatis dalam beberapa detik. Dukung kami dengan berinteraksi bersama sponsor kami!",
+    "waitDesc": "Harap tunggu sementara kami menyiapkan lembar latihan berkualitas tinggi Anda."
   }
 }

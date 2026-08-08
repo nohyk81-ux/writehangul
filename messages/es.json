@@ -50,5 +50,12 @@
     "basic": "Básico",
     "advanced": "Avanzado",
     "master": "Maestro"
+  },
+  "PdfModal": {
+    "title": "Generando PDF...",
+    "countdown": "({sec}s ⏳)",
+    "adPlaceholder": "Marcador de posición AdSense",
+    "adDesc": "Su hoja de práctica se descargará automáticamente en unos segundos. ¡Apóyenos interactuando con nuestros patrocinadores!",
+    "waitDesc": "Por favor, espere mientras preparamos su hoja de práctica de alta calidad."
   }
 }

@@ -50,5 +50,12 @@
     "basic": "基础",
     "advanced": "高级",
     "master": "精通"
+  },
+  "PdfModal": {
+    "title": "正在生成PDF...",
+    "countdown": "({sec}秒 ⏳)",
+    "adPlaceholder": "AdSense 占位符",
+    "adDesc": "您的练习表将在几秒钟内自动下载。请通过与我们的赞助商互动来支持我们！",
+    "waitDesc": "请稍候，我们正在为您准备高质量的练习表。"
   }
 }

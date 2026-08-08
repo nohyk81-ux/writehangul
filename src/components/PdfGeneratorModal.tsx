@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { usePracticeStore } from '@/store';
+import { useTranslations } from 'next-intl';
 
 export default function PdfGeneratorModal() {
   const { isPdfGenerating, setPdfGenerating } = usePracticeStore();
@@ -58,26 +59,28 @@ export default function PdfGeneratorModal() {
     }
   };
 
+  const t = useTranslations('PdfModal');
+
   if (!isPdfGenerating) return null;
 
   return (
     <div className="fixed inset-0 bg-black/60 flex flex-col items-center justify-center z-50 p-4">
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full text-center">
         <h2 className="text-2xl font-serif font-bold text-muk mb-2">
-          Generating PDF...
+          {t('title')}
         </h2>
         <p className="text-seal font-bold text-lg mb-6">
-          ({countdown}초 ⏳)
+          {t('countdown', { sec: countdown })}
         </p>
         
         {/* AdSense Dummy Box */}
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 w-full h-64 flex flex-col items-center justify-center text-gray-400 mb-4 rounded-lg">
-          <span className="mb-2">AdSense Placeholder</span>
-          <span className="text-sm px-4">Your practice sheet will automatically download in a few seconds. Support us by interacting with our sponsors!</span>
+          <span className="mb-2">{t('adPlaceholder')}</span>
+          <span className="text-sm px-4">{t('adDesc')}</span>
         </div>
         
         <p className="text-sm text-gray-500">
-          Please wait while we prepare your high-quality practice sheet.
+          {t('waitDesc')}
         </p>
       </div>
     </div>

@@ -43,6 +43,13 @@
     "proverbs": "Proverbs",
     "all": "View All Themes"
   },
+  "PdfModal": {
+    "title": "Generating PDF...",
+    "countdown": "({sec}s ⏳)",
+    "adPlaceholder": "AdSense Placeholder",
+    "adDesc": "Your practice sheet will automatically download in a few seconds. Support us by interacting with our sponsors!",
+    "waitDesc": "Please wait while we prepare your high-quality practice sheet."
+  },
   "LearningLevels": {
     "title": "학습 단계",
     "titleSub": "(Learning Levels)",
