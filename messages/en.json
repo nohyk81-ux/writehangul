@@ -68,5 +68,15 @@
     "terms": "Terms of Use",
     "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "About": {
+    "title": "About Us",
+    "missionTitle": "Our Mission",
+    "missionText": "Welcome to Write Hangul. Our mission is to make learning the Korean alphabet intuitive, beautiful, and accessible to everyone around the world.",
+    "visionTitle": "Our Vision",
+    "visionText": "We believe that writing is more than just communication; it is an art form. By combining traditional Korean aesthetics with modern web technologies, we aim to provide the best free platform for generating custom Hangul practice sheets.",
+    "howItWorksTitle": "How It Works",
+    "howItWorksText": "Whether you want to learn the basic alphabet or write your name in Korean, our platform instantly generates a high-quality PDF designed specifically for handwriting practice. All our templates feature a universal margin design ensuring they print perfectly on both A4 and US Letter paper.",
+    "lastUpdated": "Last updated: August 2026"
   }
 }

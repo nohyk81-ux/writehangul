@@ -68,5 +68,15 @@
     "terms": "Syarat Penggunaan",
     "contact": "Kontak",
     "rights": "Seluruh hak cipta."
+  },
+  "About": {
+    "title": "Tentang Kami",
+    "missionTitle": "Misi Kami",
+    "missionText": "Selamat datang di Write Hangul. Misi kami adalah membuat pembelajaran alfabet Korea menjadi intuitif, indah, dan dapat diakses oleh semua orang di seluruh dunia.",
+    "visionTitle": "Visi Kami",
+    "visionText": "Kami percaya bahwa menulis lebih dari sekadar komunikasi; ini adalah bentuk seni. Dengan menggabungkan estetika tradisional Korea dengan teknologi web modern, kami bertujuan untuk menyediakan platform gratis terbaik untuk menghasilkan lembar latihan Hangul khusus.",
+    "howItWorksTitle": "Cara Kerjanya",
+    "howItWorksText": "Apakah Anda ingin mempelajari alfabet dasar atau menulis nama Anda dalam bahasa Korea, platform kami secara instan menghasilkan PDF berkualitas tinggi yang dirancang khusus untuk latihan tulisan tangan. Semua templat kami menampilkan desain margin universal yang memastikan templat dicetak dengan sempurna di kertas A4 dan US Letter.",
+    "lastUpdated": "Terakhir diperbarui: Agustus 2026"
   }
 }

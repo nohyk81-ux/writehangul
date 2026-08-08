@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { Target, Eye, Settings } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -16,28 +17,59 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = useTranslations('About');
 
   return (
-    <main className="flex-1 max-w-3xl mx-auto w-full p-6 md:p-12">
-      <h1 className="text-4xl font-serif font-bold text-muk mb-8">About Us</h1>
+    <main className="flex-1 max-w-4xl mx-auto w-full p-6 md:p-12">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-muk mb-4">{t('title')}</h1>
+        <div className="w-20 h-1.5 bg-seal mx-auto rounded-full"></div>
+      </div>
       
-      <div className="prose prose-lg prose-slate">
-        <p>
-          Welcome to <strong>Write Hangul</strong>. Our mission is to make learning the Korean alphabet intuitive, beautiful, and accessible to everyone around the world.
-        </p>
-        
-        <h2>Our Vision</h2>
-        <p>
-          We believe that writing is more than just communication; it's an art form. By combining traditional Korean aesthetics with modern web technologies, we aim to provide the best free platform for generating custom Hangul practice sheets.
-        </p>
-        
-        <h2>How It Works</h2>
-        <p>
-          Whether you want to learn the basic alphabet or write your name in Korean, our platform instantly generates a high-quality PDF designed specifically for handwriting practice. All our templates feature a universal margin design ensuring they print perfectly on both A4 and US Letter paper.
-        </p>
+      <div className="flex flex-col gap-8">
+        {/* Mission */}
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <Target size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('missionTitle')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('missionText')}
+            </p>
+          </div>
+        </section>
 
-        <p className="mt-8 text-sm text-muk/60">
-          Last updated: August 2026
+        {/* Vision */}
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <Eye size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('visionTitle')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('visionText')}
+            </p>
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <Settings size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('howItWorksTitle')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('howItWorksText')}
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div className="mt-16 text-center">
+        <p className="text-sm font-medium text-muk/50 bg-muk/5 inline-block px-5 py-2.5 rounded-full border border-muk/10">
+          {t('lastUpdated')}
         </p>
       </div>
     </main>

@@ -68,5 +68,15 @@
     "terms": "Điều khoản sử dụng",
     "contact": "Liên hệ",
     "rights": "Đã đăng ký bản quyền."
+  },
+  "About": {
+    "title": "Về chúng tôi",
+    "missionTitle": "Sứ mệnh của chúng tôi",
+    "missionText": "Chào mừng bạn đến với Write Hangul. Sứ mệnh của chúng tôi là làm cho việc học bảng chữ cái tiếng Hàn trở nên trực quan, đẹp mắt và dễ tiếp cận đối với mọi người trên toàn thế giới.",
+    "visionTitle": "Tầm nhìn của chúng tôi",
+    "visionText": "Chúng tôi tin rằng viết lách không chỉ là giao tiếp; nó là một loại hình nghệ thuật. Bằng cách kết hợp tính thẩm mỹ truyền thống của Hàn Quốc với các công nghệ web hiện đại, chúng tôi mong muốn cung cấp nền tảng miễn phí tốt nhất để tạo các trang tính thực hành Hangul tùy chỉnh.",
+    "howItWorksTitle": "Cách thức hoạt động",
+    "howItWorksText": "Cho dù bạn muốn tìm hiểu bảng chữ cái cơ bản hay viết tên của bạn bằng tiếng Hàn, nền tảng của chúng tôi ngay lập tức tạo ra một bản PDF chất lượng cao được thiết kế riêng cho việc thực hành chữ viết tay. Tất cả các mẫu của chúng tôi đều có thiết kế lề phổ biến đảm bảo chúng in hoàn hảo trên cả khổ giấy A4 và Giấy viết thư của Hoa Kỳ.",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 8 năm 2026"
   }
 }

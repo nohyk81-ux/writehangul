@@ -68,5 +68,15 @@
     "terms": "Términos de uso",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados."
+  },
+  "About": {
+    "title": "Sobre nosotros",
+    "missionTitle": "Nuestra misión",
+    "missionText": "Bienvenido a Write Hangul. Nuestra misión es hacer que el aprendizaje del alfabeto coreano sea intuitivo, hermoso y accesible para todos en todo el mundo.",
+    "visionTitle": "Nuestra visión",
+    "visionText": "Creemos que escribir es más que una simple comunicación; es una forma de arte. Al combinar la estética tradicional coreana con tecnologías web modernas, nuestro objetivo es proporcionar la mejor plataforma gratuita para generar hojas de práctica de Hangul personalizadas.",
+    "howItWorksTitle": "Cómo funciona",
+    "howItWorksText": "Ya sea que desee aprender el alfabeto básico o escribir su nombre en coreano, nuestra plataforma genera instantáneamente un PDF de alta calidad diseñado específicamente para la práctica de escritura a mano. Todas nuestras plantillas cuentan con un diseño de margen universal que garantiza que se impriman perfectamente tanto en papel A4 como en carta estadounidense.",
+    "lastUpdated": "Última actualización: agosto de 2026"
   }
 }
