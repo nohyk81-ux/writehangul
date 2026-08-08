@@ -59,6 +59,12 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${nanumPen.variable} h-full antialiased`}
     >
       <head>
+        {/* Google AdSense */}
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2696979963987135"
+          crossOrigin="anonymous"
+        ></script>
         {/* GA4 Placeholder */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}></script>
         <script
