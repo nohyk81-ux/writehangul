@@ -1,3 +1,5 @@
+import { Link } from '@/i18n/routing';
+
 export default function Header() {
   return (
     <header className="relative w-full border-b-2 border-muk/10 bg-white print:hidden">
@@ -21,7 +23,14 @@ export default function Header() {
         <div className="flex flex-col items-end text-right">
           <div className="text-xs text-muk/60 mb-2 flex items-center gap-2 font-medium bg-gray-100 px-3 py-1 rounded-full">
             <span>Global Language Setting 🌍</span>
-            <span>🇬🇧 🇯🇵 🇨🇳 🇪🇸 🇮🇩 🇻🇳</span>
+            <div className="flex gap-1">
+              <Link href="/" locale="en" className="hover:scale-110 transition-transform" title="English">🇬🇧</Link>
+              <Link href="/" locale="ja" className="hover:scale-110 transition-transform" title="日本語">🇯🇵</Link>
+              <Link href="/" locale="zh-CN" className="hover:scale-110 transition-transform" title="简体中文">🇨🇳</Link>
+              <Link href="/" locale="es" className="hover:scale-110 transition-transform" title="Español">🇪🇸</Link>
+              <Link href="/" locale="id" className="hover:scale-110 transition-transform" title="Bahasa Indonesia">🇮🇩</Link>
+              <Link href="/" locale="vi" className="hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</Link>
+            </div>
           </div>
           
           <div className="flex items-center gap-3 bg-blue-50 border border-blue-100 px-4 py-2 rounded-xl shadow-sm">
