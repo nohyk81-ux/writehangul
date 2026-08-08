@@ -23,7 +23,7 @@ export default async function AboutPage({
       
       <div className="prose prose-lg prose-slate">
         <p>
-          Welcome to <strong>Write Hangul</strong> (formerly Daily Hangul). Our mission is to make learning the Korean alphabet intuitive, beautiful, and accessible to everyone around the world.
+          Welcome to <strong>Write Hangul</strong>. Our mission is to make learning the Korean alphabet intuitive, beautiful, and accessible to everyone around the world.
         </p>
         
         <h2>Our Vision</h2>
