@@ -3,7 +3,7 @@
 import { usePracticeStore } from '@/store';
 import { useTranslations, useLocale } from 'next-intl';
 import { dailyContentMap } from '@/data/dailyContent';
-import { ChevronLeft, ChevronRight, Flame } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Flame, Volume2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export default function DailyLearningCard() {
@@ -83,6 +83,15 @@ export default function DailyLearningCard() {
     setPdfGenerating(true);
   };
 
+  const playAudio = (text: string) => {
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'ko-KR';
+      utterance.rate = 0.8;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
   return (
     <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-3 flex flex-col">
       <h2 className="text-base font-bold text-muk mb-1 flex items-center gap-2 uppercase tracking-wide">
@@ -108,7 +117,16 @@ export default function DailyLearningCard() {
           <div className="flex flex-col items-center flex-1 mx-2 text-center">
             {content ? (
               <>
-                <span className="text-2xl font-bold text-muk mb-0.5 leading-tight">{content.hangul}</span>
+                <div className="flex items-center justify-center gap-2 mb-0.5">
+                  <span className="text-2xl font-bold text-muk leading-tight">{content.hangul}</span>
+                  <button 
+                    onClick={() => playAudio(content.hangul)}
+                    className="text-orange-500 hover:text-orange-600 bg-orange-100 hover:bg-orange-200 p-1.5 rounded-full transition-colors flex-shrink-0"
+                    title="Listen to pronunciation"
+                  >
+                    <Volume2 size={14} />
+                  </button>
+                </div>
                 <span className="text-xs text-muk/60 font-medium">{translation}</span>
               </>
             ) : (
