@@ -26,13 +26,25 @@ export default function Header() {
         <div className="flex flex-col items-end text-right">
           <div className="text-xs text-muk/60 mb-2 flex items-center gap-2 font-medium bg-gray-100 px-3 py-1 rounded-full">
             <span>{t('globalLanguageSetting')} 🌍</span>
-            <div className="flex gap-1">
-              <Link href="/" locale="gb" className="hover:scale-110 transition-transform" title="English">🇬🇧</Link>
-              <Link href="/" locale="jp" className="hover:scale-110 transition-transform" title="日本語">🇯🇵</Link>
-              <Link href="/" locale="cn" className="hover:scale-110 transition-transform" title="简体中文">🇨🇳</Link>
-              <Link href="/" locale="es" className="hover:scale-110 transition-transform" title="Español">🇪🇸</Link>
-              <Link href="/" locale="id" className="hover:scale-110 transition-transform" title="Bahasa Indonesia">🇮🇩</Link>
-              <Link href="/" locale="vn" className="hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</Link>
+            <div className="flex gap-2 items-center">
+              <Link href="/" locale="gb" className="hover:scale-110 transition-transform" title="English">
+                <img src="https://flagcdn.com/w20/gb.png" srcSet="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" className="rounded-sm shadow-sm" />
+              </Link>
+              <Link href="/" locale="jp" className="hover:scale-110 transition-transform" title="日本語">
+                <img src="https://flagcdn.com/w20/jp.png" srcSet="https://flagcdn.com/w40/jp.png 2x" width="20" alt="日本語" className="rounded-sm shadow-sm" />
+              </Link>
+              <Link href="/" locale="cn" className="hover:scale-110 transition-transform" title="简体中文">
+                <img src="https://flagcdn.com/w20/cn.png" srcSet="https://flagcdn.com/w40/cn.png 2x" width="20" alt="简体中文" className="rounded-sm shadow-sm" />
+              </Link>
+              <Link href="/" locale="es" className="hover:scale-110 transition-transform" title="Español">
+                <img src="https://flagcdn.com/w20/es.png" srcSet="https://flagcdn.com/w40/es.png 2x" width="20" alt="Español" className="rounded-sm shadow-sm" />
+              </Link>
+              <Link href="/" locale="id" className="hover:scale-110 transition-transform" title="Bahasa Indonesia">
+                <img src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" width="20" alt="Bahasa Indonesia" className="rounded-sm shadow-sm" />
+              </Link>
+              <Link href="/" locale="vn" className="hover:scale-110 transition-transform" title="Tiếng Việt">
+                <img src="https://flagcdn.com/w20/vn.png" srcSet="https://flagcdn.com/w40/vn.png 2x" width="20" alt="Tiếng Việt" className="rounded-sm shadow-sm" />
+              </Link>
             </div>
           </div>
           
