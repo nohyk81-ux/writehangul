@@ -67,6 +67,9 @@ export default function PdfTemplate() {
               </h2>
             </div>
             
+            {/* TOP THICK DIVIDER */}
+            <div className="w-full h-[3px] bg-muk mb-[6mm]"></div>
+            
             {/* MAIN GRID */}
             <div className="grid grid-cols-6 grid-rows-8 w-full border-t-[1.5px] border-l-[1.5px]" style={{ height: '220mm', borderColor: 'rgba(231, 76, 60, 0.5)' }}>
               {cells.map((char, idx) => (
@@ -88,8 +91,8 @@ export default function PdfTemplate() {
               ))}
             </div>
             
-            {/* DIVIDER */}
-            <div className="w-full border-t-[1px] border-solid mt-[6mm] mb-[2mm]" style={{ borderColor: 'rgba(44, 62, 80, 0.3)' }}></div>
+            {/* BOTTOM THICK DIVIDER */}
+            <div className="w-full h-[3px] bg-muk mt-[6mm] mb-[3mm]"></div>
             
             {/* FOOTER */}
             <div className="flex justify-between items-end w-full">
