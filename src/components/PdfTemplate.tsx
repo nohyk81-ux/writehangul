@@ -20,6 +20,7 @@ export default function PdfTemplate() {
   const isSpecial = templateStyle === 'my-name';
   const containerHex = isSpecial ? '#faf8f5' : '#ffffff';
 
+  return (
     <div 
       id="pdf-content" 
       className="absolute"
