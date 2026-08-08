@@ -34,7 +34,11 @@ export default function MiniMyName() {
       setHangul(data.hangul);
     } catch (err: any) {
       console.error(err);
-      alert(`Error: ${err.message}`);
+      if (err.message?.includes('429') || err.message?.includes('quota') || err.message?.includes('Too Many')) {
+        alert(t('errorRateLimit'));
+      } else {
+        alert(t('errorGeneric'));
+      }
     } finally {
       setIsLoading(false);
     }

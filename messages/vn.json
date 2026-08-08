@@ -27,7 +27,9 @@
     "pdfSource": "Nguồn : WRITEHANGUL.COM",
     "creationResult": "Kết quả tạo",
     "aiGeneratedNotice": "Được tạo bằng AI",
-    "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước."
+    "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước.",
+    "errorRateLimit": "Để ngăn chặn lạm dụng, số lần sử dụng hàng ngày và liên tục bị giới hạn. Vui lòng thử lại sau.",
+    "errorGeneric": "Đã xảy ra lỗi trong quá trình dịch. Vui lòng thử lại."
   },
   "CategoryGrid": {
     "title": "한국 문화와 생활",

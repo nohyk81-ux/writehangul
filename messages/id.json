@@ -27,7 +27,9 @@
     "pdfSource": "Sumber : WRITEHANGUL.COM",
     "creationResult": "Hasil Pembuatan",
     "aiGeneratedNotice": "Dibuat menggunakan AI",
-    "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu."
+    "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu.",
+    "errorRateLimit": "Untuk mencegah penyalahgunaan, penggunaan harian dan berturut-turut dibatasi. Silakan coba lagi nanti.",
+    "errorGeneric": "Terjadi kesalahan saat menerjemahkan. Silakan coba lagi."
   },
   "CategoryGrid": {
     "title": "한국 문화와 생활",
