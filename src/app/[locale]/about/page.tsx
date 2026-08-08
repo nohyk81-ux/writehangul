@@ -33,7 +33,7 @@ export default async function AboutPage({
         
         <h2>How It Works</h2>
         <p>
-          Whether you want to learn the basic alphabet, write your name in Korean, or scan Korean text from a photo, our platform instantly generates a high-quality PDF designed specifically for handwriting practice. All our templates feature a universal margin design ensuring they print perfectly on both A4 and US Letter paper.
+          Whether you want to learn the basic alphabet or write your name in Korean, our platform instantly generates a high-quality PDF designed specifically for handwriting practice. All our templates feature a universal margin design ensuring they print perfectly on both A4 and US Letter paper.
         </p>
 
         <p className="mt-8 text-sm text-muk/60">
