@@ -73,12 +73,6 @@ export default function PdfGeneratorModal() {
           {t('countdown', { sec: countdown })}
         </p>
         
-        {/* AdSense Dummy Box */}
-        <div className="bg-gray-100 border-2 border-dashed border-gray-300 w-full h-64 flex flex-col items-center justify-center text-gray-400 mb-4 rounded-lg">
-          <span className="mb-2">{t('adPlaceholder')}</span>
-          <span className="text-sm px-4">{t('adDesc')}</span>
-        </div>
-        
         <p className="text-sm text-gray-500">
           {t('waitDesc')}
         </p>
