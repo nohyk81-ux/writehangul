@@ -50,8 +50,8 @@ export default function LearningLevels() {
 
   return (
     <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 mt-4 print:hidden">
-      <h2 className="text-sm font-bold text-muk mb-4 flex items-center gap-1 uppercase tracking-wide">
-        LEARNING LEVELS <span className="text-xs text-muk/60">(학습 단계)</span>
+      <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-1 uppercase tracking-wide">
+        LEARNING LEVELS <span className="text-sm font-normal text-muk/60">(학습 단계)</span>
       </h2>
       
       <div className="flex justify-between gap-2">

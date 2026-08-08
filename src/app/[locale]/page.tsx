@@ -44,8 +44,8 @@ export default async function HomePage({
         {/* Column 1: Daily Learning */}
         <div className="flex flex-col gap-4">
           <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-4 h-full flex flex-col">
-            <h2 className="text-sm font-bold text-muk mb-4 flex items-center gap-2 uppercase tracking-wide">
-              DAILY LEARNING <span className="text-xs text-muk/60">(오늘의 학습)</span>
+            <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-2 uppercase tracking-wide">
+              DAILY LEARNING <span className="text-sm font-normal text-muk/60">(오늘의 학습)</span>
             </h2>
             
             <div className="flex-1">

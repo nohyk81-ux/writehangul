@@ -64,8 +64,8 @@ export default function MiniMyName() {
 
   return (
     <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 print:hidden">
-      <h2 className="text-sm font-bold text-muk mb-3 flex items-center gap-1 uppercase tracking-wide">
-        MY NAME WRITING <span className="text-xs text-muk/60">(내 이름 쓰기 연습)</span>
+      <h2 className="text-base font-bold text-muk mb-3 flex items-center gap-1 uppercase tracking-wide">
+        MY NAME WRITING <span className="text-sm font-normal text-muk/60">(내 이름 쓰기 연습)</span>
       </h2>
       
       <form onSubmit={handleTranslate} className="flex items-center gap-2 mb-3">
