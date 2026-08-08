@@ -21,7 +21,7 @@ export default function PdfTemplate() {
   if (characters.length === 0) {
     return (
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
-        <div id="pdf-content" style={{ width: '210mm', minHeight: '296mm', backgroundColor: '#ffffff', position: 'relative' }}>
+        <div id="pdf-content" style={{ width: '210mm', minHeight: '275mm', backgroundColor: '#ffffff', position: 'relative' }}>
         </div>
       </div>
     );
@@ -49,8 +49,8 @@ export default function PdfTemplate() {
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
         <div 
           id="pdf-content" 
-          style={{ width: '210mm', height: '296mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
-          className="flex flex-col box-border pt-[15mm] pb-[15mm] px-[20mm]"
+          style={{ width: '210mm', height: '275mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
+          className="flex flex-col box-border pt-[12mm] pb-[12mm] px-[20mm]"
         >
           {/* Subtle texture */}
           <div className="absolute inset-0 opacity-40 mix-blend-multiply" 
@@ -68,7 +68,7 @@ export default function PdfTemplate() {
             </div>
             
             {/* MAIN GRID */}
-            <div className="grid grid-cols-6 grid-rows-8 w-full border-t-[1.5px] border-l-[1.5px]" style={{ height: '235mm', borderColor: 'rgba(231, 76, 60, 0.5)' }}>
+            <div className="grid grid-cols-6 grid-rows-8 w-full border-t-[1.5px] border-l-[1.5px]" style={{ height: '220mm', borderColor: 'rgba(231, 76, 60, 0.5)' }}>
               {cells.map((char, idx) => (
                 <div key={idx} className="border-b-[1.5px] border-r-[1.5px] flex items-center justify-center relative bg-white/50 overflow-hidden" style={{ borderColor: 'rgba(231, 76, 60, 0.5)' }}>
                   {/* Guidelines */}
@@ -118,18 +118,18 @@ export default function PdfTemplate() {
         id="pdf-content" 
         style={{
           width: '210mm',
-          minHeight: '296mm',
+          minHeight: '275mm',
           backgroundColor: containerHex,
           position: 'relative'
         }}
       >
-        <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[296mm] relative z-10`}>
+        <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[275mm] relative z-10`}>
           {characters.map((char, idx) => (
             <div 
               key={idx} 
               className={`
                 border-2 flex flex-col items-center justify-center relative
-                ${layout === 4 ? 'h-[133.5mm]' : 'h-[267mm]'}
+                ${layout === 4 ? 'h-[125mm]' : 'h-[250mm]'}
               `}
               style={{
                 pageBreakInside: 'avoid',
