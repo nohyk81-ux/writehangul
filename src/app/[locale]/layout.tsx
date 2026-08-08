@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Nanum_Pen_Script } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
@@ -60,11 +61,12 @@ export default async function RootLayout({
     >
       <head>
         {/* Google AdSense */}
-        <script 
+        <Script 
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2696979963987135"
           crossOrigin="anonymous"
-        ></script>
+          strategy="afterInteractive"
+        />
         {/* GA4 Placeholder */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}></script>
         <script
