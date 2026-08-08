@@ -11,13 +11,13 @@
     "highlight": "Viết câu chuyện của bạn."
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
+    "title": "오늘의 학습",
     "titleSub": "(Bài học hôm nay)",
     "downloadBtn": "TẢI BẢNG HÔM NAY",
     "explanation": "Luyện tập hàng ngày và theo dõi tiến độ của bạn."
   },
   "MyName": {
-    "title": "MY NAME WRITING",
+    "title": "내 이름 쓰기",
     "titleSub": "(Viết tên tôi)",
     "placeholder": "Nhập tên của bạn",
     "resultsSub": "Kết quả Hangeul có phát âm",
@@ -26,8 +26,8 @@
     "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước."
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(Chủ đề)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(Văn hóa & Đời sống Hàn Quốc)",
     "basicConsonants": "Phụ âm cơ bản",
     "basicVowels": "Nguyên âm cơ bản",
     "kpop": "Lời bài hát K-Pop",
@@ -40,8 +40,8 @@
     "all": "Xem tất cả các chủ đề"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(Độ khó)",
+    "title": "학습 단계",
+    "titleSub": "(Cấp độ học tập)",
     "starter": "Người mới",
     "basic": "Cơ bản",
     "advanced": "Nâng cao",

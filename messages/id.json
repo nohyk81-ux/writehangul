@@ -11,13 +11,13 @@
     "highlight": "Tulis ceritamu."
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
+    "title": "오늘의 학습",
     "titleSub": "(Pelajaran Hari Ini)",
     "downloadBtn": "UNDUH LEMBAR HARI INI",
     "explanation": "Berlatih setiap hari dan lacak kemajuan Anda."
   },
   "MyName": {
-    "title": "MY NAME WRITING",
+    "title": "내 이름 쓰기",
     "titleSub": "(Menulis nama saya)",
     "placeholder": "Masukkan Nama Anda",
     "resultsSub": "Hasil Hangeul dengan pengucapan",
@@ -26,8 +26,8 @@
     "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu."
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(Tema)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(Budaya & Kehidupan Korea)",
     "basicConsonants": "Konsonan Dasar",
     "basicVowels": "Vokal Dasar",
     "kpop": "Lirik K-Pop",
@@ -40,8 +40,8 @@
     "all": "Lihat Semua Tema"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(Tingkat Kesulitan)",
+    "title": "학습 단계",
+    "titleSub": "(Tingkat Pembelajaran)",
     "starter": "Pemula",
     "basic": "Dasar",
     "advanced": "Lanjut",

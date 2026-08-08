@@ -11,13 +11,13 @@
     "highlight": "Escribe tu historia."
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
-    "titleSub": "(Estudio de hoy)",
+    "title": "오늘의 학습",
+    "titleSub": "(Estudio Diario)",
     "downloadBtn": "DESCARGAR LA HOJA DE HOY",
     "explanation": "Practica a diario y haz un seguimiento de tu progreso."
   },
   "MyName": {
-    "title": "MY NAME WRITING",
+    "title": "내 이름 쓰기",
     "titleSub": "(Escribir mi nombre)",
     "placeholder": "Introduce tu nombre",
     "resultsSub": "Resultados en coreano con pronunciación",
@@ -26,8 +26,8 @@
     "alertEmpty": "Por favor, introduce tu nombre y tradúcelo primero."
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(Temas)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(Cultura y vida coreana)",
     "basicConsonants": "Consonantes Básicas",
     "basicVowels": "Vocales Básicas",
     "kpop": "Letras K-Pop",
@@ -40,8 +40,8 @@
     "all": "Ver todos los temas"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(Dificultad)",
+    "title": "학습 단계",
+    "titleSub": "(Niveles de aprendizaje)",
     "starter": "Principiante",
     "basic": "Básico",
     "advanced": "Avanzado",

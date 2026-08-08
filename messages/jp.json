@@ -11,13 +11,13 @@
     "highlight": "あなたのストーリーを書こう。"
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
+    "title": "오늘의 학습",
     "titleSub": "(今日の学習)",
     "downloadBtn": "今日のシートをダウンロード",
     "explanation": "毎日練習して進捗を記録し、ハングルの書き方をマスターしましょう。"
   },
   "MyName": {
-    "title": "MY NAME WRITING",
+    "title": "내 이름 쓰기",
     "titleSub": "(私の名前を書く)",
     "placeholder": "お名前を入力してください",
     "resultsSub": "ハングルの結果と発音",
@@ -26,8 +26,8 @@
     "alertEmpty": "名前を入力して翻訳ボタンを押してください。"
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(テーマ別)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(K-カルチャーと生活)",
     "basicConsonants": "基本子音",
     "basicVowels": "基本母音",
     "kpop": "K-Pop 歌詞",
@@ -40,8 +40,8 @@
     "all": "全テーマを見る"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(難易度)",
+    "title": "학습 단계",
+    "titleSub": "(学習レベル)",
     "starter": "入門",
     "basic": "基礎",
     "advanced": "上級",

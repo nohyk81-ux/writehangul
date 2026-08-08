@@ -11,14 +11,14 @@
     "highlight": "Write your story."
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
-    "titleSub": "(Today's Study)",
+    "title": "오늘의 학습",
+    "titleSub": "(Daily Learning)",
     "downloadBtn": "DOWNLOAD TODAY'S SHEET",
     "explanation": "Practice daily and track your progress to master Hangul writing."
   },
   "MyName": {
-    "title": "MY NAME WRITING",
-    "titleSub": "(Practice my name)",
+    "title": "내 이름 쓰기",
+    "titleSub": "(My Name Writing)",
     "placeholder": "Enter Your Name",
     "resultsSub": "Hangeul results with pronunciation",
     "translationWait": "Translation will appear here",
@@ -26,8 +26,8 @@
     "alertEmpty": "Please enter your name and translate it first."
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(Themes)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(K-Culture & Life)",
     "basicConsonants": "Basic Consonants",
     "basicVowels": "Basic Vowels",
     "kpop": "K-Pop Lyrics",
@@ -40,8 +40,8 @@
     "all": "View All Themes"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(Difficulty)",
+    "title": "학습 단계",
+    "titleSub": "(Learning Levels)",
     "starter": "Starter",
     "basic": "Basic",
     "advanced": "Advanced",

@@ -11,13 +11,13 @@
     "highlight": "书写你的故事。"
   },
   "DailyLearning": {
-    "title": "DAILY LEARNING",
+    "title": "오늘의 학습",
     "titleSub": "(今日学习)",
     "downloadBtn": "下载今日练习表",
     "explanation": "每天练习并记录您的进度，以掌握韩语书写。"
   },
   "MyName": {
-    "title": "MY NAME WRITING",
+    "title": "내 이름 쓰기",
     "titleSub": "(写我的名字)",
     "placeholder": "请输入您的名字",
     "resultsSub": "韩语发音结果",
@@ -26,8 +26,8 @@
     "alertEmpty": "请先输入您的名字并点击翻译。"
   },
   "CategoryGrid": {
-    "title": "K-CULTURE & LIFE",
-    "titleSub": "(主题分类)",
+    "title": "한국 문화와 생활",
+    "titleSub": "(韩国文化与生活)",
     "basicConsonants": "基础辅音",
     "basicVowels": "基础元音",
     "kpop": "K-Pop 歌词",
@@ -40,8 +40,8 @@
     "all": "查看所有主题"
   },
   "LearningLevels": {
-    "title": "LEARNING LEVELS",
-    "titleSub": "(难度级别)",
+    "title": "학습 단계",
+    "titleSub": "(学习水平)",
     "starter": "入门",
     "basic": "基础",
     "advanced": "高级",
