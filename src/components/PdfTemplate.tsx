@@ -20,86 +20,89 @@ export default function PdfTemplate() {
   const isSpecial = templateStyle === 'my-name';
   const containerHex = isSpecial ? '#faf8f5' : '#ffffff';
 
-  return (
-    <div className="hidden">
-      {/* 
-        This is the container we pass to html2pdf. 
-        It must be rendered in the DOM but can be hidden via a wrapper wrapper.
-        Wait, if we use display:none (hidden), html2pdf might render a blank image.
-        Usually it's better to position it off-screen: absolute top-[-9999px] left-[-9999px]
-      */}
-      <div id="pdf-content" className={`absolute top-[-9999px] left-[-9999px] w-[210mm] min-h-[297mm] relative overflow-hidden`} style={{ backgroundColor: containerHex }}>
-        {/* Subtle texture for my-name */}
-        {isSpecial && (
-          <div className="absolute inset-0 opacity-40 mix-blend-multiply" 
-               style={{ 
-                 backgroundImage: 'radial-gradient(#d5c5b3 1px, transparent 1px)', 
-                 backgroundSize: '20px 20px' 
-               }}>
-          </div>
-        )}
-
-        <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[297mm] relative z-10`}>
-          {characters.map((char, idx) => (
-            <div 
-              key={idx} 
-              className={`
-                border-2 flex flex-col items-center justify-center relative
-                ${layout === 4 ? 'h-[133.5mm]' : 'h-[267mm]'}
-              `}
-              style={{
-                pageBreakInside: 'avoid',
-                borderColor: 'rgba(231, 76, 60, 0.5)' /* seal/50 */
-              }}
-            >
-              {/* Guide lines (Traditional Korean manuscript paper style) */}
-              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 border-[0.5px] pointer-events-none z-0" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}>
-                <div className="border-r-[0.5px] border-b-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
-                <div className="border-b-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
-                <div className="border-r-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
-                <div></div>
-              </div>
-              
-              <span 
-                className={`font-pen relative z-10 
-                  ${layout === 4 ? 'text-[150pt]' : 'text-[250pt]'}
-                `}
-                style={{ color: 'rgba(44, 62, 80, 0.2)' }}
-              >
-                {char}
-              </span>
-            </div>
-          ))}
+    <div 
+      id="pdf-content" 
+      className="absolute"
+      style={{
+        top: '-9999px',
+        left: '-9999px',
+        width: '210mm',
+        minHeight: '297mm',
+        backgroundColor: containerHex,
+        overflow: 'hidden',
+        zIndex: -1
+      }}
+    >
+      {/* Subtle texture for my-name */}
+      {isSpecial && (
+        <div className="absolute inset-0 opacity-40 mix-blend-multiply" 
+             style={{ 
+               backgroundImage: 'radial-gradient(#d5c5b3 1px, transparent 1px)', 
+               backgroundSize: '20px 20px' 
+             }}>
         </div>
+      )}
 
-        {/* Traditional Red Seal Watermark (Nakgwan) */}
-        {isSpecial && (
-          <div className="absolute bottom-[20mm] right-[20mm] z-20 opacity-80 mix-blend-multiply flex items-center justify-center">
-            <div 
-              className="flex items-center justify-center p-2 rounded-[2px]"
+      <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[297mm] relative z-10`}>
+        {characters.map((char, idx) => (
+          <div 
+            key={idx} 
+            className={`
+              border-2 flex flex-col items-center justify-center relative
+              ${layout === 4 ? 'h-[133.5mm]' : 'h-[267mm]'}
+            `}
+            style={{
+              pageBreakInside: 'avoid',
+              borderColor: 'rgba(231, 76, 60, 0.5)' /* seal/50 */
+            }}
+          >
+            {/* Guide lines (Traditional Korean manuscript paper style) */}
+            <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 border-[0.5px] pointer-events-none z-0" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}>
+              <div className="border-r-[0.5px] border-b-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
+              <div className="border-b-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
+              <div className="border-r-[0.5px] border-dashed" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
+              <div></div>
+            </div>
+            
+            <span 
+              className={`font-pen relative z-10 
+                ${layout === 4 ? 'text-[150pt]' : 'text-[250pt]'}
+              `}
+              style={{ color: 'rgba(44, 62, 80, 0.2)' }}
+            >
+              {char}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      {/* Traditional Red Seal Watermark (Nakgwan) */}
+      {isSpecial && (
+        <div className="absolute bottom-[20mm] right-[20mm] z-20 opacity-80 mix-blend-multiply flex items-center justify-center">
+          <div 
+            className="flex items-center justify-center p-2 rounded-[2px]"
+            style={{
+              backgroundColor: '#e74c3c',
+              width: '18mm',
+              height: '45mm',
+              border: '1px solid #c0392b',
+              boxShadow: 'inset 0 0 5px rgba(0,0,0,0.3)'
+            }}
+          >
+            <span 
+              className="text-white font-bold font-serif opacity-90 tracking-widest text-center"
               style={{
-                backgroundColor: '#e74c3c',
-                width: '18mm',
-                height: '45mm',
-                border: '1px solid #c0392b',
-                boxShadow: 'inset 0 0 5px rgba(0,0,0,0.3)'
+                writingMode: 'vertical-rl',
+                textOrientation: 'upright',
+                fontSize: '8pt',
+                lineHeight: '1.2'
               }}
             >
-              <span 
-                className="text-white font-bold font-serif opacity-90 tracking-widest text-center"
-                style={{
-                  writingMode: 'vertical-rl',
-                  textOrientation: 'upright',
-                  fontSize: '8pt',
-                  lineHeight: '1.2'
-                }}
-              >
-                Generated by<br/>WriteHangul.com
-              </span>
-            </div>
+              Generated by<br/>WriteHangul.com
+            </span>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
