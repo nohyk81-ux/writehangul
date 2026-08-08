@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     const base64Image = Buffer.from(buffer).toString('base64');
 
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' }, { apiVersion: 'v1' });
 
     const imageParts = [
       {
