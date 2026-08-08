@@ -109,9 +109,11 @@ export default function MiniMyName() {
         )}
       </div>
       
-      <div className="text-right mb-2">
-        <p className="text-[9px] text-muk/40">{t('aiGeneratedNotice')}</p>
-      </div>
+      {hangul && (
+        <div className="text-right mb-2">
+          <p className="text-[9px] text-muk/40">{t('aiGeneratedNotice')}</p>
+        </div>
+      )}
 
       <button 
         onClick={handleGeneratePdf}
