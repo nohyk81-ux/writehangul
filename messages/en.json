@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Write Hangul",
+    "description": "Learn to write Korean beautifully. Create your own practice sheets."
+  },
+  "Controls": {
+    "layout": "Layout",
+    "print": "Print",
+    "scan": "Scan Image"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "id": "alphabet",
+      "translations": {
+        "en": "Hangul Alphabet",
+        "ja": "ハングルアルファベット",
+        "zh-CN": "韩语字母",
+        "zh-TW": "韓語字母",
+        "es": "Alfabeto Hangul",
+        "id": "Alfabet Hangeul",
+        "vi": "Bảng chữ cái Hangul"
+      },
+      "items": [
+        { "korean": "가", "romanization": "ga" },
+        { "korean": "나", "romanization": "na" },
+        { "korean": "다", "romanization": "da" },
+        { "korean": "라", "romanization": "ra" },
+        { "korean": "마", "romanization": "ma" },
+        { "korean": "바", "romanization": "ba" },
+        { "korean": "사", "romanization": "sa" },
+        { "korean": "아", "romanization": "a" },
+        { "korean": "자", "romanization": "ja" },
+        { "korean": "차", "romanization": "cha" },
+        { "korean": "카", "romanization": "ka" },
+        { "korean": "타", "romanization": "ta" },
+        { "korean": "파", "romanization": "pa" },
+        { "korean": "하", "romanization": "ha" }
+      ]
+    },
+    {
+      "id": "k-food",
+      "translations": {
+        "en": "K-Food",
+        "ja": "韓国料理",
+        "zh-CN": "韩国美食",
+        "zh-TW": "韓國美食",
+        "es": "Comida Coreana",
+        "id": "Makanan Korea",
+        "vi": "Ẩm thực Hàn Quốc"
+      },
+      "items": [
+        { "korean": "비빔밥", "romanization": "bibimbap" },
+        { "korean": "김치", "romanization": "kimchi" },
+        { "korean": "불고기", "romanization": "bulgogi" },
+        { "korean": "떡볶이", "romanization": "tteokbokki" },
+        { "korean": "삼겹살", "romanization": "samgyeopsal" },
+        { "korean": "김밥", "romanization": "gimbap" },
+        { "korean": "라면", "romanization": "ramyeon" },
+        { "korean": "된장찌개", "romanization": "doenjang-jjigae" },
+        { "korean": "치킨", "romanization": "chikin" },
+        { "korean": "냉면", "romanization": "naengmyeon" },
+        { "korean": "잡채", "romanization": "japchae" },
+        { "korean": "파전", "romanization": "pajeon" }
+      ]
+    },
+    {
+      "id": "travel",
+      "translations": {
+        "en": "Travel Phrases",
+        "ja": "旅行会話",
+        "zh-CN": "旅行常用语",
+        "zh-TW": "旅行常用語",
+        "es": "Frases de Viaje",
+        "id": "Frasa Perjalanan",
+        "vi": "Cụm từ du lịch"
+      },
+      "items": [
+        { "korean": "안녕하세요", "romanization": "annyeonghaseyo" },
+        { "korean": "감사합니다", "romanization": "gamsahamnida" },
+        { "korean": "얼마예요", "romanization": "eolmayeyo" },
+        { "korean": "화장실", "romanization": "hwajangsil" },
+        { "korean": "도와주세요", "romanization": "dowajuseyo" },
+        { "korean": "죄송합니다", "romanization": "joesonghamnida" },
+        { "korean": "맛있어요", "romanization": "masisseoyo" },
+        { "korean": "주세요", "romanization": "juseyo" },
+        { "korean": "사진", "romanization": "sajin" },
+        { "korean": "지하철", "romanization": "jihacheol" },
+        { "korean": "공항", "romanization": "gonghang" },
+        { "korean": "예뻐요", "romanization": "yeppeoyo" }
+      ]
+    },
+    {
+      "id": "slang",
+      "translations": {
+        "en": "Trendy Slang & Phrases",
+        "ja": "流行語・日常会話",
+        "zh-CN": "流行语与日常用语",
+        "zh-TW": "流行語與日常用語",
+        "es": "Jerga Moderna",
+        "id": "Bahasa Gaul Trendi",
+        "vi": "Tiếng lóng thịnh hành"
+      },
+      "items": [
+        { "korean": "대박", "romanization": "daebak" },
+        { "korean": "진짜", "romanization": "jinjja" },
+        { "korean": "꿀잼", "romanization": "kkuljaem" },
+        { "korean": "화이팅", "romanization": "hwaiting" },
+        { "korean": "헐", "romanization": "heol" },
+        { "korean": "심쿵", "romanization": "simkung" },
+        { "korean": "짱", "romanization": "jjang" },
+        { "korean": "어머", "romanization": "eomeo" },
+        { "korean": "아싸", "romanization": "assa" },
+        { "korean": "멘붕", "romanization": "menbung" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+'use client';
+
+import { useState } from 'react';
+import { usePracticeStore } from '@/store';
+import { Loader2, RefreshCw, Volume2 } from 'lucide-react';
+
+export default function MiniMyName() {
+  const [name, setName] = useState('');
+  const [hangul, setHangul] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const { clearCharacters, addCharacters, setLayout, setPdfGenerating, setTemplateStyle } = usePracticeStore();
+
+  const handleTranslate = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (!name.trim()) return;
+
+    setIsLoading(true);
+    setHangul('');
+    try {
+      const res = await fetch('/api/transliterate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name.trim() })
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to translate');
+      }
+
+      const data = await res.json();
+      setHangul(data.hangul);
+    } catch (err) {
+      console.error(err);
+      alert('Error translating your name. Please try again or type directly in Korean.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleSpeak = () => {
+    if (!hangul || !window.speechSynthesis) return;
+    const utterance = new SpeechSynthesisUtterance(hangul);
+    utterance.lang = 'ko-KR';
+    utterance.rate = 0.8;
+    window.speechSynthesis.speak(utterance);
+  };
+
+  const handleGeneratePdf = () => {
+    if (!hangul) {
+      alert('Please enter your name and translate it first.');
+      return;
+    }
+    
+    // Set up the store for custom 'My Name' template
+    clearCharacters();
+    addCharacters(hangul);
+    // Usually names look best with 2 characters per row
+    setLayout(2);
+    setTemplateStyle('my-name');
+    
+    // Trigger PDF generation
+    setPdfGenerating(true);
+  };
+
+  return (
+    <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 print:hidden">
+      <h2 className="text-sm font-bold text-muk mb-3 flex items-center gap-1 uppercase tracking-wide">
+        MY NAME WRITING <span className="text-xs text-muk/60">(내 이름 쓰기 연습)</span>
+      </h2>
+      
+      <form onSubmit={handleTranslate} className="flex items-center gap-2 mb-3">
+        <input 
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Enter Your Name" 
+          className="flex-1 px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-seal text-sm transition-colors"
+          maxLength={30}
+        />
+        <button 
+          type="submit"
+          disabled={isLoading || !name.trim()}
+          className="w-9 h-9 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-md text-muk/70 disabled:opacity-50"
+        >
+          {isLoading ? <Loader2 className="animate-spin" size={16} /> : <RefreshCw size={16} />}
+        </button>
+      </form>
+
+      <div className="flex items-center gap-3 border border-muk/10 rounded-md p-3 mb-3 bg-gray-50 min-h-[60px]">
+        {hangul ? (
+          <>
+            <div className="text-3xl font-serif text-muk/40 select-none w-12 text-center">{hangul.charAt(0)}</div>
+            <div className="flex-1">
+              <p className="text-sm font-bold text-muk">{hangul}</p>
+              <p className="text-[10px] text-muk/60">Hangeul results with pronunciation</p>
+            </div>
+            <button 
+              onClick={handleSpeak}
+              className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200 shrink-0"
+            >
+              <Volume2 size={16} />
+            </button>
+          </>
+        ) : (
+          <p className="text-xs text-muk/40 text-center w-full">Translation will appear here</p>
+        )}
+      </div>
+
+      <button 
+        onClick={handleGeneratePdf}
+        className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 rounded-md text-xs tracking-wider transition-colors"
+      >
+        GET YOUR SHEET
+      </button>
+    </div>
+  );
+}

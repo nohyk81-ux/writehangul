@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Write Hangul",
+    "description": "Belajar menulis bahasa Korea dengan indah. Buat lembar latihan Anda sendiri."
+  },
+  "Controls": {
+    "layout": "Tata Letak",
+    "print": "Cetak",
+    "scan": "Pindai Gambar"
+  }
+}

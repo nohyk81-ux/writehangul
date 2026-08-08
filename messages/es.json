@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Write Hangul",
+    "description": "Aprende a escribir coreano maravillosamente. Crea tus propias hojas de práctica."
+  },
+  "Controls": {
+    "layout": "Diseño",
+    "print": "Imprimir",
+    "scan": "Escanear imagen"
+  }
+}

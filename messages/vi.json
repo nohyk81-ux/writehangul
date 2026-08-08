@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Write Hangul",
+    "description": "Học cách viết tiếng Hàn thật đẹp. Tạo bảng luyện viết của riêng bạn."
+  },
+  "Controls": {
+    "layout": "Bố cục",
+    "print": "In",
+    "scan": "Quét ảnh"
+  }
+}
