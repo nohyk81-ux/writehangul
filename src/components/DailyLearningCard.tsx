@@ -117,8 +117,8 @@ export default function DailyLearningCard() {
           <div className="flex flex-col items-center flex-1 mx-2 text-center">
             {content ? (
               <>
-                <div className="flex items-center justify-center gap-2 mb-0.5">
-                  <span className="text-2xl font-bold text-muk leading-tight">{content.hangul}</span>
+                <div className="flex items-center justify-center gap-2 mb-0.5 w-full">
+                  <span className="text-2xl font-bold text-muk leading-tight break-keep">{content.hangul}</span>
                   <button 
                     onClick={() => playAudio(content.hangul)}
                     className="text-orange-500 hover:text-orange-600 bg-orange-100 hover:bg-orange-200 p-1.5 rounded-full transition-colors flex-shrink-0"
