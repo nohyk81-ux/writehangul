@@ -84,12 +84,12 @@ export default function DailyLearningCard() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-3 h-full flex flex-col">
-      <h2 className="text-base font-bold text-muk mb-2 flex items-center gap-2 uppercase tracking-wide">
+    <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-3 flex flex-col">
+      <h2 className="text-base font-bold text-muk mb-1 flex items-center gap-2 uppercase tracking-wide">
         {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
       </h2>
       
-      <div className="bg-orange-50 rounded-xl border border-orange-100 px-2 py-4 flex flex-col flex-1 items-center justify-center relative min-h-[100px]">
+      <div className="bg-orange-50 rounded-xl border border-orange-100 px-2 py-5 mt-2 flex flex-col items-center justify-center relative min-h-[100px]">
         <div className="absolute top-2 left-0 w-full flex justify-center">
           <div className="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[11px] font-bold text-orange-600 flex items-center gap-1 shadow-sm border border-orange-100">
             <Flame size={12} className={streak > 0 ? "fill-orange-500 text-orange-500" : "text-gray-400"} />
