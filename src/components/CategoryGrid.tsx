@@ -48,7 +48,7 @@ const categories = [
 ];
 
 export default function CategoryGrid() {
-  const { setCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
+  const { clearCharacters, addCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
 
   const handleDownload = (categoryId: string) => {
     // Find category in JSON
@@ -59,8 +59,9 @@ export default function CategoryGrid() {
     }
     
     if (catData) {
-      const chars = catData.items.map(i => i.korean).join('').split('');
-      setCharacters(chars);
+      const chars = catData.items.map(i => i.korean).join('');
+      clearCharacters();
+      addCharacters(chars);
       setLayout(4); // 4 chars per page
       setTemplateStyle('default');
       setPdfGenerating(true);

@@ -34,13 +34,14 @@ const levels = [
 ];
 
 export default function LearningLevels() {
-  const { setCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
+  const { clearCharacters, addCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
 
   const handleDownload = (categoryId: string) => {
     const catData = vocabularyData.categories.find(c => c.id === categoryId);
     if (catData) {
-      const chars = catData.items.map(i => i.korean).join('').split('');
-      setCharacters(chars);
+      const chars = catData.items.map(i => i.korean).join('');
+      clearCharacters();
+      addCharacters(chars);
       setLayout(4);
       setTemplateStyle('default');
       setPdfGenerating(true);
