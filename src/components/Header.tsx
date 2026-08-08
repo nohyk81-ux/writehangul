@@ -24,8 +24,7 @@ export default function Header() {
         
         {/* Right Section: Language & Guest Progress */}
         <div className="flex flex-col items-end text-right">
-          <div className="text-xs text-muk/60 mb-2 flex items-center gap-2 font-medium bg-gray-100 px-3 py-1 rounded-full">
-            <span>{t('globalLanguageSetting')} 🌍</span>
+          <div className="mb-2 flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-full">
             <div className="flex gap-2 items-center">
               <Link href="/" locale="gb" className="hover:scale-110 transition-transform" title="English">
                 <img src="https://flagcdn.com/w20/gb.png" srcSet="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" className="rounded-sm shadow-sm" />
