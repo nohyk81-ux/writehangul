@@ -1,11 +1,50 @@
 {
-  "HomePage": {
-    "title": "Write Hangul",
-    "description": "Aprende a escribir coreano maravillosamente. Crea tus propias hojas de práctica."
+  "Header": {
+    "globalLanguageSetting": "Configuración de idioma global",
+    "guestProgress": "Progreso del invitado",
+    "guestProgressSub": "(Mi progreso)",
+    "todayChecked": "Hoy - comprobado"
   },
-  "Controls": {
-    "layout": "Diseño",
-    "print": "Imprimir",
-    "scan": "Escanear imagen"
+  "Hero": {
+    "title": "Traza coreano a diario.<br/>Hojas de práctica gratuitas.",
+    "subtitle": "Aprende coreano práctico.<br/>Descarga, imprime y practica en casa.",
+    "highlight": "Escribe tu historia."
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(Estudio de hoy)",
+    "downloadBtn": "DESCARGAR LA HOJA DE HOY",
+    "explanation": "Practica a diario y haz un seguimiento de tu progreso."
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(Escribir mi nombre)",
+    "placeholder": "Introduce tu nombre",
+    "resultsSub": "Resultados en coreano con pronunciación",
+    "translationWait": "La traducción aparecerá aquí",
+    "getSheetBtn": "OBTÉN TU HOJA",
+    "alertEmpty": "Por favor, introduce tu nombre y tradúcelo primero."
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(Temas)",
+    "basicConsonants": "Consonantes Básicas",
+    "basicVowels": "Vocales Básicas",
+    "kpop": "Letras K-Pop",
+    "travel": "Coreano de Viaje",
+    "food": "Comida Coreana",
+    "greetings": "Saludos",
+    "business": "Negocios",
+    "slang": "Jerga",
+    "proverbs": "Proverbios",
+    "all": "Ver todos los temas"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(Dificultad)",
+    "starter": "Principiante",
+    "basic": "Básico",
+    "advanced": "Avanzado",
+    "master": "Maestro"
   }
 }

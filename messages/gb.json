@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "globalLanguageSetting": "Global Language Setting",
+    "guestProgress": "Guest Progress",
+    "guestProgressSub": "(My Progress)",
+    "todayChecked": "Today - checked"
+  },
+  "Hero": {
+    "title": "Trace Korean daily.<br/>Free writing practice sheets.",
+    "subtitle": "Learn practical Korean.<br/>Download, print, and practice at home.",
+    "highlight": "Write your story."
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(Today's Study)",
+    "downloadBtn": "DOWNLOAD TODAY'S SHEET",
+    "explanation": "Practice daily and track your progress to master Hangul writing."
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(Practice my name)",
+    "placeholder": "Enter Your Name",
+    "resultsSub": "Hangeul results with pronunciation",
+    "translationWait": "Translation will appear here",
+    "getSheetBtn": "GET YOUR SHEET",
+    "alertEmpty": "Please enter your name and translate it first."
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(Themes)",
+    "basicConsonants": "Basic Consonants",
+    "basicVowels": "Basic Vowels",
+    "kpop": "K-Pop Lyrics",
+    "travel": "Travel Korean",
+    "food": "Korean Food",
+    "greetings": "Greetings",
+    "business": "Business",
+    "slang": "Slang & Idioms",
+    "proverbs": "Proverbs",
+    "all": "View All Themes"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(Difficulty)",
+    "starter": "Starter",
+    "basic": "Basic",
+    "advanced": "Advanced",
+    "master": "Master"
+  }
+}

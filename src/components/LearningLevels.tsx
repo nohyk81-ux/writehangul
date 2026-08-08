@@ -3,38 +3,43 @@
 import { usePracticeStore } from '@/store';
 import vocabularyData from '@/data/vocabulary.json';
 
-const levels = [
-  {
-    id: 'alphabet', // maps to basic alphabet
-    icon: '🎯',
-    title: 'BEGINNER (초급)',
-    subtitle: 'Consonants & Vowels',
-    features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
-    bgColor: 'bg-slate-100',
-    iconBg: 'bg-slate-700'
-  },
-  {
-    id: 'travel', // maps to travel phrases
-    icon: '🧪',
-    title: 'ELEMENTARY (중급)',
-    subtitle: 'Simple Words & Phrases',
-    features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
-    bgColor: 'bg-blue-50',
-    iconBg: 'bg-blue-600'
-  },
-  {
-    id: 'slang', // maps to slang/expressions
-    icon: '📝',
-    title: 'INTERMEDIATE (고급)',
-    subtitle: 'Expressions & Writing',
-    features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
-    bgColor: 'bg-green-50',
-    iconBg: 'bg-green-600'
-  }
-];
+
+
+import { useTranslations } from 'next-intl';
 
 export default function LearningLevels() {
   const { clearCharacters, addCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
+  const t = useTranslations('LearningLevels');
+
+  const levels = [
+    {
+      id: 'alphabet', // maps to basic alphabet
+      icon: '🎯',
+      title: t('starter'),
+      subtitle: 'Consonants & Vowels',
+      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      bgColor: 'bg-slate-100',
+      iconBg: 'bg-slate-700'
+    },
+    {
+      id: 'travel', // maps to travel phrases
+      icon: '🧪',
+      title: t('basic'),
+      subtitle: 'Simple Words & Phrases',
+      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      bgColor: 'bg-blue-50',
+      iconBg: 'bg-blue-600'
+    },
+    {
+      id: 'slang', // maps to slang/expressions
+      icon: '📝',
+      title: t('advanced'),
+      subtitle: 'Expressions & Writing',
+      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      bgColor: 'bg-green-50',
+      iconBg: 'bg-green-600'
+    }
+  ];
 
   const handleDownload = (categoryId: string) => {
     const catData = vocabularyData.categories.find(c => c.id === categoryId);
@@ -51,7 +56,7 @@ export default function LearningLevels() {
   return (
     <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 mt-4 print:hidden">
       <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-1 uppercase tracking-wide">
-        LEARNING LEVELS <span className="text-sm font-normal text-muk/60">(학습 단계)</span>
+        {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
       </h2>
       
       <div className="flex justify-between gap-2">

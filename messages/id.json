@@ -1,11 +1,50 @@
 {
-  "HomePage": {
-    "title": "Write Hangul",
-    "description": "Belajar menulis bahasa Korea dengan indah. Buat lembar latihan Anda sendiri."
+  "Header": {
+    "globalLanguageSetting": "Pengaturan Bahasa Global",
+    "guestProgress": "Kemajuan Tamu",
+    "guestProgressSub": "(Kemajuan Saya)",
+    "todayChecked": "Hari ini - diperiksa"
   },
-  "Controls": {
-    "layout": "Tata Letak",
-    "print": "Cetak",
-    "scan": "Pindai Gambar"
+  "Hero": {
+    "title": "Lacak bahasa Korea setiap hari.<br/>Lembar latihan menulis gratis.",
+    "subtitle": "Pelajari bahasa Korea praktis.<br/>Unduh, cetak, dan berlatih di rumah.",
+    "highlight": "Tulis ceritamu."
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(Pelajaran Hari Ini)",
+    "downloadBtn": "UNDUH LEMBAR HARI INI",
+    "explanation": "Berlatih setiap hari dan lacak kemajuan Anda."
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(Menulis nama saya)",
+    "placeholder": "Masukkan Nama Anda",
+    "resultsSub": "Hasil Hangeul dengan pengucapan",
+    "translationWait": "Terjemahan akan muncul di sini",
+    "getSheetBtn": "DAPATKAN LEMBAR ANDA",
+    "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu."
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(Tema)",
+    "basicConsonants": "Konsonan Dasar",
+    "basicVowels": "Vokal Dasar",
+    "kpop": "Lirik K-Pop",
+    "travel": "Bahasa Korea Wisata",
+    "food": "Makanan Korea",
+    "greetings": "Salam",
+    "business": "Bisnis",
+    "slang": "Gaul",
+    "proverbs": "Peribahasa",
+    "all": "Lihat Semua Tema"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(Tingkat Kesulitan)",
+    "starter": "Pemula",
+    "basic": "Dasar",
+    "advanced": "Lanjut",
+    "master": "Master"
   }
 }

@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "globalLanguageSetting": "全局语言设置",
+    "guestProgress": "访客进度",
+    "guestProgressSub": "(我的进度)",
+    "todayChecked": "今日已签到"
+  },
+  "Hero": {
+    "title": "每天描红韩语。<br/>免费的书写练习表。",
+    "subtitle": "学习实用的韩语。<br/>下载、打印，并在家练习。",
+    "highlight": "书写你的故事。"
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(今日学习)",
+    "downloadBtn": "下载今日练习表",
+    "explanation": "每天练习并记录您的进度，以掌握韩语书写。"
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(写我的名字)",
+    "placeholder": "请输入您的名字",
+    "resultsSub": "韩语发音结果",
+    "translationWait": "翻译结果将显示在这里",
+    "getSheetBtn": "获取你的练习表",
+    "alertEmpty": "请先输入您的名字并点击翻译。"
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(主题分类)",
+    "basicConsonants": "基础辅音",
+    "basicVowels": "基础元音",
+    "kpop": "K-Pop 歌词",
+    "travel": "旅游韩语",
+    "food": "韩国美食",
+    "greetings": "问候语",
+    "business": "商务韩语",
+    "slang": "流行语及惯用语",
+    "proverbs": "谚语",
+    "all": "查看所有主题"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(难度级别)",
+    "starter": "入门",
+    "basic": "基础",
+    "advanced": "高级",
+    "master": "精通"
+  }
+}

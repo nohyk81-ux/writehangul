@@ -1,6 +1,9 @@
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations('Header');
+
   return (
     <header className="relative w-full border-b-2 border-muk/10 bg-white print:hidden">
       <div className="max-w-7xl mx-auto px-4 py-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -22,14 +25,14 @@ export default function Header() {
         {/* Right Section: Language & Guest Progress */}
         <div className="flex flex-col items-end text-right">
           <div className="text-xs text-muk/60 mb-2 flex items-center gap-2 font-medium bg-gray-100 px-3 py-1 rounded-full">
-            <span>Global Language Setting 🌍</span>
+            <span>{t('globalLanguageSetting')} 🌍</span>
             <div className="flex gap-1">
-              <Link href="/" locale="en" className="hover:scale-110 transition-transform" title="English">🇬🇧</Link>
-              <Link href="/" locale="ja" className="hover:scale-110 transition-transform" title="日本語">🇯🇵</Link>
-              <Link href="/" locale="zh-CN" className="hover:scale-110 transition-transform" title="简体中文">🇨🇳</Link>
+              <Link href="/" locale="gb" className="hover:scale-110 transition-transform" title="English">🇬🇧</Link>
+              <Link href="/" locale="jp" className="hover:scale-110 transition-transform" title="日本語">🇯🇵</Link>
+              <Link href="/" locale="cn" className="hover:scale-110 transition-transform" title="简体中文">🇨🇳</Link>
               <Link href="/" locale="es" className="hover:scale-110 transition-transform" title="Español">🇪🇸</Link>
               <Link href="/" locale="id" className="hover:scale-110 transition-transform" title="Bahasa Indonesia">🇮🇩</Link>
-              <Link href="/" locale="vi" className="hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</Link>
+              <Link href="/" locale="vn" className="hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</Link>
             </div>
           </div>
           
@@ -39,10 +42,10 @@ export default function Header() {
             </div>
             <div className="text-left">
               <p className="text-sm font-bold text-muk leading-tight flex items-center gap-1">
-                Guest Progress <span className="text-xs text-muk/60 font-normal">(내 진행상황)</span>
+                {t('guestProgress')} <span className="text-xs text-muk/60 font-normal">{t('guestProgressSub')}</span>
               </p>
               <p className="text-xs text-muk/80 leading-tight flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span> Today - checked
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span> {t('todayChecked')}
               </p>
             </div>
             <button className="w-6 h-6 rounded-full border border-muk/30 flex items-center justify-center text-xs text-muk/50 hover:bg-muk/5 ml-2">

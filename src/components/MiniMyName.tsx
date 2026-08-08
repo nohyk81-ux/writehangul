@@ -3,8 +3,10 @@
 import { useState } from 'react';
 import { usePracticeStore } from '@/store';
 import { Loader2, RefreshCw, Volume2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function MiniMyName() {
+  const t = useTranslations('MyName');
   const [name, setName] = useState('');
   const [hangul, setHangul] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +50,7 @@ export default function MiniMyName() {
 
   const handleGeneratePdf = () => {
     if (!hangul) {
-      alert('Please enter your name and translate it first.');
+      alert(t('alertEmpty'));
       return;
     }
     
@@ -66,7 +68,7 @@ export default function MiniMyName() {
   return (
     <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 print:hidden">
       <h2 className="text-base font-bold text-muk mb-3 flex items-center gap-1 uppercase tracking-wide">
-        MY NAME WRITING <span className="text-sm font-normal text-muk/60">(내 이름 쓰기 연습)</span>
+        {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
       </h2>
       
       <form onSubmit={handleTranslate} className="flex items-center gap-2 mb-3">
@@ -74,7 +76,7 @@ export default function MiniMyName() {
           type="text" 
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Enter Your Name" 
+          placeholder={t('placeholder')} 
           className="flex-1 px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-seal text-sm transition-colors"
           maxLength={30}
         />
@@ -93,7 +95,7 @@ export default function MiniMyName() {
             <div className="text-3xl font-serif text-muk/40 select-none w-12 text-center">{hangul.charAt(0)}</div>
             <div className="flex-1">
               <p className="text-sm font-bold text-muk">{hangul}</p>
-              <p className="text-[10px] text-muk/60">Hangeul results with pronunciation</p>
+              <p className="text-[10px] text-muk/60">{t('resultsSub')}</p>
             </div>
             <button 
               onClick={handleSpeak}
@@ -103,7 +105,7 @@ export default function MiniMyName() {
             </button>
           </>
         ) : (
-          <p className="text-xs text-muk/40 text-center w-full">Translation will appear here</p>
+          <p className="text-xs text-muk/40 text-center w-full">{t('translationWait')}</p>
         )}
       </div>
 
@@ -111,7 +113,7 @@ export default function MiniMyName() {
         onClick={handleGeneratePdf}
         className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 rounded-md text-xs tracking-wider transition-colors"
       >
-        GET YOUR SHEET
+        {t('getSheetBtn')}
       </button>
     </div>
   );

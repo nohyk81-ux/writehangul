@@ -1,4 +1,4 @@
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import AttendanceAndAd from '@/components/AttendanceAndAd';
 import CategoryGrid from '@/components/CategoryGrid';
 import AttendanceCalendar from '@/components/AttendanceCalendar';
@@ -13,6 +13,8 @@ export default async function HomePage({
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({locale, namespace: 'Hero'});
+  const td = await getTranslations({locale, namespace: 'DailyLearning'});
 
   return (
     <main className="flex-1 flex flex-col p-4 md:p-8 max-w-7xl mx-auto w-full print:p-0 print:m-0 print:max-w-none relative">
@@ -29,11 +31,9 @@ export default async function HomePage({
           </div>
           
           <div className="flex-1 text-center md:text-left relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-muk mb-2 leading-tight">
-              Trace Korean daily.<br/>Free writing practice sheets.
-            </h2>
-            <p className="text-muk/80 text-lg mb-2 font-medium">Learn practical Korean.<br/>Download, print, and practice at home.</p>
-            <p className="font-bold text-2xl text-muk mt-4">Write your story.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-muk mb-2 leading-tight" dangerouslySetInnerHTML={{ __html: t('title') }}></h2>
+            <p className="text-muk/80 text-lg mb-2 font-medium" dangerouslySetInnerHTML={{ __html: t('subtitle') }}></p>
+            <p className="font-bold text-2xl text-muk mt-4">{t('highlight')}</p>
           </div>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default async function HomePage({
         <div className="flex flex-col gap-4">
           <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-4 h-full flex flex-col">
             <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-2 uppercase tracking-wide">
-              DAILY LEARNING <span className="text-sm font-normal text-muk/60">(오늘의 학습)</span>
+              {td('title')} <span className="text-sm font-normal text-muk/60">{td('titleSub')}</span>
             </h2>
             
             <div className="flex-1">
@@ -53,10 +53,10 @@ export default async function HomePage({
             </div>
             
             <button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 mt-4 rounded-md text-xs tracking-wider transition-colors shadow-sm">
-              DOWNLOAD TODAY'S SHEET
+              {td('downloadBtn')}
             </button>
             <p className="text-[10px] text-muk/50 mt-4 leading-relaxed">
-              Progress explanation is lingo, mnemonic characters: haze effect, and Text-to-speech (TTS) noise more in AdSense space.
+              {td('explanation')}
             </p>
           </div>
           

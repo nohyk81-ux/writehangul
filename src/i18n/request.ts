@@ -1,21 +1,19 @@
 import {getRequestConfig} from 'next-intl/server';
 import {routing} from './routing';
-import en from '../../messages/en.json';
-import ja from '../../messages/ja.json';
-import zh_CN from '../../messages/zh-CN.json';
-import zh_TW from '../../messages/zh-TW.json';
+import gb from '../../messages/gb.json';
+import jp from '../../messages/jp.json';
+import cn from '../../messages/cn.json';
 import es from '../../messages/es.json';
 import id from '../../messages/id.json';
-import vi from '../../messages/vi.json';
+import vn from '../../messages/vn.json';
 
 const messagesMap: Record<string, any> = {
-  'en': en,
-  'ja': ja,
-  'zh-CN': zh_CN,
-  'zh-TW': zh_TW,
+  'gb': gb,
+  'jp': jp,
+  'cn': cn,
   'es': es,
   'id': id,
-  'vi': vi
+  'vn': vn
 };
 
 export default getRequestConfig(async ({requestLocale}) => {
@@ -27,6 +25,6 @@ export default getRequestConfig(async ({requestLocale}) => {
  
   return {
     locale,
-    messages: messagesMap[locale] || en
+    messages: messagesMap[locale] || gb
   };
 });

@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "globalLanguageSetting": "Cài đặt Ngôn ngữ Toàn cầu",
+    "guestProgress": "Tiến trình của Khách",
+    "guestProgressSub": "(Tiến trình của tôi)",
+    "todayChecked": "Hôm nay - đã kiểm tra"
+  },
+  "Hero": {
+    "title": "Đồ chữ Hàn mỗi ngày.<br/>Bảng tập viết miễn phí.",
+    "subtitle": "Học tiếng Hàn thực tế.<br/>Tải xuống, in và luyện tập tại nhà.",
+    "highlight": "Viết câu chuyện của bạn."
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(Bài học hôm nay)",
+    "downloadBtn": "TẢI BẢNG HÔM NAY",
+    "explanation": "Luyện tập hàng ngày và theo dõi tiến độ của bạn."
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(Viết tên tôi)",
+    "placeholder": "Nhập tên của bạn",
+    "resultsSub": "Kết quả Hangeul có phát âm",
+    "translationWait": "Bản dịch sẽ xuất hiện ở đây",
+    "getSheetBtn": "NHẬN BẢNG CỦA BẠN",
+    "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước."
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(Chủ đề)",
+    "basicConsonants": "Phụ âm cơ bản",
+    "basicVowels": "Nguyên âm cơ bản",
+    "kpop": "Lời bài hát K-Pop",
+    "travel": "Tiếng Hàn Du lịch",
+    "food": "Ẩm thực Hàn Quốc",
+    "greetings": "Chào hỏi",
+    "business": "Kinh doanh",
+    "slang": "Tiếng lóng",
+    "proverbs": "Tục ngữ",
+    "all": "Xem tất cả các chủ đề"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(Độ khó)",
+    "starter": "Người mới",
+    "basic": "Cơ bản",
+    "advanced": "Nâng cao",
+    "master": "Thành thạo"
+  }
+}

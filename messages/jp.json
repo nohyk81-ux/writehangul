@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "globalLanguageSetting": "グローバル言語設定",
+    "guestProgress": "ゲストの進捗状況",
+    "guestProgressSub": "(私の進捗)",
+    "todayChecked": "本日のチェック完了"
+  },
+  "Hero": {
+    "title": "毎日なぞり書き。<br/>無料の韓国語練習シート。",
+    "subtitle": "実用的な韓国語を学びましょう。<br/>ダウンロードして印刷し、自宅で練習できます。",
+    "highlight": "あなたのストーリーを書こう。"
+  },
+  "DailyLearning": {
+    "title": "DAILY LEARNING",
+    "titleSub": "(今日の学習)",
+    "downloadBtn": "今日のシートをダウンロード",
+    "explanation": "毎日練習して進捗を記録し、ハングルの書き方をマスターしましょう。"
+  },
+  "MyName": {
+    "title": "MY NAME WRITING",
+    "titleSub": "(私の名前を書く)",
+    "placeholder": "お名前を入力してください",
+    "resultsSub": "ハングルの結果と発音",
+    "translationWait": "翻訳結果がここに表示されます",
+    "getSheetBtn": "シートを取得する",
+    "alertEmpty": "名前を入力して翻訳ボタンを押してください。"
+  },
+  "CategoryGrid": {
+    "title": "K-CULTURE & LIFE",
+    "titleSub": "(テーマ別)",
+    "basicConsonants": "基本子音",
+    "basicVowels": "基本母音",
+    "kpop": "K-Pop 歌詞",
+    "travel": "旅行の韓国語",
+    "food": "韓国料理",
+    "greetings": "挨拶",
+    "business": "ビジネス",
+    "slang": "スラング・慣用句",
+    "proverbs": "ことわざ",
+    "all": "全テーマを見る"
+  },
+  "LearningLevels": {
+    "title": "LEARNING LEVELS",
+    "titleSub": "(難易度)",
+    "starter": "入門",
+    "basic": "基礎",
+    "advanced": "上級",
+    "master": "マスター"
+  }
+}

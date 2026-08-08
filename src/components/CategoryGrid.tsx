@@ -2,53 +2,24 @@
 
 import { usePracticeStore } from '@/store';
 import vocabularyData from '@/data/vocabulary.json';
-
-const categories = [
-  { 
-    id: 'k-food', 
-    num: '1',
-    label: 'K-Food Menu Writing', 
-    desc: 'Trace restaurant words.',
-    emoji: '🍲', 
-    bgColor: 'bg-orange-100',
-    borderColor: 'border-orange-200',
-    btnColor: 'bg-blue-600 hover:bg-blue-700'
-  },
-  { 
-    id: 'travel', 
-    num: '2',
-    label: 'Travel Survival Phrases', 
-    desc: 'Essential sentences for your trip.',
-    emoji: '🧳', 
-    bgColor: 'bg-sky-100',
-    borderColor: 'border-sky-200',
-    btnColor: 'bg-blue-600 hover:bg-blue-700'
-  },
-  { 
-    id: 'beautiful-words', 
-    num: '3',
-    label: 'Beautiful Korean Words', 
-    desc: 'Meaningful words.',
-    emoji: '🌙', 
-    bgColor: 'bg-blue-900',
-    textColor: 'text-white',
-    borderColor: 'border-blue-800',
-    btnColor: 'bg-sky-400 hover:bg-sky-500 text-blue-900'
-  },
-  { 
-    id: 'slang', 
-    num: '4',
-    label: 'Trendy Slang & Daily Phrases', 
-    desc: 'Cool words.',
-    emoji: '📱', 
-    bgColor: 'bg-emerald-100',
-    borderColor: 'border-emerald-200',
-    btnColor: 'bg-blue-600 hover:bg-blue-700'
-  }
-];
+import { BookA, Music, Plane, Coffee, HandHeart, Briefcase, MessageCircleWarning, Quote } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function CategoryGrid() {
   const { clearCharacters, addCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
+  const t = useTranslations('CategoryGrid');
+
+  const categories = [
+    { id: 'consonants', title: t('basicConsonants'), count: 14, icon: <BookA size={16} /> },
+    { id: 'vowels', title: t('basicVowels'), count: 10, icon: <BookA size={16} /> },
+    { id: 'kpop', title: t('kpop'), count: 50, icon: <Music size={16} /> },
+    { id: 'travel', title: t('travel'), count: 32, icon: <Plane size={16} /> },
+    { id: 'food', title: t('food'), count: 24, icon: <Coffee size={16} /> },
+    { id: 'greetings', title: t('greetings'), count: 18, icon: <HandHeart size={16} /> },
+    { id: 'business', title: t('business'), count: 15, icon: <Briefcase size={16} /> },
+    { id: 'slang', title: t('slang'), count: 20, icon: <MessageCircleWarning size={16} /> },
+    { id: 'proverbs', title: t('proverbs'), count: 12, icon: <Quote size={16} /> }
+  ];
 
   const handleDownload = (categoryId: string) => {
     // Find category in JSON
@@ -69,36 +40,31 @@ export default function CategoryGrid() {
   };
 
   return (
-    <section className="print:hidden h-full flex flex-col">
-      <h2 className="text-base font-bold text-muk mb-3 flex items-center gap-2 uppercase tracking-wide">
-        K-Culture & Life <span className="text-sm font-normal text-muk/60">(한류 & 일상 체험)</span>
-      </h2>
-      <div className="grid grid-cols-2 gap-3 flex-1">
+    <div className="w-full bg-white rounded-xl shadow-sm border border-muk/10 p-4 print:hidden h-full flex flex-col">
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-base font-bold text-muk flex items-center gap-1 uppercase tracking-wide">
+          {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
+        </h2>
+        <a href="#" className="text-[10px] text-blue-600 font-bold hover:underline">
+          {t('all')}
+        </a>
+      </div>
+      
+      <div className="grid grid-cols-2 gap-2 flex-1">
         {categories.map((cat) => (
-          <div
+          <button 
             key={cat.id}
-            className={`flex flex-col p-3 rounded-xl border-2 shadow-sm ${cat.bgColor} ${cat.borderColor} ${cat.textColor || 'text-muk'}`}
+            onClick={() => handleDownload(cat.id)}
+            className="flex flex-col items-start p-3 rounded-lg border border-muk/10 hover:border-seal/50 hover:bg-orange-50 transition-colors group text-left h-full"
           >
-            <div className="flex justify-between items-start mb-2">
-              <span className="w-5 h-5 rounded-full bg-muk text-white text-[10px] font-bold flex items-center justify-center shrink-0">
-                {cat.num}
-              </span>
-              <span className="text-4xl mx-auto">{cat.emoji}</span>
-              <div className="w-5 shrink-0"></div> {/* Spacer for centering */}
+            <div className="w-6 h-6 rounded-md bg-blue-50 text-blue-600 flex items-center justify-center mb-2 group-hover:bg-seal group-hover:text-white transition-colors">
+              {cat.icon}
             </div>
-            
-            <h3 className="font-bold text-[13px] leading-tight mb-1 text-center">{cat.label}</h3>
-            <p className="text-[11px] leading-tight text-center opacity-80 mb-3 flex-1">{cat.desc}</p>
-            
-            <button
-              onClick={() => handleDownload(cat.id)}
-              className={`w-full py-1.5 rounded-md text-[10px] font-bold uppercase tracking-wider text-white transition-colors ${cat.btnColor}`}
-            >
-              Print / Download
-            </button>
-          </div>
+            <h3 className="font-bold text-muk text-xs leading-tight mb-1">{cat.title}</h3>
+            <p className="text-[10px] text-muk/50 mt-auto">{cat.count} sheets</p>
+          </button>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
