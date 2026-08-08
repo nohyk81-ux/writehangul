@@ -45,7 +45,10 @@
     "business": "ビジネス",
     "slang": "スラング・慣用句",
     "proverbs": "ことわざ",
-    "all": "全テーマを見る"
+    "all": "全テーマを見る",
+    "modalDesc": "このカテゴリには、{count}枚の高品質な練習用シートが含まれています。印刷して練習する準備はできましたか？",
+    "downloadPdf": "PDFをダウンロード",
+    "cancel": "キャンセル"
   },
   "LearningLevels": {
     "title": "학습 단계",

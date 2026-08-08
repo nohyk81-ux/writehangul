@@ -45,7 +45,10 @@
     "business": "Bisnis",
     "slang": "Gaul",
     "proverbs": "Peribahasa",
-    "all": "Lihat Semua Tema"
+    "all": "Lihat Semua Tema",
+    "modalDesc": "Kategori ini berisi {count} lembar latihan berkualitas tinggi. Siap untuk mencetak dan berlatih?",
+    "downloadPdf": "Unduh PDF",
+    "cancel": "Batal"
   },
   "LearningLevels": {
     "title": "학습 단계",

@@ -45,7 +45,10 @@
     "business": "Business",
     "slang": "Slang & Idioms",
     "proverbs": "Proverbs",
-    "all": "View All Themes"
+    "all": "View All Themes",
+    "modalDesc": "This category contains {count} high-quality practice sheets. Ready to print and practice?",
+    "downloadPdf": "Download PDF",
+    "cancel": "Cancel"
   },
   "PdfModal": {
     "title": "Generating PDF...",

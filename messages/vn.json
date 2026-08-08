@@ -45,7 +45,10 @@
     "business": "Kinh doanh",
     "slang": "Tiếng lóng",
     "proverbs": "Tục ngữ",
-    "all": "Xem tất cả các chủ đề"
+    "all": "Xem tất cả các chủ đề",
+    "modalDesc": "Danh mục này chứa {count} trang tính thực hành chất lượng cao. Sẵn sàng in và thực hành?",
+    "downloadPdf": "Tải xuống PDF",
+    "cancel": "Hủy"
   },
   "LearningLevels": {
     "title": "학습 단계",

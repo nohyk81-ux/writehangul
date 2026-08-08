@@ -45,7 +45,10 @@
     "business": "Negocios",
     "slang": "Jerga",
     "proverbs": "Proverbios",
-    "all": "Ver todos los temas"
+    "all": "Ver todos los temas",
+    "modalDesc": "Esta categoría contiene {count} hojas de práctica de alta calidad. ¿Listo para imprimir y practicar?",
+    "downloadPdf": "Descargar PDF",
+    "cancel": "Cancelar"
   },
   "LearningLevels": {
     "title": "학습 단계",

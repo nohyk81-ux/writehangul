@@ -45,7 +45,10 @@
     "business": "商务韩语",
     "slang": "流行语及惯用语",
     "proverbs": "谚语",
-    "all": "查看所有主题"
+    "all": "查看所有主题",
+    "modalDesc": "该类别包含 {count} 张高质量的练习表。准备好打印和练习了吗？",
+    "downloadPdf": "下载 PDF",
+    "cancel": "取消"
   },
   "LearningLevels": {
     "title": "학습 단계",
