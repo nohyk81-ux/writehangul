@@ -26,8 +26,8 @@ export default function Header() {
         <div className="flex flex-col items-end text-right">
           <div className="mb-2 flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-full">
             <div className="flex gap-2 items-center">
-              <Link href="/" locale="gb" className="hover:scale-110 transition-transform" title="English">
-                <img src="https://flagcdn.com/w20/gb.png" srcSet="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" className="rounded-sm shadow-sm" />
+              <Link href="/" locale="en" className="hover:scale-110 transition-transform" title="English">
+                <img src="https://flagcdn.com/w20/us.png" srcSet="https://flagcdn.com/w40/us.png 2x" width="20" alt="English" className="rounded-sm shadow-sm" />
               </Link>
               <Link href="/" locale="jp" className="hover:scale-110 transition-transform" title="日本語">
                 <img src="https://flagcdn.com/w20/jp.png" srcSet="https://flagcdn.com/w40/jp.png 2x" width="20" alt="日本語" className="rounded-sm shadow-sm" />

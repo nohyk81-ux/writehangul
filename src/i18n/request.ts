@@ -1,6 +1,6 @@
 import {getRequestConfig} from 'next-intl/server';
 import {routing} from './routing';
-import gb from '../../messages/gb.json';
+import en from '../../messages/en.json';
 import jp from '../../messages/jp.json';
 import cn from '../../messages/cn.json';
 import es from '../../messages/es.json';
@@ -8,7 +8,7 @@ import id from '../../messages/id.json';
 import vn from '../../messages/vn.json';
 
 const messagesMap: Record<string, any> = {
-  'gb': gb,
+  'en': en,
   'jp': jp,
   'cn': cn,
   'es': es,
@@ -25,6 +25,6 @@ export default getRequestConfig(async ({requestLocale}) => {
  
   return {
     locale,
-    messages: messagesMap[locale] || gb
+    messages: messagesMap[locale] || en
   };
 });
