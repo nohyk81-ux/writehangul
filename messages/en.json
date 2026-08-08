@@ -106,5 +106,31 @@
     "successDesc": "We will get back to you shortly.",
     "closeBtn": "Close",
     "errorMsg": "Failed to send message. Please try again."
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Effective Date: August 2026",
+    "section1Title": "1. Information We Collect",
+    "section1Text": "We do not require users to create an account to use our services. We collect minimal information to ensure the core functionality of our service: Local storage for saving your practice words and attendance records locally on your device, and Analytics (Google Analytics/Microsoft Clarity) to understand how users interact with our website.",
+    "section2Title": "2. Use of Information",
+    "section2Text": "The information we collect is used solely to improve the user experience and maintain the performance of the Website. Images uploaded to our AI Scanner are processed temporarily via secure APIs and are not stored permanently on our servers.",
+    "section3Title": "3. Third-Party Services",
+    "section3Text": "We use Google AdSense to display advertisements. AdSense uses cookies to serve ads based on a user's prior visits to our website or other websites. You can opt out of personalized advertising by visiting Google's Ads Settings.",
+    "section4Title": "4. Contact Us",
+    "section4Text": "If you have any questions about this Privacy Policy, please contact us through our Contact page."
+  },
+  "Terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Effective Date: August 2026",
+    "section1Title": "1. Acceptance of Terms",
+    "section1Text": "By accessing and using Write Hangul (the \"Website\"), you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.",
+    "section2Title": "2. Use License",
+    "section2Text": "Permission is granted to temporarily download one copy of the PDF materials generated on Write Hangul for personal, non-commercial transitory viewing only. You may not modify or copy the core software materials, use them for commercial purpose, or attempt to reverse engineer the software.",
+    "section3Title": "3. Disclaimer",
+    "section3Text": "The materials on Write Hangul's website are provided on an 'as is' basis. Write Hangul makes no warranties, expressed or implied, and hereby disclaims all other warranties including implied warranties or conditions of merchantability.",
+    "section4Title": "4. Limitations",
+    "section4Text": "In no event shall Write Hangul or its suppliers be liable for any damages (including damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Website.",
+    "section5Title": "5. Modifications",
+    "section5Text": "Write Hangul may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service."
   }
 }

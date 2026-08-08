@@ -106,5 +106,31 @@
     "successDesc": "Nos pondremos en contacto con usted en breve.",
     "closeBtn": "Cerrar",
     "errorMsg": "Error al enviar el mensaje. Por favor, inténtelo de nuevo."
+  },
+  "Privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Fecha de vigencia: agosto 2026",
+    "section1Title": "1. Información que recopilamos",
+    "section1Text": "No requerimos crear una cuenta. Solo recopilamos información mínima: almacenamiento local para el progreso y herramientas de análisis.",
+    "section2Title": "2. Uso de la información",
+    "section2Text": "La información se utiliza únicamente para mejorar la experiencia del usuario y el rendimiento del sitio web.",
+    "section3Title": "3. Servicios de terceros",
+    "section3Text": "Usamos Google AdSense para mostrar anuncios. Puede darse de baja de la publicidad personalizada en la Configuración de anuncios de Google.",
+    "section4Title": "4. Contáctenos",
+    "section4Text": "Si tiene preguntas sobre esta política, comuníquese a través de nuestra página de Contacto."
+  },
+  "Terms": {
+    "title": "Términos de Uso",
+    "lastUpdated": "Fecha de vigencia: agosto 2026",
+    "section1Title": "1. Aceptación",
+    "section1Text": "Al usar este sitio web, usted acepta estar sujeto a estos Términos de uso.",
+    "section2Title": "2. Licencia",
+    "section2Text": "Se otorga permiso para descargar materiales PDF con fines personales y no comerciales. No puede usar los materiales con fines comerciales.",
+    "section3Title": "3. Descargo de responsabilidad",
+    "section3Text": "Los materiales se proporcionan 'tal cual', sin garantías explícitas o implícitas.",
+    "section4Title": "4. Limitaciones",
+    "section4Text": "En ningún caso seremos responsables de los daños que surjan del uso de este sitio web.",
+    "section5Title": "5. Modificaciones",
+    "section5Text": "Podemos revisar estos términos en cualquier momento sin previo aviso."
   }
 }

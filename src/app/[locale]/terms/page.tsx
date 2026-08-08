@@ -1,10 +1,12 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { CheckCircle, FileText, AlertTriangle, Ban, RefreshCw } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Terms' });
   return {
-    title: 'Terms of Use - Write Hangul',
-    description: 'Terms of Use and Conditions for Write Hangul.',
+    title: `${t('title')} - Write Hangul`,
+    description: `Terms of Use and Conditions for Write Hangul.`,
   };
 }
 
@@ -15,42 +17,80 @@ export default async function TermsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'Terms' });
 
   return (
-    <main className="flex-1 max-w-3xl mx-auto w-full p-6 md:p-12">
-      <h1 className="text-4xl font-serif font-bold text-muk mb-8">Terms of Use</h1>
+    <main className="flex-1 max-w-4xl mx-auto w-full p-6 md:p-12">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-muk mb-4">{t('title')}</h1>
+        <div className="w-20 h-1.5 bg-seal mx-auto rounded-full"></div>
+      </div>
       
-      <div className="prose prose-lg prose-slate">
-        <p><strong>Effective Date:</strong> August 5, 2026</p>
-        
-        <h2>1. Acceptance of Terms</h2>
-        <p>
-          By accessing and using Write Hangul (the "Website"), you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
-        </p>
+      <div className="flex flex-col gap-8">
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <CheckCircle size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('section1Title')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('section1Text')}
+            </p>
+          </div>
+        </section>
 
-        <h2>2. Use License</h2>
-        <p>
-          Permission is granted to temporarily download one copy of the PDF materials generated on Write Hangul for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-        </p>
-        <ul>
-          <li>modify or copy the core software materials;</li>
-          <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
-          <li>attempt to decompile or reverse engineer any software contained on the Website.</li>
-        </ul>
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <FileText size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('section2Title')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('section2Text')}
+            </p>
+          </div>
+        </section>
 
-        <h2>3. Disclaimer</h2>
-        <p>
-          The materials on Write Hangul's website are provided on an 'as is' basis. Write Hangul makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
-        </p>
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <AlertTriangle size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('section3Title')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('section3Text')}
+            </p>
+          </div>
+        </section>
 
-        <h2>4. Limitations</h2>
-        <p>
-          In no event shall Write Hangul or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Write Hangul's website.
-        </p>
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <Ban size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('section4Title')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('section4Text')}
+            </p>
+          </div>
+        </section>
 
-        <h2>5. Modifications</h2>
-        <p>
-          Write Hangul may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.
+        <section className="bg-white p-8 rounded-2xl shadow-sm border border-muk/10 flex flex-col md:flex-row gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+            <RefreshCw size={32} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-muk mb-3">{t('section5Title')}</h2>
+            <p className="text-lg text-muk/80 leading-relaxed">
+              {t('section5Text')}
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div className="mt-16 text-center">
+        <p className="text-sm font-medium text-muk/50 bg-muk/5 inline-block px-5 py-2.5 rounded-full border border-muk/10">
+          {t('lastUpdated')}
         </p>
       </div>
     </main>

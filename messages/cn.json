@@ -106,5 +106,31 @@
     "successDesc": "我们会尽快回复您。",
     "closeBtn": "关闭",
     "errorMsg": "发送消息失败。请重试。"
+  },
+  "Privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "生效日期: 2026年8月",
+    "section1Title": "1. 我们收集的信息",
+    "section1Text": "我们不要求用户创建帐户即可使用服务。我们只收集最少的信息以确保核心功能：本地存储用于保存练习记录，分析工具用于了解用户交互。",
+    "section2Title": "2. 信息的使用",
+    "section2Text": "收集的信息仅用于改善用户体验和维护网站性能。",
+    "section3Title": "3. 第三方服务",
+    "section3Text": "我们使用 Google AdSense 显示广告。您可以通过 Google 的广告设置选择退出个性化广告。",
+    "section4Title": "4. 联系我们",
+    "section4Text": "如果您对本隐私政策有任何疑问，请通过“联系我们”页面与我们联系。"
+  },
+  "Terms": {
+    "title": "使用条款",
+    "lastUpdated": "生效日期: 2026年8月",
+    "section1Title": "1. 接受条款",
+    "section1Text": "访问和使用本网站即表示您同意受这些使用条款的约束。如果您不同意，请勿使用本网站。",
+    "section2Title": "2. 使用许可",
+    "section2Text": "允许个人以非商业目的下载PDF资料。您不得修改、复制软件材料，或用于商业目的。",
+    "section3Title": "3. 免责声明",
+    "section3Text": "本网站上的材料按“原样”提供，我们不作任何明示或暗示的保证。",
+    "section4Title": "4. 责任限制",
+    "section4Text": "在任何情况下，我们对因使用或无法使用本网站材料而引起的任何损害概不负责。",
+    "section5Title": "5. 修改条款",
+    "section5Text": "我们可能随时修改使用条款，恕不另行通知。"
   }
 }

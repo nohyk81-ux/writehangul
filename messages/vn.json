@@ -106,5 +106,31 @@
     "successDesc": "Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
     "closeBtn": "Đóng",
     "errorMsg": "Gửi tin nhắn không thành công. Vui lòng thử lại."
+  },
+  "Privacy": {
+    "title": "Chính sách Bảo mật",
+    "lastUpdated": "Ngày hiệu lực: Tháng 8 năm 2026",
+    "section1Title": "1. Thông tin chúng tôi thu thập",
+    "section1Text": "Chúng tôi không yêu cầu tạo tài khoản. Chỉ thu thập thông tin tối thiểu: bộ nhớ cục bộ cho tiến trình và công cụ phân tích.",
+    "section2Title": "2. Sử dụng thông tin",
+    "section2Text": "Thông tin chỉ được sử dụng để cải thiện trải nghiệm người dùng và hiệu suất trang web.",
+    "section3Title": "3. Dịch vụ của bên thứ ba",
+    "section3Text": "Chúng tôi sử dụng Google AdSense. Bạn có thể chọn không tham gia quảng cáo được cá nhân hóa trong Cài đặt quảng cáo Google.",
+    "section4Title": "4. Liên hệ",
+    "section4Text": "Nếu bạn có câu hỏi, vui lòng liên hệ qua trang Liên hệ."
+  },
+  "Terms": {
+    "title": "Điều khoản Sử dụng",
+    "lastUpdated": "Ngày hiệu lực: Tháng 8 năm 2026",
+    "section1Title": "1. Chấp nhận điều khoản",
+    "section1Text": "Bằng cách sử dụng trang web này, bạn đồng ý bị ràng buộc bởi các Điều khoản Sử dụng này.",
+    "section2Title": "2. Giấy phép",
+    "section2Text": "Được phép tải xuống tài liệu PDF cho mục đích cá nhân và phi thương mại.",
+    "section3Title": "3. Tuyên bố miễn trừ trách nhiệm",
+    "section3Text": "Các tài liệu được cung cấp 'nguyên trạng', không có bất kỳ bảo đảm nào.",
+    "section4Title": "4. Giới hạn trách nhiệm",
+    "section4Text": "Trong mọi trường hợp, chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại nào từ việc sử dụng trang web này.",
+    "section5Title": "5. Sửa đổi",
+    "section5Text": "Chúng tôi có thể sửa đổi các điều khoản này bất cứ lúc nào mà không cần thông báo."
   }
 }

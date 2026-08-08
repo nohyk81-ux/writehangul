@@ -106,5 +106,31 @@
     "successDesc": "Kami akan segera menghubungi Anda kembali.",
     "closeBtn": "Tutup",
     "errorMsg": "Gagal mengirim pesan. Silakan coba lagi."
+  },
+  "Privacy": {
+    "title": "Kebijakan Privasi",
+    "lastUpdated": "Tanggal Efektif: Agustus 2026",
+    "section1Title": "1. Informasi yang Kami Kumpulkan",
+    "section1Text": "Kami tidak mewajibkan pembuatan akun. Kami hanya mengumpulkan informasi minimal: penyimpanan lokal untuk kemajuan dan alat analitik.",
+    "section2Title": "2. Penggunaan Informasi",
+    "section2Text": "Informasi digunakan semata-mata untuk meningkatkan pengalaman pengguna dan kinerja situs web.",
+    "section3Title": "3. Layanan Pihak Ketiga",
+    "section3Text": "Kami menggunakan Google AdSense. Anda dapat menyisih dari iklan yang dipersonalisasi di Setelan Iklan Google.",
+    "section4Title": "4. Hubungi Kami",
+    "section4Text": "Jika Anda memiliki pertanyaan, hubungi kami melalui halaman Kontak."
+  },
+  "Terms": {
+    "title": "Syarat Penggunaan",
+    "lastUpdated": "Tanggal Efektif: Agustus 2026",
+    "section1Title": "1. Penerimaan Syarat",
+    "section1Text": "Dengan menggunakan situs ini, Anda setuju untuk terikat dengan Syarat Penggunaan ini.",
+    "section2Title": "2. Lisensi",
+    "section2Text": "Izin diberikan untuk mengunduh materi PDF untuk tujuan pribadi dan non-komersial.",
+    "section3Title": "3. Penafian",
+    "section3Text": "Materi disediakan 'apa adanya', tanpa jaminan apa pun.",
+    "section4Title": "4. Batasan Tanggung Jawab",
+    "section4Text": "Dalam keadaan apa pun kami tidak bertanggung jawab atas kerugian dari penggunaan situs ini.",
+    "section5Title": "5. Modifikasi",
+    "section5Text": "Kami dapat merevisi persyaratan ini kapan saja tanpa pemberitahuan."
   }
 }
