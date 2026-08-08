@@ -23,6 +23,10 @@
     "resultsSub": "韩语发音结果",
     "translationWait": "翻译结果将显示在这里",
     "getSheetBtn": "下载我的韩文名字练习表",
+    "pdfHeader": "我的韩文名字练习表",
+    "pdfSource": "来源 : WRITEHANGUL.COM",
+    "creationResult": "制作结果",
+    "aiGeneratedNotice": "使用AI制作",
     "alertEmpty": "请先输入您的名字并点击翻译。"
   },
   "CategoryGrid": {

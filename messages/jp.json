@@ -23,6 +23,10 @@
     "resultsSub": "ハングルの結果と発音",
     "translationWait": "翻訳結果がここに表示されます",
     "getSheetBtn": "ハングル名前練習シートをダウンロード",
+    "pdfHeader": "ハングル名前練習シート",
+    "pdfSource": "出典 : WRITEHANGUL.COM",
+    "creationResult": "作成結果",
+    "aiGeneratedNotice": "AIを活用して作成されました",
     "alertEmpty": "名前を入力して翻訳ボタンを押してください。"
   },
   "CategoryGrid": {

@@ -23,6 +23,10 @@
     "resultsSub": "Resultados en coreano con pronunciación",
     "translationWait": "La traducción aparecerá aquí",
     "getSheetBtn": "DESCARGAR HOJA DE PRÁCTICA DE MI NOMBRE HANGEUL",
+    "pdfHeader": "HOJA DE PRÁCTICA DE MI NOMBRE HANGEUL",
+    "pdfSource": "Fuente : WRITEHANGUL.COM",
+    "creationResult": "Resultado de creación",
+    "aiGeneratedNotice": "Creado usando IA",
     "alertEmpty": "Por favor, introduce tu nombre y tradúcelo primero."
   },
   "CategoryGrid": {

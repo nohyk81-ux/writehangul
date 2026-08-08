@@ -23,6 +23,10 @@
     "resultsSub": "Kết quả Hangeul có phát âm",
     "translationWait": "Bản dịch sẽ xuất hiện ở đây",
     "getSheetBtn": "TẢI BẢNG LUYỆN TẬP TÊN TIẾNG HÀN CỦA TÔI",
+    "pdfHeader": "BẢNG LUYỆN TẬP TÊN TIẾNG HÀN CỦA TÔI",
+    "pdfSource": "Nguồn : WRITEHANGUL.COM",
+    "creationResult": "Kết quả tạo",
+    "aiGeneratedNotice": "Được tạo bằng AI",
     "alertEmpty": "Vui lòng nhập tên của bạn và dịch trước."
   },
   "CategoryGrid": {

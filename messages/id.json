@@ -23,6 +23,10 @@
     "resultsSub": "Hasil Hangeul dengan pengucapan",
     "translationWait": "Terjemahan akan muncul di sini",
     "getSheetBtn": "UNDUH LEMBAR LATIHAN NAMA HANGEUL SAYA",
+    "pdfHeader": "LEMBAR LATIHAN NAMA HANGEUL SAYA",
+    "pdfSource": "Sumber : WRITEHANGUL.COM",
+    "creationResult": "Hasil Pembuatan",
+    "aiGeneratedNotice": "Dibuat menggunakan AI",
     "alertEmpty": "Silakan masukkan nama Anda dan terjemahkan terlebih dahulu."
   },
   "CategoryGrid": {

@@ -23,6 +23,10 @@
     "resultsSub": "Hangeul results with pronunciation",
     "translationWait": "Translation will appear here",
     "getSheetBtn": "DOWNLOAD MY HANGUL NAME PRACTICE SHEET",
+    "pdfHeader": "MY HANGUL NAME PRACTICE SHEET",
+    "pdfSource": "Source : WRITEHANGUL.COM",
+    "creationResult": "Creation Result",
+    "aiGeneratedNotice": "Created using AI",
     "alertEmpty": "Please enter your name and translate it first."
   },
   "CategoryGrid": {
