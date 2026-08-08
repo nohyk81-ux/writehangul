@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Logo Area */}
-        <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
           {/* Authentic Korean Red Seal Stamp (Nakgwan) */}
           <div className="w-12 h-12 bg-white border-2 border-seal text-seal font-serif font-bold flex items-center justify-center rounded-sm transform -rotate-3 select-none text-2xl shadow-sm">
             한
@@ -20,7 +20,7 @@ export default function Header() {
             </h1>
           </div>
           <span className="text-2xl ml-2 opacity-80">✍️</span>
-        </div>
+        </Link>
         
         {/* Right Section: Language & Guest Progress */}
         <div className="flex flex-col items-end text-right">
