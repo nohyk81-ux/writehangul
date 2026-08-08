@@ -12,9 +12,11 @@
   },
   "DailyLearning": {
     "title": "오늘의 학습",
-    "titleSub": "(Pelajaran Hari Ini)",
+    "titleSub": "(Pembelajaran Harian)",
     "downloadBtn": "UNDUH LEMBAR HARI INI",
-    "explanation": "Berlatih setiap hari dan lacak kemajuan Anda."
+    "explanation": "Berlatihlah setiap hari dan lacak kemajuan Anda untuk menguasai penulisan Hangul.",
+    "streak": "🔥 {days} hari berturut-turut!",
+    "streak0": "Mulai rekor harianmu!"
   },
   "MyName": {
     "title": "내 이름 한글로 만들기",

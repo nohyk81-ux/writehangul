@@ -1,10 +1,9 @@
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import AttendanceAndAd from '@/components/AttendanceAndAd';
 import CategoryGrid from '@/components/CategoryGrid';
-import AttendanceCalendar from '@/components/AttendanceCalendar';
+import DailyLearningCard from '@/components/DailyLearningCard';
 import MiniMyName from '@/components/MiniMyName';
 import LearningLevels from '@/components/LearningLevels';
-import DailyDownloadBtn from '@/components/DailyDownloadBtn';
 import { Download } from 'lucide-react';
 
 export default async function HomePage({
@@ -44,21 +43,7 @@ export default async function HomePage({
         
         {/* Column 1: Daily Learning */}
         <div className="flex flex-col gap-4">
-          <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-4 h-full flex flex-col">
-            <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-2 uppercase tracking-wide">
-              {td('title')} <span className="text-sm font-normal text-muk/60">{td('titleSub')}</span>
-            </h2>
-            
-            <div className="flex-1">
-              <AttendanceCalendar />
-            </div>
-            
-            <DailyDownloadBtn text={td('downloadBtn')} />
-            
-            <p className="text-[10px] text-muk/50 mt-4 leading-relaxed">
-              {td('explanation')}
-            </p>
-          </div>
+          <DailyLearningCard />
           
           {/* AdSense Placeholder */}
           <div className="bg-gray-100 border border-dashed border-gray-300 w-full h-32 flex items-center justify-center text-gray-400 text-sm rounded-xl">

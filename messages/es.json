@@ -12,9 +12,11 @@
   },
   "DailyLearning": {
     "title": "오늘의 학습",
-    "titleSub": "(Estudio Diario)",
+    "titleSub": "(Aprendizaje Diario)",
     "downloadBtn": "DESCARGAR LA HOJA DE HOY",
-    "explanation": "Practica a diario y haz un seguimiento de tu progreso."
+    "explanation": "Practica diariamente y sigue tu progreso para dominar la escritura del Hangul.",
+    "streak": "🔥 ¡{days} días seguidos!",
+    "streak0": "¡Comienza tu racha diaria!"
   },
   "MyName": {
     "title": "내 이름 한글로 만들기",

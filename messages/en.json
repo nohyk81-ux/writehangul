@@ -14,7 +14,9 @@
     "title": "오늘의 학습",
     "titleSub": "(Daily Learning)",
     "downloadBtn": "DOWNLOAD TODAY'S SHEET",
-    "explanation": "Practice daily and track your progress to master Hangul writing."
+    "explanation": "Practice daily and track your progress to master Hangul writing.",
+    "streak": "🔥 {days} Day Streak!",
+    "streak0": "Start your daily streak!"
   },
   "MyName": {
     "title": "내 이름 한글로 만들기",

@@ -12,9 +12,11 @@
   },
   "DailyLearning": {
     "title": "오늘의 학습",
-    "titleSub": "(Bài học hôm nay)",
-    "downloadBtn": "TẢI BẢNG HÔM NAY",
-    "explanation": "Luyện tập hàng ngày và theo dõi tiến độ của bạn."
+    "titleSub": "(Học Tập Hàng Ngày)",
+    "downloadBtn": "TẢI BẢNG CỦA NGÀY HÔM NAY",
+    "explanation": "Luyện tập hàng ngày và theo dõi tiến độ của bạn để thành thạo việc viết Hangul.",
+    "streak": "🔥 Chuỗi {days} ngày!",
+    "streak0": "Bắt đầu chuỗi ngày của bạn!"
   },
   "MyName": {
     "title": "내 이름 한글로 만들기",

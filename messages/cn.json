@@ -13,8 +13,10 @@
   "DailyLearning": {
     "title": "오늘의 학습",
     "titleSub": "(今日学习)",
-    "downloadBtn": "下载今日练习表",
-    "explanation": "每天练习并记录您的进度，以掌握韩语书写。"
+    "downloadBtn": "下载今日练习纸",
+    "explanation": "每天练习并追踪您的韩语书写进度。",
+    "streak": "🔥 连续学习 {days} 天!",
+    "streak0": "开始你的连续学习吧!"
   },
   "MyName": {
     "title": "내 이름 한글로 만들기",
