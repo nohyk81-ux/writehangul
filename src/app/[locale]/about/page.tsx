@@ -1,5 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Target, Eye, Settings } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -17,7 +16,7 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = useTranslations('About');
+  const t = await getTranslations({ locale, namespace: 'About' });
 
   return (
     <main className="flex-1 max-w-4xl mx-auto w-full p-6 md:p-12">
