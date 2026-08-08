@@ -13,7 +13,7 @@
   "DailyLearning": {
     "title": "오늘의 학습",
     "titleSub": "(Daily Learning)",
-    "downloadBtn": "DOWNLOAD TODAY'S SHEET",
+    "downloadBtn": "DOWNLOAD TODAY'S PRACTICE SHEET",
     "explanation": "Practice daily and track your progress to master Hangul writing.",
     "streak": "🔥 {days} Day Streak!",
     "streak0": "Start your daily streak!"

@@ -21,7 +21,7 @@ export default function PdfTemplate() {
   if (characters.length === 0) {
     return (
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
-        <div id="pdf-content" style={{ width: '210mm', minHeight: '297mm', backgroundColor: '#ffffff', position: 'relative' }}>
+        <div id="pdf-content" style={{ width: '210mm', minHeight: '296mm', backgroundColor: '#ffffff', position: 'relative' }}>
         </div>
       </div>
     );
@@ -49,7 +49,7 @@ export default function PdfTemplate() {
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
         <div 
           id="pdf-content" 
-          style={{ width: '210mm', height: '297mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
+          style={{ width: '210mm', height: '296mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
           className="flex flex-col box-border pt-[15mm] pb-[15mm] px-[20mm]"
         >
           {/* Subtle texture */}
@@ -118,12 +118,12 @@ export default function PdfTemplate() {
         id="pdf-content" 
         style={{
           width: '210mm',
-          minHeight: '297mm',
+          minHeight: '296mm',
           backgroundColor: containerHex,
           position: 'relative'
         }}
       >
-        <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[297mm] relative z-10`}>
+        <div className={`pdf-safe-zone grid ${cols} ${rows} gap-0 w-[210mm] min-h-[296mm] relative z-10`}>
           {characters.map((char, idx) => (
             <div 
               key={idx} 
