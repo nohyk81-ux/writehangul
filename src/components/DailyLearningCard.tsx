@@ -84,50 +84,50 @@ export default function DailyLearningCard() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-4 h-full flex flex-col">
-      <h2 className="text-base font-bold text-muk mb-4 flex items-center gap-2 uppercase tracking-wide">
+    <div className="bg-white rounded-xl shadow-sm border border-muk/10 p-3 h-full flex flex-col">
+      <h2 className="text-base font-bold text-muk mb-2 flex items-center gap-2 uppercase tracking-wide">
         {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
       </h2>
       
-      <div className="bg-orange-50 rounded-xl border border-orange-100 p-4 flex flex-col flex-1 items-center justify-center relative min-h-[160px]">
-        <div className="absolute top-3 left-0 w-full flex justify-center">
-          <div className="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-orange-600 flex items-center gap-1 shadow-sm border border-orange-100">
-            <Flame size={14} className={streak > 0 ? "fill-orange-500 text-orange-500" : "text-gray-400"} />
+      <div className="bg-orange-50 rounded-xl border border-orange-100 px-2 py-4 flex flex-col flex-1 items-center justify-center relative min-h-[100px]">
+        <div className="absolute top-2 left-0 w-full flex justify-center">
+          <div className="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[11px] font-bold text-orange-600 flex items-center gap-1 shadow-sm border border-orange-100">
+            <Flame size={12} className={streak > 0 ? "fill-orange-500 text-orange-500" : "text-gray-400"} />
             {streak > 0 ? t('streak').replace('{days}', streak.toString()) : t('streak0')}
           </div>
         </div>
 
-        <div className="flex items-center justify-between w-full mt-6">
+        <div className="flex items-center justify-between w-full mt-4">
           <button 
             onClick={() => navigateDate(-1)}
-            className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm text-muk/50 hover:text-muk hover:bg-orange-100 transition-colors"
+            className="w-7 h-7 flex items-center justify-center bg-white rounded-full shadow-sm text-muk/50 hover:text-muk hover:bg-orange-100 transition-colors"
           >
-            <ChevronLeft size={20} />
+            <ChevronLeft size={16} />
           </button>
           
           <div className="flex flex-col items-center flex-1 mx-2 text-center">
             {content ? (
               <>
-                <span className="text-3xl font-bold text-muk mb-1 leading-tight">{content.hangul}</span>
-                <span className="text-sm text-muk/60 font-medium">{translation}</span>
+                <span className="text-2xl font-bold text-muk mb-0.5 leading-tight">{content.hangul}</span>
+                <span className="text-xs text-muk/60 font-medium">{translation}</span>
               </>
             ) : (
-              <span className="text-sm text-muk/40">No content</span>
+              <span className="text-xs text-muk/40">No content</span>
             )}
             {!isToday && (
-              <span className="text-[10px] text-orange-400 mt-3 font-bold uppercase tracking-widest">{viewingDate}</span>
+              <span className="text-[9px] text-orange-400 mt-1 font-bold uppercase tracking-widest">{viewingDate}</span>
             )}
             {isToday && (
-              <span className="text-[10px] text-orange-500 mt-3 font-bold uppercase tracking-widest">TODAY</span>
+              <span className="text-[9px] text-orange-500 mt-1 font-bold uppercase tracking-widest">TODAY</span>
             )}
           </div>
           
           <button 
             onClick={() => navigateDate(1)}
             disabled={isToday}
-            className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${isToday ? 'opacity-30 cursor-not-allowed text-muk/30 bg-transparent' : 'bg-white shadow-sm text-muk/50 hover:text-muk hover:bg-orange-100'}`}
+            className={`w-7 h-7 flex items-center justify-center rounded-full transition-colors ${isToday ? 'opacity-30 cursor-not-allowed text-muk/30 bg-transparent' : 'bg-white shadow-sm text-muk/50 hover:text-muk hover:bg-orange-100'}`}
           >
-            <ChevronRight size={20} />
+            <ChevronRight size={16} />
           </button>
         </div>
       </div>
@@ -135,11 +135,11 @@ export default function DailyLearningCard() {
       <button 
         onClick={handleDownload}
         disabled={!content}
-        className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 mt-4 rounded-md text-xs tracking-wider transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-2.5 mt-2 rounded-md text-[11px] tracking-wider transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {t('downloadBtn')}
       </button>
-      <p className="text-[10px] text-muk/50 mt-4 leading-relaxed">
+      <p className="text-[10px] text-muk/50 mt-2 leading-relaxed">
         {t('explanation')}
       </p>
     </div>
