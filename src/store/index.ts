@@ -6,7 +6,7 @@ interface PracticeStore {
   layout: 1 | 2 | 4;
   visitedDates: string[];
   isPdfGenerating: boolean;
-  templateStyle: 'default' | 'my-name' | 'daily-learning';
+  templateStyle: 'default' | 'my-name' | 'daily-learning' | 'learning-levels';
   selectedDailyDate: string | null;
   addCharacters: (chars: string) => void;
   removeCharacter: (index: number) => void;
@@ -14,7 +14,7 @@ interface PracticeStore {
   clearCharacters: () => void;
   checkIn: () => void;
   setPdfGenerating: (isGenerating: boolean) => void;
-  setTemplateStyle: (style: 'default' | 'my-name' | 'daily-learning') => void;
+  setTemplateStyle: (style: 'default' | 'my-name' | 'daily-learning' | 'learning-levels') => void;
   setSelectedDailyDate: (dateStr: string) => void;
 }
 
@@ -31,7 +31,7 @@ export const usePracticeStore = create<PracticeStore>()(
       setTemplateStyle: (templateStyle) => set({ templateStyle }),
       setSelectedDailyDate: (selectedDailyDate) => set({ selectedDailyDate }),
       addCharacters: (chars) => set((state) => {
-        const newChars = chars.replace(/\s+/g, '').split('');
+        const newChars = chars.split('');
         return { characters: [...state.characters, ...newChars] };
       }),
       removeCharacter: (index) => set((state) => ({
