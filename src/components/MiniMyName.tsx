@@ -24,14 +24,15 @@ export default function MiniMyName() {
       });
 
       if (!res.ok) {
-        throw new Error('Failed to translate');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to translate');
       }
 
       const data = await res.json();
       setHangul(data.hangul);
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      alert('Error translating your name. Please try again or type directly in Korean.');
+      alert(`Error: ${err.message}`);
     } finally {
       setIsLoading(false);
     }
