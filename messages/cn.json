@@ -51,12 +51,18 @@
     "cancel": "取消"
   },
   "LearningLevels": {
-    "title": "학습 단계",
-    "titleSub": "(学习水平)",
+    "title": "学习阶段",
+    "titleSub": "(Learning Levels)",
     "starter": "入门",
+    "starterSub": "辅音和元音",
     "basic": "基础",
-    "advanced": "高级",
-    "master": "精通"
+    "basicSub": "基本词汇",
+    "advanced": "初级",
+    "advancedSub": "句子练习",
+    "featureGrid": "田字格形式",
+    "featurePdf": "PDF下载",
+    "featurePrint": "可打印练习表",
+    "downloadBtn": "下载"
   },
   "PdfModal": {
     "title": "正在生成PDF...",

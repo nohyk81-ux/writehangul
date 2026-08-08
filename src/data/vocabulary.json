@@ -12,20 +12,102 @@
         "vi": "Bảng chữ cái Hangul"
       },
       "items": [
-        { "korean": "가", "romanization": "ga" },
-        { "korean": "나", "romanization": "na" },
-        { "korean": "다", "romanization": "da" },
-        { "korean": "라", "romanization": "ra" },
-        { "korean": "마", "romanization": "ma" },
-        { "korean": "바", "romanization": "ba" },
-        { "korean": "사", "romanization": "sa" },
-        { "korean": "아", "romanization": "a" },
-        { "korean": "자", "romanization": "ja" },
-        { "korean": "차", "romanization": "cha" },
-        { "korean": "카", "romanization": "ka" },
-        { "korean": "타", "romanization": "ta" },
-        { "korean": "파", "romanization": "pa" },
-        { "korean": "하", "romanization": "ha" }
+        {
+          "korean": "ㄱ",
+          "romanization": "g/k"
+        },
+        {
+          "korean": "ㄴ",
+          "romanization": "n"
+        },
+        {
+          "korean": "ㄷ",
+          "romanization": "d/t"
+        },
+        {
+          "korean": "ㄹ",
+          "romanization": "r/l"
+        },
+        {
+          "korean": "ㅁ",
+          "romanization": "m"
+        },
+        {
+          "korean": "ㅂ",
+          "romanization": "b/p"
+        },
+        {
+          "korean": "ㅅ",
+          "romanization": "s"
+        },
+        {
+          "korean": "ㅇ",
+          "romanization": "ng"
+        },
+        {
+          "korean": "ㅈ",
+          "romanization": "j"
+        },
+        {
+          "korean": "ㅊ",
+          "romanization": "ch"
+        },
+        {
+          "korean": "ㅋ",
+          "romanization": "k"
+        },
+        {
+          "korean": "ㅌ",
+          "romanization": "t"
+        },
+        {
+          "korean": "ㅍ",
+          "romanization": "p"
+        },
+        {
+          "korean": "ㅎ",
+          "romanization": "h"
+        },
+        {
+          "korean": "ㅏ",
+          "romanization": "a"
+        },
+        {
+          "korean": "ㅑ",
+          "romanization": "ya"
+        },
+        {
+          "korean": "ㅓ",
+          "romanization": "eo"
+        },
+        {
+          "korean": "ㅕ",
+          "romanization": "yeo"
+        },
+        {
+          "korean": "ㅗ",
+          "romanization": "o"
+        },
+        {
+          "korean": "ㅛ",
+          "romanization": "yo"
+        },
+        {
+          "korean": "ㅜ",
+          "romanization": "u"
+        },
+        {
+          "korean": "ㅠ",
+          "romanization": "yu"
+        },
+        {
+          "korean": "ㅡ",
+          "romanization": "eu"
+        },
+        {
+          "korean": "ㅣ",
+          "romanization": "i"
+        }
       ]
     },
     {
@@ -40,18 +122,54 @@
         "vi": "Ẩm thực Hàn Quốc"
       },
       "items": [
-        { "korean": "비빔밥", "romanization": "bibimbap" },
-        { "korean": "김치", "romanization": "kimchi" },
-        { "korean": "불고기", "romanization": "bulgogi" },
-        { "korean": "떡볶이", "romanization": "tteokbokki" },
-        { "korean": "삼겹살", "romanization": "samgyeopsal" },
-        { "korean": "김밥", "romanization": "gimbap" },
-        { "korean": "라면", "romanization": "ramyeon" },
-        { "korean": "된장찌개", "romanization": "doenjang-jjigae" },
-        { "korean": "치킨", "romanization": "chikin" },
-        { "korean": "냉면", "romanization": "naengmyeon" },
-        { "korean": "잡채", "romanization": "japchae" },
-        { "korean": "파전", "romanization": "pajeon" }
+        {
+          "korean": "비빔밥",
+          "romanization": "bibimbap"
+        },
+        {
+          "korean": "김치",
+          "romanization": "kimchi"
+        },
+        {
+          "korean": "불고기",
+          "romanization": "bulgogi"
+        },
+        {
+          "korean": "떡볶이",
+          "romanization": "tteokbokki"
+        },
+        {
+          "korean": "삼겹살",
+          "romanization": "samgyeopsal"
+        },
+        {
+          "korean": "김밥",
+          "romanization": "gimbap"
+        },
+        {
+          "korean": "라면",
+          "romanization": "ramyeon"
+        },
+        {
+          "korean": "된장찌개",
+          "romanization": "doenjang-jjigae"
+        },
+        {
+          "korean": "치킨",
+          "romanization": "chikin"
+        },
+        {
+          "korean": "냉면",
+          "romanization": "naengmyeon"
+        },
+        {
+          "korean": "잡채",
+          "romanization": "japchae"
+        },
+        {
+          "korean": "파전",
+          "romanization": "pajeon"
+        }
       ]
     },
     {
@@ -66,18 +184,54 @@
         "vi": "Cụm từ du lịch"
       },
       "items": [
-        { "korean": "안녕하세요", "romanization": "annyeonghaseyo" },
-        { "korean": "감사합니다", "romanization": "gamsahamnida" },
-        { "korean": "얼마예요", "romanization": "eolmayeyo" },
-        { "korean": "화장실", "romanization": "hwajangsil" },
-        { "korean": "도와주세요", "romanization": "dowajuseyo" },
-        { "korean": "죄송합니다", "romanization": "joesonghamnida" },
-        { "korean": "맛있어요", "romanization": "masisseoyo" },
-        { "korean": "주세요", "romanization": "juseyo" },
-        { "korean": "사진", "romanization": "sajin" },
-        { "korean": "지하철", "romanization": "jihacheol" },
-        { "korean": "공항", "romanization": "gonghang" },
-        { "korean": "예뻐요", "romanization": "yeppeoyo" }
+        {
+          "korean": "안녕하세요",
+          "romanization": "annyeonghaseyo"
+        },
+        {
+          "korean": "감사합니다",
+          "romanization": "gamsahamnida"
+        },
+        {
+          "korean": "얼마예요",
+          "romanization": "eolmayeyo"
+        },
+        {
+          "korean": "화장실",
+          "romanization": "hwajangsil"
+        },
+        {
+          "korean": "도와주세요",
+          "romanization": "dowajuseyo"
+        },
+        {
+          "korean": "죄송합니다",
+          "romanization": "joesonghamnida"
+        },
+        {
+          "korean": "맛있어요",
+          "romanization": "masisseoyo"
+        },
+        {
+          "korean": "주세요",
+          "romanization": "juseyo"
+        },
+        {
+          "korean": "사진",
+          "romanization": "sajin"
+        },
+        {
+          "korean": "지하철",
+          "romanization": "jihacheol"
+        },
+        {
+          "korean": "공항",
+          "romanization": "gonghang"
+        },
+        {
+          "korean": "예뻐요",
+          "romanization": "yeppeoyo"
+        }
       ]
     },
     {
@@ -92,16 +246,126 @@
         "vi": "Tiếng lóng thịnh hành"
       },
       "items": [
-        { "korean": "대박", "romanization": "daebak" },
-        { "korean": "진짜", "romanization": "jinjja" },
-        { "korean": "꿀잼", "romanization": "kkuljaem" },
-        { "korean": "화이팅", "romanization": "hwaiting" },
-        { "korean": "헐", "romanization": "heol" },
-        { "korean": "심쿵", "romanization": "simkung" },
-        { "korean": "짱", "romanization": "jjang" },
-        { "korean": "어머", "romanization": "eomeo" },
-        { "korean": "아싸", "romanization": "assa" },
-        { "korean": "멘붕", "romanization": "menbung" }
+        {
+          "korean": "대박",
+          "romanization": "daebak"
+        },
+        {
+          "korean": "진짜",
+          "romanization": "jinjja"
+        },
+        {
+          "korean": "꿀잼",
+          "romanization": "kkuljaem"
+        },
+        {
+          "korean": "화이팅",
+          "romanization": "hwaiting"
+        },
+        {
+          "korean": "헐",
+          "romanization": "heol"
+        },
+        {
+          "korean": "심쿵",
+          "romanization": "simkung"
+        },
+        {
+          "korean": "짱",
+          "romanization": "jjang"
+        },
+        {
+          "korean": "어머",
+          "romanization": "eomeo"
+        },
+        {
+          "korean": "아싸",
+          "romanization": "assa"
+        },
+        {
+          "korean": "멘붕",
+          "romanization": "menbung"
+        }
+      ]
+    },
+    {
+      "id": "basic-words",
+      "translations": {
+        "en": "Essential Words",
+        "ja": "必須単語",
+        "zh-CN": "基本词汇",
+        "zh-TW": "基本詞彙",
+        "es": "Palabras Esenciales",
+        "id": "Kata Penting",
+        "vi": "Từ vựng thiết yếu"
+      },
+      "items": [
+        {
+          "korean": "가족",
+          "romanization": "gajok"
+        },
+        {
+          "korean": "친구",
+          "romanization": "chingu"
+        },
+        {
+          "korean": "학교",
+          "romanization": "hakgyo"
+        },
+        {
+          "korean": "회사",
+          "romanization": "hoesa"
+        },
+        {
+          "korean": "사랑",
+          "romanization": "sarang"
+        },
+        {
+          "korean": "시간",
+          "romanization": "sigan"
+        },
+        {
+          "korean": "오늘",
+          "romanization": "oneul"
+        },
+        {
+          "korean": "내일",
+          "romanization": "naeil"
+        }
+      ]
+    },
+    {
+      "id": "sentences",
+      "translations": {
+        "en": "Sentence Practice",
+        "ja": "文章練習",
+        "zh-CN": "句子练习",
+        "zh-TW": "句子練習",
+        "es": "Práctica de Oraciones",
+        "id": "Latihan Kalimat",
+        "vi": "Thực hành câu"
+      },
+      "items": [
+        {
+          "korean": "안녕하세요",
+          "romanization": "annyeonghaseyo"
+        },
+        {
+          "korean": "반갑습니다",
+          "romanization": "bangapseumnida"
+        },
+        {
+          "korean": "감사합니다",
+          "romanization": "gamsahamnida"
+        },
+        {
+          "korean": "죄송합니다",
+          "romanization": "joesonghamnida"
+        },
+        {
+          "korean": "잘 부탁드립니다",
+          "romanization": "jal butakdeurimnida"
+        }
       ]
     }
   ]

@@ -13,29 +13,29 @@ export default function LearningLevels() {
 
   const levels = [
     {
-      id: 'alphabet', // maps to basic alphabet
+      id: 'alphabet',
       icon: '🎯',
       title: t('starter'),
-      subtitle: 'Consonants & Vowels',
-      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      subtitle: t('starterSub'),
+      features: [t('featureGrid'), t('featurePdf'), t('featurePrint')],
       bgColor: 'bg-slate-100',
       iconBg: 'bg-slate-700'
     },
     {
-      id: 'travel', // maps to travel phrases
+      id: 'basic-words',
       icon: '🧪',
       title: t('basic'),
-      subtitle: 'Simple Words & Phrases',
-      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      subtitle: t('basicSub'),
+      features: [t('featureGrid'), t('featurePdf'), t('featurePrint')],
       bgColor: 'bg-blue-50',
       iconBg: 'bg-blue-600'
     },
     {
-      id: 'slang', // maps to slang/expressions
+      id: 'sentences',
       icon: '📝',
       title: t('advanced'),
-      subtitle: 'Expressions & Writing',
-      features: ['Handwrite font', 'Vocabulary list', 'Sentence practice'],
+      subtitle: t('advancedSub'),
+      features: [t('featureGrid'), t('featurePdf'), t('featurePrint')],
       bgColor: 'bg-green-50',
       iconBg: 'bg-green-600'
     }
@@ -44,7 +44,7 @@ export default function LearningLevels() {
   const handleDownload = (categoryId: string) => {
     const catData = vocabularyData.categories.find(c => c.id === categoryId);
     if (catData) {
-      const chars = catData.items.map(i => i.korean).join('');
+      const chars = catData.items.map(i => i.korean).join(' ');
       clearCharacters();
       addCharacters(chars);
       setLayout(4);
@@ -86,7 +86,7 @@ export default function LearningLevels() {
               onClick={() => handleDownload(level.id)}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 rounded text-[9px] tracking-wider transition-colors"
             >
-              DOWNLOAD
+              {t('downloadBtn')}
             </button>
           </div>
         ))}

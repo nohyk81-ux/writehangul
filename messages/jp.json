@@ -51,13 +51,18 @@
     "cancel": "キャンセル"
   },
   "LearningLevels": {
-    "title": "학습 단계",
-    "titleSub": "(学習レベル)",
+    "title": "学習レベル",
+    "titleSub": "(Learning Levels)",
     "starter": "入門",
+    "starterSub": "子音と母音",
     "basic": "基礎",
-    "advanced": "上級",
-    "master": "マスター",
-    "selectLang": "言語を選択"
+    "basicSub": "必須単語",
+    "advanced": "初級",
+    "advancedSub": "文章練習",
+    "featureGrid": "マス目ノート形式",
+    "featurePdf": "PDFダウンロード",
+    "featurePrint": "印刷用練習シート",
+    "downloadBtn": "ダウンロード"
   },
   "PdfModal": {
     "title": "PDFを生成しています...",

@@ -51,12 +51,18 @@
     "cancel": "Hủy"
   },
   "LearningLevels": {
-    "title": "학습 단계",
-    "titleSub": "(Cấp độ học tập)",
-    "starter": "Người mới",
+    "title": "Cấp độ",
+    "titleSub": "(Learning Levels)",
+    "starter": "Nhập môn",
+    "starterSub": "Phụ âm & Nguyên âm",
     "basic": "Cơ bản",
-    "advanced": "Nâng cao",
-    "master": "Bậc thầy"
+    "basicSub": "Từ vựng thiết yếu",
+    "advanced": "Sơ cấp",
+    "advancedSub": "Thực hành câu",
+    "featureGrid": "Định dạng vở ô ly",
+    "featurePdf": "Tải xuống PDF",
+    "featurePrint": "Bài tập có thể in",
+    "downloadBtn": "TẢI XUỐNG"
   },
   "PdfModal": {
     "title": "Đang tạo PDF...",

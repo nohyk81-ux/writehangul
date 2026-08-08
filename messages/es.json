@@ -51,12 +51,18 @@
     "cancel": "Cancelar"
   },
   "LearningLevels": {
-    "title": "학습 단계",
-    "titleSub": "(Niveles de aprendizaje)",
-    "starter": "Principiante",
+    "title": "Niveles",
+    "titleSub": "(Learning Levels)",
+    "starter": "Iniciación",
+    "starterSub": "Consonantes y Vocales",
     "basic": "Básico",
-    "advanced": "Avanzado",
-    "master": "Maestro"
+    "basicSub": "Palabras Esenciales",
+    "advanced": "Principiante",
+    "advancedSub": "Práctica de Oraciones",
+    "featureGrid": "Formato de cuadrícula",
+    "featurePdf": "Descarga de PDF",
+    "featurePrint": "Hojas imprimibles",
+    "downloadBtn": "DESCARGAR"
   },
   "PdfModal": {
     "title": "Generando PDF...",

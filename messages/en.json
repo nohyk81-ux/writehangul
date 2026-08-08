@@ -61,9 +61,15 @@
     "title": "학습 단계",
     "titleSub": "(Learning Levels)",
     "starter": "Starter",
+    "starterSub": "Consonants & Vowels",
     "basic": "Basic",
-    "advanced": "Advanced",
-    "master": "Master"
+    "basicSub": "Essential Words",
+    "advanced": "Beginner",
+    "advancedSub": "Sentence Practice",
+    "featureGrid": "Grid Note format",
+    "featurePdf": "PDF Download",
+    "featurePrint": "Printable practice sheets",
+    "downloadBtn": "DOWNLOAD"
   },
   "Footer": {
     "about": "About",

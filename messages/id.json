@@ -51,12 +51,18 @@
     "cancel": "Batal"
   },
   "LearningLevels": {
-    "title": "학습 단계",
-    "titleSub": "(Tingkat Pembelajaran)",
-    "starter": "Pemula",
+    "title": "Tingkat Belajar",
+    "titleSub": "(Learning Levels)",
+    "starter": "Pemula Awal",
+    "starterSub": "Konsonan & Vokal",
     "basic": "Dasar",
-    "advanced": "Lanjutan",
-    "master": "Ahli"
+    "basicSub": "Kata Penting",
+    "advanced": "Pemula",
+    "advancedSub": "Latihan Kalimat",
+    "featureGrid": "Format buku kotak",
+    "featurePdf": "Unduh PDF",
+    "featurePrint": "Lembar latihan cetak",
+    "downloadBtn": "UNDUH"
   },
   "PdfModal": {
     "title": "Membuat PDF...",
