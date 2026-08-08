@@ -61,5 +61,12 @@
     "adPlaceholder": "Marcador de posición AdSense",
     "adDesc": "Su hoja de práctica se descargará automáticamente en unos segundos. ¡Apóyenos interactuando con nuestros patrocinadores!",
     "waitDesc": "Por favor, espere mientras preparamos su hoja de práctica de alta calidad."
+  },
+  "Footer": {
+    "about": "Acerca de",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
   }
 }

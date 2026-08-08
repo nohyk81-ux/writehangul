@@ -61,5 +61,12 @@
     "basic": "Basic",
     "advanced": "Advanced",
     "master": "Master"
+  },
+  "Footer": {
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "contact": "Contact",
+    "rights": "All rights reserved."
   }
 }

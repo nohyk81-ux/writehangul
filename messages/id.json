@@ -61,5 +61,12 @@
     "adPlaceholder": "Tempat AdSense",
     "adDesc": "Lembar latihan Anda akan diunduh secara otomatis dalam beberapa detik. Dukung kami dengan berinteraksi bersama sponsor kami!",
     "waitDesc": "Harap tunggu sementara kami menyiapkan lembar latihan berkualitas tinggi Anda."
+  },
+  "Footer": {
+    "about": "Tentang Kami",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Penggunaan",
+    "contact": "Kontak",
+    "rights": "Seluruh hak cipta."
   }
 }

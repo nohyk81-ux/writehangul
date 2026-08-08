@@ -61,5 +61,12 @@
     "adPlaceholder": "Trình giữ chỗ AdSense",
     "adDesc": "Bảng luyện tập của bạn sẽ tự động tải xuống trong vài giây. Hãy ủng hộ chúng tôi bằng cách tương tác với các nhà tài trợ!",
     "waitDesc": "Vui lòng đợi trong khi chúng tôi chuẩn bị bảng luyện tập chất lượng cao cho bạn."
+  },
+  "Footer": {
+    "about": "Về chúng tôi",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng",
+    "contact": "Liên hệ",
+    "rights": "Đã đăng ký bản quyền."
   }
 }
