@@ -1,5 +1,6 @@
 'use client';
 
+import { usePracticeStore } from '@/store';
 import { useTranslations } from 'next-intl';
 
 export default function PdfTemplate() {
