@@ -78,5 +78,24 @@
     "howItWorksTitle": "How It Works",
     "howItWorksText": "Whether you want to learn the basic alphabet or write your name in Korean, our platform instantly generates a high-quality PDF designed specifically for handwriting practice. All our templates feature a universal margin design ensuring they print perfectly on both A4 and US Letter paper.",
     "lastUpdated": "Last updated: August 2026"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "supportTitle": "Email Support",
+    "supportDesc": "For general inquiries and technical support.",
+    "supportModalDesc": "Send us a message below.",
+    "bizTitle": "Business & Partnerships",
+    "bizDesc": "For advertising, partnerships, and press.",
+    "bizModalDesc": "Send us a message below.",
+    "nameLabel": "Name",
+    "emailLabel": "Email Address",
+    "companyLabel": "Company Name",
+    "messageLabel": "Message",
+    "privacyConsent": "I agree to the collection of personal information (Name, Email / Purpose: Inquiry response / Retention: 6 months)",
+    "sendBtn": "Send Message",
+    "successTitle": "Message Sent!",
+    "successDesc": "We will get back to you shortly.",
+    "closeBtn": "Close",
+    "errorMsg": "Failed to send message. Please try again."
   }
 }

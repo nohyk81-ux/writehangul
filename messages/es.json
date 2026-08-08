@@ -78,5 +78,24 @@
     "howItWorksTitle": "Cómo funciona",
     "howItWorksText": "Ya sea que desee aprender el alfabeto básico o escribir su nombre en coreano, nuestra plataforma genera instantáneamente un PDF de alta calidad diseñado específicamente para la práctica de escritura a mano. Todas nuestras plantillas cuentan con un diseño de margen universal que garantiza que se impriman perfectamente tanto en papel A4 como en carta estadounidense.",
     "lastUpdated": "Última actualización: agosto de 2026"
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "supportTitle": "Soporte por correo",
+    "supportDesc": "Para consultas generales y soporte técnico.",
+    "supportModalDesc": "Envíenos un mensaje a continuación.",
+    "bizTitle": "Negocios y asociaciones",
+    "bizDesc": "Para publicidad, asociaciones y prensa.",
+    "bizModalDesc": "Envíenos un mensaje a continuación.",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "companyLabel": "Nombre de empresa",
+    "messageLabel": "Mensaje",
+    "privacyConsent": "Acepto la recopilación de información personal (Nombre, Correo electrónico / Propósito: Respuesta a consultas / Retención: 6 meses)",
+    "sendBtn": "Enviar mensaje",
+    "successTitle": "¡Mensaje enviado!",
+    "successDesc": "Nos pondremos en contacto con usted en breve.",
+    "closeBtn": "Cerrar",
+    "errorMsg": "Error al enviar el mensaje. Por favor, inténtelo de nuevo."
   }
 }

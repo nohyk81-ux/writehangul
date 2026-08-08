@@ -78,5 +78,24 @@
     "howItWorksTitle": "工作原理",
     "howItWorksText": "无论您是想学习基本字母还是用韩文写您的名字，我们的平台都会立即生成专为手写练习设计的高质量PDF。我们所有的模板都采用通用边距设计，确保它们在A4和US Letter纸张上都能完美打印。",
     "lastUpdated": "最后更新：2026年8月"
+  },
+  "Contact": {
+    "title": "联系我们",
+    "supportTitle": "电子邮件支持",
+    "supportDesc": "有关一般查询和技术支持，请联系我们。",
+    "supportModalDesc": "请在下面向我们发送消息。",
+    "bizTitle": "商业与合作",
+    "bizDesc": "有关广告、合作伙伴关系和媒体，请联系我们。",
+    "bizModalDesc": "请在下面向我们发送消息。",
+    "nameLabel": "姓名",
+    "emailLabel": "电子邮件",
+    "companyLabel": "公司名称",
+    "messageLabel": "留言内容",
+    "privacyConsent": "我同意收集个人信息（项目：姓名，电子邮件 / 目的：查询响应 / 保留期：6个月）",
+    "sendBtn": "发送消息",
+    "successTitle": "消息已发送！",
+    "successDesc": "我们会尽快回复您。",
+    "closeBtn": "关闭",
+    "errorMsg": "发送消息失败。请重试。"
   }
 }

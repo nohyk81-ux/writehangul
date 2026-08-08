@@ -78,5 +78,24 @@
     "howItWorksTitle": "Cách thức hoạt động",
     "howItWorksText": "Cho dù bạn muốn tìm hiểu bảng chữ cái cơ bản hay viết tên của bạn bằng tiếng Hàn, nền tảng của chúng tôi ngay lập tức tạo ra một bản PDF chất lượng cao được thiết kế riêng cho việc thực hành chữ viết tay. Tất cả các mẫu của chúng tôi đều có thiết kế lề phổ biến đảm bảo chúng in hoàn hảo trên cả khổ giấy A4 và Giấy viết thư của Hoa Kỳ.",
     "lastUpdated": "Cập nhật lần cuối: Tháng 8 năm 2026"
+  },
+  "Contact": {
+    "title": "Liên hệ chúng tôi",
+    "supportTitle": "Hỗ trợ qua Email",
+    "supportDesc": "Đối với các câu hỏi chung và hỗ trợ kỹ thuật.",
+    "supportModalDesc": "Gửi tin nhắn cho chúng tôi bên dưới.",
+    "bizTitle": "Kinh doanh & Đối tác",
+    "bizDesc": "Đối với quảng cáo, quan hệ đối tác và báo chí.",
+    "bizModalDesc": "Gửi tin nhắn cho chúng tôi bên dưới.",
+    "nameLabel": "Tên",
+    "emailLabel": "Địa chỉ Email",
+    "companyLabel": "Tên Công ty",
+    "messageLabel": "Tin nhắn",
+    "privacyConsent": "Tôi đồng ý với việc thu thập thông tin cá nhân (Tên, Email / Mục đích: Trả lời yêu cầu / Thời gian lưu giữ: 6 tháng)",
+    "sendBtn": "Gửi tin nhắn",
+    "successTitle": "Đã gửi tin nhắn!",
+    "successDesc": "Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
+    "closeBtn": "Đóng",
+    "errorMsg": "Gửi tin nhắn không thành công. Vui lòng thử lại."
   }
 }

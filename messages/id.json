@@ -78,5 +78,24 @@
     "howItWorksTitle": "Cara Kerjanya",
     "howItWorksText": "Apakah Anda ingin mempelajari alfabet dasar atau menulis nama Anda dalam bahasa Korea, platform kami secara instan menghasilkan PDF berkualitas tinggi yang dirancang khusus untuk latihan tulisan tangan. Semua templat kami menampilkan desain margin universal yang memastikan templat dicetak dengan sempurna di kertas A4 dan US Letter.",
     "lastUpdated": "Terakhir diperbarui: Agustus 2026"
+  },
+  "Contact": {
+    "title": "Hubungi Kami",
+    "supportTitle": "Dukungan Email",
+    "supportDesc": "Untuk pertanyaan umum dan dukungan teknis.",
+    "supportModalDesc": "Kirim pesan kepada kami di bawah ini.",
+    "bizTitle": "Bisnis & Kemitraan",
+    "bizDesc": "Untuk periklanan, kemitraan, dan pers.",
+    "bizModalDesc": "Kirim pesan kepada kami di bawah ini.",
+    "nameLabel": "Nama",
+    "emailLabel": "Alamat Email",
+    "companyLabel": "Nama Perusahaan",
+    "messageLabel": "Pesan",
+    "privacyConsent": "Saya menyetujui pengumpulan informasi pribadi (Nama, Email / Tujuan: Respons pertanyaan / Penyimpanan: 6 bulan)",
+    "sendBtn": "Kirim Pesan",
+    "successTitle": "Pesan Terkirim!",
+    "successDesc": "Kami akan segera menghubungi Anda kembali.",
+    "closeBtn": "Tutup",
+    "errorMsg": "Gagal mengirim pesan. Silakan coba lagi."
   }
 }
