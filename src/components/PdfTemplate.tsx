@@ -44,7 +44,7 @@ export default function PdfTemplate() {
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
         <div 
           id="pdf-content" 
-          style={{ width: '210mm', minHeight: '297mm', backgroundColor: containerHex, position: 'relative' }}
+          style={{ width: '210mm', height: '297mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
           className="flex flex-col box-border pt-[15mm] pb-[15mm] px-[20mm]"
         >
           {/* Subtle texture */}
@@ -75,7 +75,7 @@ export default function PdfTemplate() {
                   </div>
                   {/* Character */}
                   {char && (
-                    <span className="font-sans font-medium text-[38pt] relative z-10 flex items-center justify-center w-full h-full pb-1" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
+                    <span className="font-sans font-medium text-[40pt] relative z-10 mb-2 leading-none" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
                       {char}
                     </span>
                   )}
