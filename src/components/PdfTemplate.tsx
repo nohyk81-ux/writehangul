@@ -80,7 +80,7 @@ export default function PdfTemplate() {
                   </div>
                   {/* Character */}
                   {char && (
-                    <span className="font-sans font-medium text-[40pt] relative z-10 mb-2 leading-none" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
+                    <span className="font-sans font-medium text-[40pt] relative z-10 -translate-y-3" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
                       {char}
                     </span>
                   )}
@@ -88,8 +88,11 @@ export default function PdfTemplate() {
               ))}
             </div>
             
+            {/* DIVIDER */}
+            <div className="w-full border-t-[1.5px] border-dashed my-[5mm]" style={{ borderColor: 'rgba(44, 62, 80, 0.2)' }}></div>
+            
             {/* FOOTER */}
-            <div className="flex justify-between items-end w-full mt-[4mm]">
+            <div className="flex justify-between items-end w-full">
               <div className="text-lg font-bold font-sans text-muk tracking-widest flex items-baseline gap-2">
                 <span>{characters.join('')}</span>
                 {templateStyle === 'daily-learning' && (
