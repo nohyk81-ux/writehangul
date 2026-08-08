@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, MessageSquare, Loader2, CheckCircle2 } from 'lucide-react';
+import { Mail, MessageSquare, Loader2, CheckCircle2, X } from 'lucide-react';
 
 export default function ContactForms() {
+  const [activeModal, setActiveModal] = useState<'none' | 'support' | 'business'>('none');
+  
   const [supportStatus, setSupportStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [businessStatus, setBusinessStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [supportConsent, setSupportConsent] = useState(false);
@@ -65,145 +67,196 @@ export default function ContactForms() {
     }
   };
 
+  const closeModal = () => {
+    setActiveModal('none');
+    // Reset states when closing
+    setSupportStatus('idle');
+    setBusinessStatus('idle');
+    setSupportConsent(false);
+    setBusinessConsent(false);
+  };
+
   const privacyText = "개인정보 수집 동의 (수집항목: 이름, 이메일 주소 / 목적: 문의사항 응대 / 보유기간: 6개월)";
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-      
-      {/* 1. Email Support Form */}
-      <div className="bg-white p-6 rounded-xl border-2 border-muk/10 shadow-sm flex flex-col w-full relative overflow-hidden">
-        <div className="flex flex-col items-center text-center mb-6">
-          <div className="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-4">
-            <Mail size={32} />
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+        {/* Support Card Button */}
+        <button 
+          onClick={() => setActiveModal('support')}
+          className="bg-white p-8 rounded-2xl border-2 border-muk/10 shadow-sm flex flex-col items-center text-center hover:border-blue-300 hover:shadow-md transition-all group"
+        >
+          <div className="w-20 h-20 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+            <Mail size={40} />
           </div>
-          <h2 className="text-xl font-bold text-muk mb-2">Email Support</h2>
-          <p className="text-muk/70 text-sm">For general inquiries and technical support.</p>
-        </div>
+          <h2 className="text-2xl font-bold text-muk mb-3">Email Support</h2>
+          <p className="text-muk/70">For general inquiries and technical support.</p>
+        </button>
 
-        {supportStatus === 'success' ? (
-          <div className="flex-1 flex flex-col items-center justify-center text-center py-8">
-            <CheckCircle2 size={48} className="text-green-500 mb-4" />
-            <h3 className="text-lg font-bold text-muk mb-2">Message Sent!</h3>
-            <p className="text-muk/70 text-sm">We will get back to you shortly.</p>
-            <button 
-              onClick={() => setSupportStatus('idle')}
-              className="mt-6 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-bold hover:bg-blue-100 transition-colors"
-            >
-              Send another message
-            </button>
+        {/* Business Card Button */}
+        <button 
+          onClick={() => setActiveModal('business')}
+          className="bg-white p-8 rounded-2xl border-2 border-muk/10 shadow-sm flex flex-col items-center text-center hover:border-green-300 hover:shadow-md transition-all group"
+        >
+          <div className="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:text-white transition-colors">
+            <MessageSquare size={40} />
           </div>
-        ) : (
-          <form onSubmit={handleSupportSubmit} className="flex flex-col gap-4 flex-1">
-            <div className="flex flex-col gap-1">
-              <label htmlFor="supportName" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이름 (Name)</label>
-              <input type="text" id="supportName" name="name" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors" />
-            </div>
-            
-            <div className="flex flex-col gap-1">
-              <label htmlFor="supportEmail" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이메일 주소 (Email)</label>
-              <input type="email" id="supportEmail" name="email" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors" />
-            </div>
-            
-            <div className="flex flex-col gap-1 flex-1">
-              <label htmlFor="supportMessage" className="text-xs font-bold text-muk/70 uppercase tracking-wider">문의내용 (Message)</label>
-              <textarea id="supportMessage" name="message" required rows={4} className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors resize-none flex-1"></textarea>
-            </div>
-
-            <label className="flex items-start gap-2 mt-2 cursor-pointer group">
-              <input 
-                type="checkbox" 
-                required 
-                checked={supportConsent}
-                onChange={(e) => setSupportConsent(e.target.checked)}
-                className="mt-0.5 rounded text-blue-600 focus:ring-blue-500 cursor-pointer"
-              />
-              <span className="text-[11px] text-muk/60 leading-tight group-hover:text-muk/80 transition-colors">
-                {privacyText}
-              </span>
-            </label>
-
-            <button 
-              type="submit" 
-              disabled={supportStatus === 'loading' || !supportConsent}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 mt-2 rounded-lg text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center h-11"
-            >
-              {supportStatus === 'loading' ? <Loader2 size={18} className="animate-spin" /> : 'Send Message'}
-            </button>
-            {supportStatus === 'error' && <p className="text-red-500 text-xs text-center font-bold">Failed to send message. Please try again.</p>}
-          </form>
-        )}
+          <h2 className="text-2xl font-bold text-muk mb-3">Business & Partnerships</h2>
+          <p className="text-muk/70">For advertising, partnerships, and press.</p>
+        </button>
       </div>
 
+      {/* Modal Overlay */}
+      {activeModal !== 'none' && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="bg-white w-full max-w-md rounded-2xl shadow-xl overflow-hidden animate-in zoom-in-95 duration-200 relative max-h-[90vh] flex flex-col">
+            
+            <button 
+              onClick={closeModal}
+              className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-muk/5 hover:bg-muk/10 text-muk/60 hover:text-muk transition-colors z-10"
+            >
+              <X size={20} />
+            </button>
 
-      {/* 2. Business & Partnerships Form */}
-      <div className="bg-white p-6 rounded-xl border-2 border-muk/10 shadow-sm flex flex-col w-full relative overflow-hidden">
-        <div className="flex flex-col items-center text-center mb-6">
-          <div className="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-4">
-            <MessageSquare size={32} />
+            {/* Support Modal Content */}
+            {activeModal === 'support' && (
+              <div className="p-6 overflow-y-auto">
+                <div className="flex flex-col items-center text-center mb-6 pt-4">
+                  <div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-3">
+                    <Mail size={24} />
+                  </div>
+                  <h2 className="text-xl font-bold text-muk mb-1">Email Support</h2>
+                  <p className="text-muk/70 text-sm">Send us a message below.</p>
+                </div>
+
+                {supportStatus === 'success' ? (
+                  <div className="flex flex-col items-center justify-center text-center py-8">
+                    <CheckCircle2 size={48} className="text-green-500 mb-4" />
+                    <h3 className="text-lg font-bold text-muk mb-2">Message Sent!</h3>
+                    <p className="text-muk/70 text-sm">We will get back to you shortly.</p>
+                    <button 
+                      onClick={closeModal}
+                      className="mt-6 w-full py-3 bg-blue-50 text-blue-600 rounded-lg text-sm font-bold hover:bg-blue-100 transition-colors"
+                    >
+                      Close
+                    </button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSupportSubmit} className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="supportName" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이름 (Name)</label>
+                      <input type="text" id="supportName" name="name" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors" />
+                    </div>
+                    
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="supportEmail" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이메일 주소 (Email)</label>
+                      <input type="email" id="supportEmail" name="email" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors" />
+                    </div>
+                    
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="supportMessage" className="text-xs font-bold text-muk/70 uppercase tracking-wider">문의내용 (Message)</label>
+                      <textarea id="supportMessage" name="message" required rows={4} className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-blue-500 text-sm transition-colors resize-none"></textarea>
+                    </div>
+
+                    <label className="flex items-start gap-2 mt-2 cursor-pointer group bg-muk/5 p-3 rounded-lg border border-muk/10">
+                      <input 
+                        type="checkbox" 
+                        required 
+                        checked={supportConsent}
+                        onChange={(e) => setSupportConsent(e.target.checked)}
+                        className="mt-0.5 rounded text-blue-600 focus:ring-blue-500 cursor-pointer"
+                      />
+                      <span className="text-[11px] text-muk/60 leading-tight group-hover:text-muk/80 transition-colors">
+                        {privacyText}
+                      </span>
+                    </label>
+
+                    <button 
+                      type="submit" 
+                      disabled={supportStatus === 'loading' || !supportConsent}
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 mt-2 rounded-lg text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center h-12"
+                    >
+                      {supportStatus === 'loading' ? <Loader2 size={18} className="animate-spin" /> : 'Send Message'}
+                    </button>
+                    {supportStatus === 'error' && <p className="text-red-500 text-xs text-center font-bold mt-2">Failed to send message. Please try again.</p>}
+                  </form>
+                )}
+              </div>
+            )}
+
+            {/* Business Modal Content */}
+            {activeModal === 'business' && (
+              <div className="p-6 overflow-y-auto">
+                <div className="flex flex-col items-center text-center mb-6 pt-4">
+                  <div className="w-12 h-12 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-3">
+                    <MessageSquare size={24} />
+                  </div>
+                  <h2 className="text-xl font-bold text-muk mb-1">Business & Partnerships</h2>
+                  <p className="text-muk/70 text-sm">Send us a message below.</p>
+                </div>
+
+                {businessStatus === 'success' ? (
+                  <div className="flex flex-col items-center justify-center text-center py-8">
+                    <CheckCircle2 size={48} className="text-green-500 mb-4" />
+                    <h3 className="text-lg font-bold text-muk mb-2">Message Sent!</h3>
+                    <p className="text-muk/70 text-sm">We will get back to you shortly.</p>
+                    <button 
+                      onClick={closeModal}
+                      className="mt-6 w-full py-3 bg-green-50 text-green-600 rounded-lg text-sm font-bold hover:bg-green-100 transition-colors"
+                    >
+                      Close
+                    </button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleBusinessSubmit} className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="bizName" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이름 (Name)</label>
+                      <input type="text" id="bizName" name="name" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
+                    </div>
+                    
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="bizEmail" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이메일 주소 (Email)</label>
+                      <input type="email" id="bizEmail" name="email" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="bizCompany" className="text-xs font-bold text-muk/70 uppercase tracking-wider">회사명 (Company)</label>
+                      <input type="text" id="bizCompany" name="company" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
+                    </div>
+                    
+                    <div className="flex flex-col gap-1">
+                      <label htmlFor="bizMessage" className="text-xs font-bold text-muk/70 uppercase tracking-wider">문의내용 (Message)</label>
+                      <textarea id="bizMessage" name="message" required rows={3} className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors resize-none"></textarea>
+                    </div>
+
+                    <label className="flex items-start gap-2 mt-2 cursor-pointer group bg-muk/5 p-3 rounded-lg border border-muk/10">
+                      <input 
+                        type="checkbox" 
+                        required 
+                        checked={businessConsent}
+                        onChange={(e) => setBusinessConsent(e.target.checked)}
+                        className="mt-0.5 rounded text-green-600 focus:ring-green-500 cursor-pointer"
+                      />
+                      <span className="text-[11px] text-muk/60 leading-tight group-hover:text-muk/80 transition-colors">
+                        {privacyText}
+                      </span>
+                    </label>
+
+                    <button 
+                      type="submit" 
+                      disabled={businessStatus === 'loading' || !businessConsent}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-2 rounded-lg text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center h-12"
+                    >
+                      {businessStatus === 'loading' ? <Loader2 size={18} className="animate-spin" /> : 'Send Message'}
+                    </button>
+                    {businessStatus === 'error' && <p className="text-red-500 text-xs text-center font-bold mt-2">Failed to send message. Please try again.</p>}
+                  </form>
+                )}
+              </div>
+            )}
           </div>
-          <h2 className="text-xl font-bold text-muk mb-2">Business & Partnerships</h2>
-          <p className="text-muk/70 text-sm">For advertising, partnerships, and press.</p>
         </div>
-
-        {businessStatus === 'success' ? (
-          <div className="flex-1 flex flex-col items-center justify-center text-center py-8">
-            <CheckCircle2 size={48} className="text-green-500 mb-4" />
-            <h3 className="text-lg font-bold text-muk mb-2">Message Sent!</h3>
-            <p className="text-muk/70 text-sm">We will get back to you shortly.</p>
-            <button 
-              onClick={() => setBusinessStatus('idle')}
-              className="mt-6 px-4 py-2 bg-green-50 text-green-600 rounded-lg text-sm font-bold hover:bg-green-100 transition-colors"
-            >
-              Send another message
-            </button>
-          </div>
-        ) : (
-          <form onSubmit={handleBusinessSubmit} className="flex flex-col gap-4 flex-1">
-            <div className="flex flex-col gap-1">
-              <label htmlFor="bizName" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이름 (Name)</label>
-              <input type="text" id="bizName" name="name" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
-            </div>
-            
-            <div className="flex flex-col gap-1">
-              <label htmlFor="bizEmail" className="text-xs font-bold text-muk/70 uppercase tracking-wider">이메일 주소 (Email)</label>
-              <input type="email" id="bizEmail" name="email" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <label htmlFor="bizCompany" className="text-xs font-bold text-muk/70 uppercase tracking-wider">회사명 (Company)</label>
-              <input type="text" id="bizCompany" name="company" required className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors" />
-            </div>
-            
-            <div className="flex flex-col gap-1 flex-1">
-              <label htmlFor="bizMessage" className="text-xs font-bold text-muk/70 uppercase tracking-wider">문의내용 (Message)</label>
-              <textarea id="bizMessage" name="message" required rows={3} className="w-full px-3 py-2 border border-muk/20 rounded-md outline-none focus:border-green-500 text-sm transition-colors resize-none flex-1"></textarea>
-            </div>
-
-            <label className="flex items-start gap-2 mt-2 cursor-pointer group">
-              <input 
-                type="checkbox" 
-                required 
-                checked={businessConsent}
-                onChange={(e) => setBusinessConsent(e.target.checked)}
-                className="mt-0.5 rounded text-green-600 focus:ring-green-500 cursor-pointer"
-              />
-              <span className="text-[11px] text-muk/60 leading-tight group-hover:text-muk/80 transition-colors">
-                {privacyText}
-              </span>
-            </label>
-
-            <button 
-              type="submit" 
-              disabled={businessStatus === 'loading' || !businessConsent}
-              className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 mt-2 rounded-lg text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center h-11"
-            >
-              {businessStatus === 'loading' ? <Loader2 size={18} className="animate-spin" /> : 'Send Message'}
-            </button>
-            {businessStatus === 'error' && <p className="text-red-500 text-xs text-center font-bold">Failed to send message. Please try again.</p>}
-          </form>
-        )}
-      </div>
-
-    </div>
+      )}
+    </>
   );
 }
