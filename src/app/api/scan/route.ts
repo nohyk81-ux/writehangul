@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export const runtime = 'edge';
 
@@ -45,34 +46,22 @@ export async function POST(req: NextRequest) {
     const buffer = await file.arrayBuffer();
     const base64Image = Buffer.from(buffer).toString('base64');
 
-    // 4. Call Gemini 1.5 Flash API
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [{
-          parts: [
-            { text: "Extract only the Korean characters from this image. Do not include spaces, English, numbers, or punctuation. Just return a continuous string of Korean characters." },
-            {
-              inline_data: {
-                mime_type: file.type,
-                data: base64Image
-              }
-            }
-          ]
-        }]
-      })
-    });
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-    if (!response.ok) {
-      const errBody = await response.text();
-      throw new Error(`Gemini API Error (${response.status}): ${errBody}`);
-    }
+    const imageParts = [
+      {
+        inlineData: {
+          data: base64Image,
+          mimeType: file.type
+        }
+      }
+    ];
 
-    const data = await response.json();
-    const extractedText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const prompt = "Extract only the Korean characters from this image. Do not include spaces, English, numbers, or punctuation. Just return a continuous string of Korean characters.";
+
+    const result = await model.generateContent([prompt, ...imageParts]);
+    const extractedText = result.response.text();
     const cleanKoreanChars = extractedText.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g, '');
 
     return NextResponse.json({ characters: cleanKoreanChars });

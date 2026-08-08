@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export const runtime = 'edge';
 
@@ -33,36 +34,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Gemini API key not configured' }, { status: 500 });
     }
 
-    // Call Gemini 1.5 Flash API
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [{
-          parts: [
-            { 
-              text: `Translate the following name into its phonetic Korean (Hangul) equivalent. 
-              Only return the Hangul characters. No extra words, punctuation, or spaces.
-              If the name is already in Korean, return it as is.
-              Example 1: Michael -> 마이클
-              Example 2: 田中 -> 타나카
-              Example 3: José -> 호세
-              Name to translate: ${name}`
-            }
-          ]
-        }]
-      })
-    });
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-    if (!response.ok) {
-      const errBody = await response.text();
-      throw new Error(`Gemini API Error (${response.status}): ${errBody}`);
-    }
+    const prompt = `Translate the following name into its phonetic Korean (Hangul) equivalent. 
+    Only return the Hangul characters. No extra words, punctuation, or spaces.
+    If the name is already in Korean, return it as is.
+    Example 1: Michael -> 마이클
+    Example 2: 田中 -> 타나카
+    Example 3: José -> 호세
+    Name to translate: ${name}`;
 
-    const data = await response.json();
-    const extractedText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const result = await model.generateContent(prompt);
+    const extractedText = result.response.text();
     const cleanKoreanChars = extractedText.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g, '');
 
     return NextResponse.json({ hangul: cleanKoreanChars });
