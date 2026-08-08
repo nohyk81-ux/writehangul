@@ -47,22 +47,6 @@ export default function Header() {
             </div>
           </div>
           
-          <div className="flex items-center gap-3 bg-blue-50 border border-blue-100 px-4 py-2 rounded-xl shadow-sm">
-            <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-white text-xl border-2 border-white shadow-sm">
-              👤
-            </div>
-            <div className="text-left">
-              <p className="text-sm font-bold text-muk leading-tight flex items-center gap-1">
-                {t('guestProgress')} <span className="text-xs text-muk/60 font-normal">{t('guestProgressSub')}</span>
-              </p>
-              <p className="text-xs text-muk/80 leading-tight flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span> {t('todayChecked')}
-              </p>
-            </div>
-            <button className="w-6 h-6 rounded-full border border-muk/30 flex items-center justify-center text-xs text-muk/50 hover:bg-muk/5 ml-2">
-              ?
-            </button>
-          </div>
         </div>
       </div>
     </header>
