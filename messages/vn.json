@@ -132,5 +132,12 @@
     "section4Text": "Trong mọi trường hợp, chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại nào từ việc sử dụng trang web này.",
     "section5Title": "5. Sửa đổi",
     "section5Text": "Chúng tôi có thể sửa đổi các điều khoản này bất cứ lúc nào mà không cần thông báo."
+  },
+  "LearningLevelModal": {
+    "title": "Chọn Từ Để Thực Hành",
+    "selectAll": "Chọn tất cả",
+    "deselectAll": "Bỏ chọn tất cả",
+    "cancel": "Hủy",
+    "downloadBtn": "Tạo PDF"
   }
 }

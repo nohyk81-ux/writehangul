@@ -132,5 +132,12 @@
     "section4Text": "En ningún caso seremos responsables de los daños que surjan del uso de este sitio web.",
     "section5Title": "5. Modificaciones",
     "section5Text": "Podemos revisar estos términos en cualquier momento sin previo aviso."
+  },
+  "LearningLevelModal": {
+    "title": "Selecciona Palabras para Practicar",
+    "selectAll": "Seleccionar todo",
+    "deselectAll": "Deseleccionar todo",
+    "cancel": "Cancelar",
+    "downloadBtn": "Generar PDF"
   }
 }

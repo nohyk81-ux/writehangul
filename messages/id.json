@@ -132,5 +132,12 @@
     "section4Text": "Dalam keadaan apa pun kami tidak bertanggung jawab atas kerugian dari penggunaan situs ini.",
     "section5Title": "5. Modifikasi",
     "section5Text": "Kami dapat merevisi persyaratan ini kapan saja tanpa pemberitahuan."
+  },
+  "LearningLevelModal": {
+    "title": "Pilih Kata untuk Latihan",
+    "selectAll": "Pilih Semua",
+    "deselectAll": "Batal Pilih Semua",
+    "cancel": "Batal",
+    "downloadBtn": "Buat PDF"
   }
 }

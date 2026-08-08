@@ -27,7 +27,7 @@ export default function PdfTemplate() {
     );
   }
 
-  const isSpecial = templateStyle === 'my-name' || templateStyle === 'daily-learning';
+  const isSpecial = templateStyle === 'my-name' || templateStyle === 'daily-learning' || templateStyle === 'learning-levels';
   const containerHex = '#ffffff';
 
   if (isSpecial) {
@@ -56,10 +56,10 @@ export default function PdfTemplate() {
             {/* HEADER */}
             <div className="text-center mb-[4mm] w-full flex flex-col items-center">
               <h1 className="text-2xl font-bold font-sans tracking-widest text-muk mb-1">
-                {templateStyle === 'daily-learning' ? "오늘의 한국어 쓰기" : "나의 한글이름 쓰기"}
+                {templateStyle === 'daily-learning' ? "오늘의 한국어 쓰기" : templateStyle === 'learning-levels' ? "한국어 쓰기 연습" : "나의 한글이름 쓰기"}
               </h1>
               <h2 className="text-[10px] font-sans tracking-widest text-muk/60 uppercase">
-                {templateStyle === 'daily-learning' ? "TODAY'S HANGUL PRACTICE" : t('pdfHeader')}
+                {templateStyle === 'daily-learning' ? "TODAY'S HANGUL PRACTICE" : templateStyle === 'learning-levels' ? "HANGUL PRACTICE" : t('pdfHeader')}
               </h2>
             </div>
             
@@ -92,15 +92,15 @@ export default function PdfTemplate() {
             
             {/* FOOTER */}
             <div className="flex justify-between items-end w-full">
-              <div className="text-lg font-bold font-sans text-muk tracking-widest flex items-baseline gap-2">
-                <span>{characters.join('')}</span>
+              <div className="text-lg font-bold font-sans text-muk tracking-widest flex items-baseline gap-2 truncate max-w-[120mm]">
+                <span className="truncate">{characters.join('')}</span>
                 {templateStyle === 'daily-learning' && (
-                  <span className="text-[11px] font-medium text-muk/60 font-sans tracking-normal">
+                  <span className="text-[11px] font-medium text-muk/60 font-sans tracking-normal whitespace-nowrap">
                     {translation}
                   </span>
                 )}
               </div>
-              <div className="text-[11px] font-sans font-medium text-muk/60">
+              <div className="text-[11px] font-sans font-medium text-muk/60 whitespace-nowrap">
                 {t('pdfSource')}
               </div>
             </div>

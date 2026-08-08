@@ -302,35 +302,107 @@
       "items": [
         {
           "korean": "가족",
-          "romanization": "gajok"
+          "romanization": "gajok",
+          "translations": {
+            "en": "Family",
+            "ja": "家族",
+            "zh-CN": "家庭",
+            "zh-TW": "家庭",
+            "es": "Familia",
+            "id": "Keluarga",
+            "vi": "Gia đình"
+          }
         },
         {
           "korean": "친구",
-          "romanization": "chingu"
+          "romanization": "chingu",
+          "translations": {
+            "en": "Friend",
+            "ja": "友達",
+            "zh-CN": "朋友",
+            "zh-TW": "朋友",
+            "es": "Amigo/a",
+            "id": "Teman",
+            "vi": "Bạn bè"
+          }
         },
         {
           "korean": "학교",
-          "romanization": "hakgyo"
+          "romanization": "hakgyo",
+          "translations": {
+            "en": "School",
+            "ja": "学校",
+            "zh-CN": "学校",
+            "zh-TW": "學校",
+            "es": "Escuela",
+            "id": "Sekolah",
+            "vi": "Trường học"
+          }
         },
         {
           "korean": "회사",
-          "romanization": "hoesa"
+          "romanization": "hoesa",
+          "translations": {
+            "en": "Company",
+            "ja": "会社",
+            "zh-CN": "公司",
+            "zh-TW": "公司",
+            "es": "Empresa",
+            "id": "Perusahaan",
+            "vi": "Công ty"
+          }
         },
         {
           "korean": "사랑",
-          "romanization": "sarang"
+          "romanization": "sarang",
+          "translations": {
+            "en": "Love",
+            "ja": "愛",
+            "zh-CN": "爱",
+            "zh-TW": "愛",
+            "es": "Amor",
+            "id": "Cinta",
+            "vi": "Tình yêu"
+          }
         },
         {
           "korean": "시간",
-          "romanization": "sigan"
+          "romanization": "sigan",
+          "translations": {
+            "en": "Time",
+            "ja": "時間",
+            "zh-CN": "时间",
+            "zh-TW": "時間",
+            "es": "Tiempo",
+            "id": "Waktu",
+            "vi": "Thời gian"
+          }
         },
         {
           "korean": "오늘",
-          "romanization": "oneul"
+          "romanization": "oneul",
+          "translations": {
+            "en": "Today",
+            "ja": "今日",
+            "zh-CN": "今天",
+            "zh-TW": "今天",
+            "es": "Hoy",
+            "id": "Hari ini",
+            "vi": "Hôm nay"
+          }
         },
         {
           "korean": "내일",
-          "romanization": "naeil"
+          "romanization": "naeil",
+          "translations": {
+            "en": "Tomorrow",
+            "ja": "明日",
+            "zh-CN": "明天",
+            "zh-TW": "明天",
+            "es": "Mañana",
+            "id": "Besok",
+            "vi": "Ngày mai"
+          }
         }
       ]
     },
@@ -348,23 +420,68 @@
       "items": [
         {
           "korean": "안녕하세요",
-          "romanization": "annyeonghaseyo"
+          "romanization": "annyeonghaseyo",
+          "translations": {
+            "en": "Hello",
+            "ja": "こんにちは",
+            "zh-CN": "你好",
+            "zh-TW": "你好",
+            "es": "Hola",
+            "id": "Halo",
+            "vi": "Xin chào"
+          }
         },
         {
           "korean": "반갑습니다",
-          "romanization": "bangapseumnida"
+          "romanization": "bangapseumnida",
+          "translations": {
+            "en": "Nice to meet you",
+            "ja": "お会いできて嬉しいです",
+            "zh-CN": "很高兴见到你",
+            "zh-TW": "很高興見到你",
+            "es": "Encantado de conocerte",
+            "id": "Senang bertemu denganmu",
+            "vi": "Rất vui được gặp bạn"
+          }
         },
         {
           "korean": "감사합니다",
-          "romanization": "gamsahamnida"
+          "romanization": "gamsahamnida",
+          "translations": {
+            "en": "Thank you",
+            "ja": "ありがとうございます",
+            "zh-CN": "谢谢",
+            "zh-TW": "謝謝",
+            "es": "Gracias",
+            "id": "Terima kasih",
+            "vi": "Cảm ơn"
+          }
         },
         {
           "korean": "죄송합니다",
-          "romanization": "joesonghamnida"
+          "romanization": "joesonghamnida",
+          "translations": {
+            "en": "I'm sorry",
+            "ja": "申し訳ありません",
+            "zh-CN": "对不起",
+            "zh-TW": "對不起",
+            "es": "Lo siento",
+            "id": "Maaf",
+            "vi": "Xin lỗi"
+          }
         },
         {
           "korean": "잘 부탁드립니다",
-          "romanization": "jal butakdeurimnida"
+          "romanization": "jal butakdeurimnida",
+          "translations": {
+            "en": "Please take care of me",
+            "ja": "よろしくお願いします",
+            "zh-CN": "请多关照",
+            "zh-TW": "請多關照",
+            "es": "Por favor cuídame",
+            "id": "Mohon bantuannya",
+            "vi": "Xin hãy giúp đỡ"
+          }
         }
       ]
     }

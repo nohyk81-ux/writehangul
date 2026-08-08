@@ -2,8 +2,8 @@
 
 import { usePracticeStore } from '@/store';
 import vocabularyData from '@/data/vocabulary.json';
-
-
+import { useState } from 'react';
+import LearningLevelModal from './LearningLevelModal';
 
 import { useTranslations } from 'next-intl';
 
@@ -41,16 +41,19 @@ export default function LearningLevels() {
     }
   ];
 
-  const handleDownload = (categoryId: string) => {
-    const catData = vocabularyData.categories.find(c => c.id === categoryId);
-    if (catData) {
-      const chars = catData.items.map(i => i.korean).join(' ');
-      clearCharacters();
-      addCharacters(chars);
-      setLayout(4);
-      setTemplateStyle('default');
-      setPdfGenerating(true);
-    }
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const handleDownloadClick = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+  };
+
+  const handleModalDownload = (selectedWords: string) => {
+    clearCharacters();
+    addCharacters(selectedWords);
+    setLayout(4);
+    setTemplateStyle('learning-levels');
+    setPdfGenerating(true);
+    setSelectedCategory(null);
   };
 
   return (
@@ -83,7 +86,7 @@ export default function LearningLevels() {
             </div>
             
             <button 
-              onClick={() => handleDownload(level.id)}
+              onClick={() => handleDownloadClick(level.id)}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 rounded text-[9px] tracking-wider transition-colors"
             >
               {t('downloadBtn')}
@@ -91,6 +94,12 @@ export default function LearningLevels() {
           </div>
         ))}
       </div>
+      
+      <LearningLevelModal 
+        categoryId={selectedCategory} 
+        onClose={() => setSelectedCategory(null)} 
+        onDownload={handleModalDownload} 
+      />
     </div>
   );
 }

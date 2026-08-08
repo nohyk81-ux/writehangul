@@ -132,5 +132,12 @@
     "section4Text": "在任何情况下，我们对因使用或无法使用本网站材料而引起的任何损害概不负责。",
     "section5Title": "5. 修改条款",
     "section5Text": "我们可能随时修改使用条款，恕不另行通知。"
+  },
+  "LearningLevelModal": {
+    "title": "选择练习单词",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "cancel": "取消",
+    "downloadBtn": "生成PDF"
   }
 }

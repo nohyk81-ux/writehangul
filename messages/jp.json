@@ -132,5 +132,12 @@
     "section4Text": "いかなる場合も、当サイトはデータ損失や利益損失などの損害について責任を負いません。",
     "section5Title": "5. 規約の変更",
     "section5Text": "当サイトは事前の通知なく利用規約を変更することがあり、利用者は最新の規約に拘束されることに同意するものとします。"
+  },
+  "LearningLevelModal": {
+    "title": "練習する単語を選択",
+    "selectAll": "すべて選択",
+    "deselectAll": "すべて選択解除",
+    "cancel": "キャンセル",
+    "downloadBtn": "PDFを生成"
   }
 }

@@ -132,5 +132,12 @@
     "section4Text": "In no event shall Write Hangul or its suppliers be liable for any damages (including damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Website.",
     "section5Title": "5. Modifications",
     "section5Text": "Write Hangul may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service."
+  },
+  "LearningLevelModal": {
+    "title": "Select Words to Practice",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "cancel": "Cancel",
+    "downloadBtn": "Generate PDF"
   }
 }
