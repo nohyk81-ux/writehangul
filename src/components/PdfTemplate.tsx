@@ -28,7 +28,7 @@ export default function PdfTemplate() {
   }
 
   const isSpecial = templateStyle === 'my-name' || templateStyle === 'daily-learning';
-  const containerHex = isSpecial ? '#faf8f5' : '#ffffff';
+  const containerHex = '#ffffff';
 
   if (isSpecial) {
     const nameLength = characters.length;
@@ -52,10 +52,6 @@ export default function PdfTemplate() {
           style={{ width: '210mm', height: '275mm', overflow: 'hidden', backgroundColor: containerHex, position: 'relative' }}
           className="flex flex-col box-border pt-[12mm] pb-[12mm] px-[20mm]"
         >
-          {/* Subtle texture */}
-          <div className="absolute inset-0 opacity-40 mix-blend-multiply" 
-               style={{ backgroundImage: 'radial-gradient(#d5c5b3 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-          
           <div className="w-full relative z-10 flex flex-col items-center">
             {/* HEADER */}
             <div className="text-center mb-[4mm] w-full flex flex-col items-center">
@@ -83,7 +79,7 @@ export default function PdfTemplate() {
                   </div>
                   {/* Character */}
                   {char && (
-                    <span className="font-sans font-medium text-[40pt] relative z-10 -translate-y-3" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
+                    <span className="font-sans font-medium text-[40pt] relative z-10 -translate-y-5" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
                       {char}
                     </span>
                   )}
