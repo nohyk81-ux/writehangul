@@ -49,9 +49,6 @@ export default function CategoryGrid() {
           <h2 className="text-base font-bold text-muk flex items-center gap-1 uppercase tracking-wide">
             {t('title')} <span className="text-sm font-normal text-muk/60">{t('titleSub')}</span>
           </h2>
-          <a href="#" className="text-[10px] text-blue-600 font-bold hover:underline">
-            {t('all')}
-          </a>
         </div>
         
         <div className="grid grid-cols-2 gap-2 flex-1">
