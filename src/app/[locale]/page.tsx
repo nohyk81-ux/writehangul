@@ -23,14 +23,14 @@ export default async function HomePage({
       
       {/* Hero Section */}
       <section className="mb-6 print:hidden mt-2">
-        <div className="bg-blue-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm border border-blue-200 relative overflow-hidden">
+        <div className="bg-blue-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 shadow-sm border border-blue-200 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-50 -mr-20 -mt-20 pointer-events-none"></div>
           
-          <div className="flex items-center gap-4 relative z-10">
+          <div className="relative z-10 shrink-0">
             <Image src="/hero-character.png" alt="Korean Girl Avatar" width={140} height={140} className="object-contain drop-shadow-xl" />
           </div>
           
-          <div className="flex-1 text-center md:text-left relative z-10">
+          <div className="text-center md:text-left relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-muk mb-2 leading-tight" dangerouslySetInnerHTML={{ __html: t('title') }}></h2>
             <p className="text-muk/80 text-lg mb-2 font-medium" dangerouslySetInnerHTML={{ __html: t('subtitle') }}></p>
             <p className="font-bold text-2xl text-muk mt-4">{t('highlight')}</p>
