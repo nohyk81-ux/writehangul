@@ -27,8 +27,8 @@ export default async function HomePage({
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-50 -mr-20 -mt-20 pointer-events-none"></div>
           
           <div className="relative z-10 shrink-0">
-            <div className="relative w-[18vw] h-[18vw] md:w-[140px] md:h-[140px]">
-              <Image src="/hero-character.png" alt="Korean Girl Avatar" fill className="object-contain drop-shadow-xl" sizes="(max-width: 768px) 25vw, 140px" />
+            <div className="relative w-[26vw] h-[26vw] md:w-[140px] md:h-[140px]">
+              <Image src="/hero-character.png" alt="Korean Girl Avatar" fill className="object-contain drop-shadow-xl" sizes="(max-width: 768px) 30vw, 140px" />
             </div>
           </div>
           
