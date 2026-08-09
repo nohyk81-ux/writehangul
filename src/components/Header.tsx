@@ -28,7 +28,9 @@ export default function Header() {
             <Link href="/history" className="text-muk hover:text-seal font-bold transition-colors">
               {t('history')}
             </Link>
-            <LanguageSwitcher />
+            <div className="absolute top-5 right-4 md:static md:top-auto md:right-auto z-50">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>
