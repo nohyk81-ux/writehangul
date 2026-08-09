@@ -28,7 +28,6 @@ export default async function HomePage({
           
           <div className="flex items-center gap-4 relative z-10">
             <Image src="/hero-character.png" alt="Korean Girl Avatar" width={140} height={140} className="object-contain drop-shadow-xl" />
-            <div className="text-8xl font-serif font-bold text-muk">ㅎ</div>
           </div>
           
           <div className="flex-1 text-center md:text-left relative z-10">
