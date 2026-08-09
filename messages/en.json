@@ -3,7 +3,8 @@
     "globalLanguageSetting": "Global Language Setting",
     "guestProgress": "Guest Progress",
     "guestProgressSub": "(My Progress)",
-    "todayChecked": "Today - checked"
+    "todayChecked": "Today - checked",
+    "history": "History of Hangul"
   },
   "Hero": {
     "title": "Trace Korean daily.<br/>Free writing practice sheets.",
@@ -139,5 +140,17 @@
     "deselectAll": "Deselect All",
     "cancel": "Cancel",
     "downloadBtn": "Generate PDF"
+  },
+  "History": {
+    "title": "History of Hangul",
+    "subtitle": "The Story of King Sejong and the Creation of the Korean Alphabet",
+    "section1Title": "King Sejong the Great",
+    "section1Text": "King Sejong, the 4th king of the Joseon Dynasty, was born in 1397. Known for his benevolence and diligence, he loved his people and implemented royal politics centered on their well-being. His reign marked a golden era of politics, economy, society, and culture in Korean history.",
+    "section2Title": "The Birth of Hunminjeongeum",
+    "section2Text": "Realizing that the common people could not read Chinese characters and suffered injustices, King Sejong felt the need for a new alphabet. He created \"Hunminjeongeum\" (Hangul) to provide an easy-to-learn writing system for the uneducated, allowing everyone to understand laws and express themselves.",
+    "section3Title": "Scholars of Jiphyeonjeon",
+    "section3Text": "To create this alphabet, King Sejong nurtured brilliant scholars through the royal research institute, Jiphyeonjeon. With the collaboration of young scholars like Choe Hang, Park Paeng-nyeon, and Sin Suk-ju, the creation of Hangul stands as the most magnificent cultural heritage of the Korean people.",
+    "section4Title": "Cultural Renaissance",
+    "section4Text": "Beyond Hangul, King Sejong's era saw massive advancements in various fields. He reformed laws, advanced science with astronomical instruments, improved agriculture, and elevated music. This stable and progressive environment laid the foundation for Korea's glorious cultural renaissance."
   }
 }

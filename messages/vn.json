@@ -3,7 +3,8 @@
     "globalLanguageSetting": "Cài đặt Ngôn ngữ Toàn cầu",
     "guestProgress": "Tiến trình của Khách",
     "guestProgressSub": "(Tiến trình của tôi)",
-    "todayChecked": "Hôm nay - đã kiểm tra"
+    "todayChecked": "Hôm nay - đã kiểm tra",
+    "history": "Lịch sử Hangul"
   },
   "Hero": {
     "title": "Đồ chữ Hàn mỗi ngày.<br/>Bảng tập viết miễn phí.",
@@ -139,5 +140,17 @@
     "deselectAll": "Bỏ chọn tất cả",
     "cancel": "Hủy",
     "downloadBtn": "Tạo PDF"
+  },
+  "History": {
+    "title": "Lịch sử Hangul",
+    "subtitle": "Câu chuyện về Vua Sejong và sự ra đời của Bảng chữ cái Hàn Quốc",
+    "section1Title": "Vua Sejong Đại Đế",
+    "section1Text": "Vua Sejong, vị vua thứ 4 của Vương triều Joseon, sinh năm 1397. Nổi tiếng với sự nhân từ và siêng năng, ông yêu thương thần dân của mình và thực hiện chính sách cai trị đặt hạnh phúc của họ làm trung tâm. Triều đại của ông đánh dấu thời kỳ hoàng kim về chính trị, kinh tế, xã hội và văn hóa trong lịch sử Hàn Quốc.",
+    "section2Title": "Sự ra đời của Hunminjeongeum",
+    "section2Text": "Nhận thấy người dân thường không thể đọc chữ Hán và phải chịu nhiều bất công, Vua Sejong cảm thấy cần phải có một bảng chữ cái mới. Ông đã sáng tạo ra \"Hunminjeongeum\" (Hangul) để cung cấp một hệ thống chữ viết dễ học cho những người không được học hành, cho phép mọi người hiểu luật pháp và bày tỏ suy nghĩ của mình.",
+    "section3Title": "Các học giả của Jiphyeonjeon",
+    "section3Text": "Để tạo ra bảng chữ cái này, Vua Sejong đã nuôi dưỡng các học giả tài ba thông qua viện nghiên cứu hoàng gia, Jiphyeonjeon. Với sự hợp tác của các học giả trẻ như Choe Hang, Park Paeng-nyeon và Sin Suk-ju, sự ra đời của Hangul là di sản văn hóa tráng lệ nhất của người dân Hàn Quốc.",
+    "section4Title": "Phục hưng Văn hóa",
+    "section4Text": "Bên cạnh Hangul, triều đại của Vua Sejong còn chứng kiến những tiến bộ to lớn trong nhiều lĩnh vực khác. Ông đã cải cách luật pháp, phát triển khoa học bằng các dụng cụ thiên văn, cải tiến nông nghiệp và nâng tầm âm nhạc. Môi trường ổn định và tiến bộ này đã đặt nền móng cho thời kỳ phục hưng văn hóa rực rỡ của Hàn Quốc."
   }
 }

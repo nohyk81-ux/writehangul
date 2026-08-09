@@ -3,7 +3,8 @@
     "globalLanguageSetting": "Pengaturan Bahasa Global",
     "guestProgress": "Kemajuan Tamu",
     "guestProgressSub": "(Kemajuan Saya)",
-    "todayChecked": "Hari ini - diperiksa"
+    "todayChecked": "Hari ini - diperiksa",
+    "history": "Sejarah Hangul"
   },
   "Hero": {
     "title": "Lacak bahasa Korea setiap hari.<br/>Lembar latihan menulis gratis.",
@@ -139,5 +140,17 @@
     "deselectAll": "Batal Pilih Semua",
     "cancel": "Batal",
     "downloadBtn": "Buat PDF"
+  },
+  "History": {
+    "title": "Sejarah Hangul",
+    "subtitle": "Kisah Raja Sejong dan Penciptaan Alfabet Korea",
+    "section1Title": "Raja Sejong yang Agung",
+    "section1Text": "Raja Sejong, raja ke-4 dari Dinasti Joseon, lahir pada tahun 1397. Dikenal karena kebaikan dan ketekunannya, ia mencintai rakyatnya dan menerapkan politik kerajaan yang berpusat pada kesejahteraan mereka. Pemerintahannya menandai era keemasan politik, ekonomi, masyarakat, dan budaya dalam sejarah Korea.",
+    "section2Title": "Kelahiran Hunminjeongeum",
+    "section2Text": "Menyadari bahwa rakyat jelata tidak dapat membaca karakter Tiongkok dan menderita ketidakadilan, Raja Sejong merasa perlunya alfabet baru. Ia menciptakan \"Hunminjeongeum\" (Hangul) untuk menyediakan sistem tulisan yang mudah dipelajari bagi mereka yang tidak berpendidikan, memungkinkan semua orang memahami hukum dan mengekspresikan diri.",
+    "section3Title": "Para Sarjana Jiphyeonjeon",
+    "section3Text": "Untuk menciptakan alfabet ini, Raja Sejong membina sarjana-sarjana brilian melalui lembaga penelitian kerajaan, Jiphyeonjeon. Dengan kolaborasi sarjana muda seperti Choe Hang, Park Paeng-nyeon, dan Sin Suk-ju, penciptaan Hangul berdiri sebagai warisan budaya paling luar biasa dari rakyat Korea.",
+    "section4Title": "Renaisans Budaya",
+    "section4Text": "Di luar Hangul, era Raja Sejong melihat kemajuan besar di berbagai bidang. Ia mereformasi hukum, memajukan sains dengan instrumen astronomi, meningkatkan pertanian, dan memajukan musik. Lingkungan yang stabil dan progresif ini meletakkan dasar bagi renaisans budaya yang gemilang di Korea."
   }
 }

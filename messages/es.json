@@ -3,7 +3,8 @@
     "globalLanguageSetting": "Configuración de idioma global",
     "guestProgress": "Progreso del invitado",
     "guestProgressSub": "(Mi progreso)",
-    "todayChecked": "Hoy - comprobado"
+    "todayChecked": "Hoy - comprobado",
+    "history": "Historia del Hangul"
   },
   "Hero": {
     "title": "Traza coreano a diario.<br/>Hojas de práctica gratuitas.",
@@ -139,5 +140,17 @@
     "deselectAll": "Deseleccionar todo",
     "cancel": "Cancelar",
     "downloadBtn": "Generar PDF"
+  },
+  "History": {
+    "title": "Historia del Hangul",
+    "subtitle": "La Historia del Rey Sejong y la Creación del Alfabeto Coreano",
+    "section1Title": "El Gran Rey Sejong",
+    "section1Text": "El Rey Sejong, el cuarto rey de la Dinastía Joseon, nació en 1397. Conocido por su benevolencia y diligencia, amaba a su pueblo e implementó una política real centrada en su bienestar. Su reinado marcó una era dorada de política, economía, sociedad y cultura en la historia de Corea.",
+    "section2Title": "El Nacimiento de Hunminjeongeum",
+    "section2Text": "Al darse cuenta de que la gente común no podía leer caracteres chinos y sufría injusticias, el Rey Sejong sintió la necesidad de un nuevo alfabeto. Creó el \"Hunminjeongeum\" (Hangul) para proporcionar un sistema de escritura fácil de aprender para los no educados, permitiendo que todos entendieran las leyes y se expresaran.",
+    "section3Title": "Los Eruditos de Jiphyeonjeon",
+    "section3Text": "Para crear este alfabeto, el Rey Sejong formó a brillantes eruditos a través del instituto de investigación real, Jiphyeonjeon. Con la colaboración de jóvenes eruditos como Choe Hang, Park Paeng-nyeon y Sin Suk-ju, la creación del Hangul se erige como la herencia cultural más magnífica del pueblo coreano.",
+    "section4Title": "Renacimiento Cultural",
+    "section4Text": "Más allá del Hangul, la era del Rey Sejong vio avances masivos en varios campos. Reformó leyes, avanzó en la ciencia con instrumentos astronómicos, mejoró la agricultura y elevó la música. Este entorno estable y progresista sentó las bases para el glorioso renacimiento cultural de Corea."
   }
 }
