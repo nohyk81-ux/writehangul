@@ -1,5 +1,5 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { BookOpen, Sparkles, Users, Music } from 'lucide-react';
+import { BookOpen, Sparkles, Users, Music, Info } from 'lucide-react';
 import Image from 'next/image';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -85,6 +85,19 @@ export default async function HistoryPage({
             </h2>
             <p className="text-lg text-muk/80 leading-relaxed">
               {t('section4Text')}
+            </p>
+          </div>
+        </section>
+
+        {/* Copyright Section */}
+        <section className="mt-12 bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200 flex flex-col md:flex-row gap-4 items-start md:items-center">
+          <div className="w-12 h-12 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center shrink-0">
+            <Info size={24} />
+          </div>
+          <div>
+            <h3 className="text-base font-bold text-gray-700 mb-1">{t('copyrightTitle')}</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {t('copyrightText')}
             </p>
           </div>
         </section>
