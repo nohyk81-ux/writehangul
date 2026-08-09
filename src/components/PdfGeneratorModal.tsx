@@ -45,8 +45,8 @@ export default function PdfGeneratorModal() {
       const opt = {
         margin:       0, // We handle margins via CSS safe zone
         filename:     'write-hangul-practice.pdf',
-        image:        { type: 'jpeg' as const, quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true, logging: false },
+        image:        { type: 'jpeg' as const, quality: 1 },
+        html2canvas:  { scale: 4, useCORS: true, logging: false },
         jsPDF:        { unit: 'in' as const, format: 'letter' as const, orientation: 'portrait' as const }
       };
 

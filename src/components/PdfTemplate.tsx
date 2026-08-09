@@ -71,7 +71,7 @@ export default function PdfTemplate() {
                   </div>
                   
                   {/* TOP THICK DIVIDER */}
-                  <div className="w-full h-[3px] bg-muk mb-[3mm]"></div>
+                  <div className="w-full h-[3px] bg-muk mb-[1.5mm]"></div>
                   
                   {/* MAIN GRID */}
                   <div className="grid grid-cols-6 grid-rows-8 w-full border-t-[1.5px] border-l-[1.5px]" style={{ height: '220mm', borderColor: 'rgba(231, 76, 60, 0.5)' }}>
@@ -95,7 +95,7 @@ export default function PdfTemplate() {
                   </div>
                   
                   {/* BOTTOM THICK DIVIDER */}
-                  <div className="w-full h-[3px] bg-muk mt-[3mm] mb-[1.5mm]"></div>
+                  <div className="w-full h-[3px] bg-muk mt-[1.5mm] mb-[1mm]"></div>
                   
                   {/* FOOTER */}
                   <div className="flex justify-between items-end w-full">
