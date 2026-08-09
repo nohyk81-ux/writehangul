@@ -86,10 +86,10 @@ export default function LearningLevelModal({ categoryId, onClose, onDownload }: 
             const isSelected = selectedIndices.has(idx);
             const translation = item.translations?.[locale] || item.romanization;
             return (
-              <label 
+              <div 
                 key={idx} 
                 className={`flex items-center p-3 rounded-lg cursor-pointer transition-colors ${isSelected ? 'bg-blue-50 border border-blue-100' : 'hover:bg-gray-50 border border-transparent'}`}
-                onChange={() => handleToggle(idx)}
+                onClick={() => handleToggle(idx)}
               >
                 <div className={`mr-3 ${isSelected ? 'text-blue-600' : 'text-gray-300'}`}>
                   {isSelected ? <CheckSquare size={20} /> : <Square size={20} />}
@@ -98,7 +98,7 @@ export default function LearningLevelModal({ categoryId, onClose, onDownload }: 
                   <span className="text-lg font-bold text-muk">{item.korean}</span>
                   <span className="text-xs text-muk/60">{translation}</span>
                 </div>
-              </label>
+              </div>
             );
           })}
         </div>

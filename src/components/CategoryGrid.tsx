@@ -3,15 +3,16 @@
 import { useState } from 'react';
 
 import { usePracticeStore } from '@/store';
-import vocabularyData from '@/data/vocabulary.json';
 import { BookA, Music, Plane, Coffee, HandHeart, Briefcase, MessageCircleWarning, Quote } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import LearningLevelModal from './LearningLevelModal';
 
 export default function CategoryGrid() {
   const { clearCharacters, addCharacters, setLayout, setTemplateStyle, setPdfGenerating } = usePracticeStore();
   const t = useTranslations('CategoryGrid');
 
   const [activeCategory, setActiveCategory] = useState<typeof categories[0] | null>(null);
+  const [downloadCategory, setDownloadCategory] = useState<string | null>(null);
 
   const categories = [
     { id: 'kpop', title: t('kpop'), count: 50, icon: <Music size={16} /> },
@@ -23,23 +24,18 @@ export default function CategoryGrid() {
     { id: 'proverbs', title: t('proverbs'), count: 12, icon: <Quote size={16} /> }
   ];
 
-  const handleDownload = (categoryId: string) => {
-    // Find category in JSON
-    let catData = vocabularyData.categories.find(c => c.id === categoryId);
-    if (!catData && categoryId === 'beautiful-words') {
-       // fallback for old ID
-       catData = vocabularyData.categories.find(c => c.id === 'beautiful-words');
-    }
-    
-    if (catData) {
-      const chars = catData.items.map(i => i.korean).join('');
-      clearCharacters();
-      addCharacters(chars);
-      setLayout(4); // 4 chars per page
-      setTemplateStyle('default');
-      setPdfGenerating(true);
-      setActiveCategory(null); // Close modal after initiating download
-    }
+  const handleDownloadClick = (categoryId: string) => {
+    setDownloadCategory(categoryId);
+    setActiveCategory(null); // Close the details modal to show the selection modal
+  };
+
+  const handleModalDownload = (selectedWords: string) => {
+    clearCharacters();
+    addCharacters(selectedWords);
+    setLayout(4);
+    setTemplateStyle('default');
+    setPdfGenerating(true);
+    setDownloadCategory(null);
   };
 
   return (
@@ -83,7 +79,7 @@ export default function CategoryGrid() {
               
               <div className="flex flex-col w-full gap-2">
                 <button 
-                  onClick={() => handleDownload(activeCategory.id)}
+                  onClick={() => handleDownloadClick(activeCategory.id)}
                   className="w-full bg-seal hover:bg-seal/90 text-white font-bold py-3 rounded-xl transition-colors"
                 >
                   {t('downloadPdf')}
@@ -99,6 +95,12 @@ export default function CategoryGrid() {
           </div>
         </div>
       )}
+
+      <LearningLevelModal 
+        categoryId={downloadCategory} 
+        onClose={() => setDownloadCategory(null)} 
+        onDownload={handleModalDownload} 
+      />
     </>
   );
 }
