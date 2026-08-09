@@ -55,11 +55,11 @@ export default function LearningLevelModal({ categoryId, onClose, onDownload }: 
 
   const handleDownload = () => {
     if (selectedIndices.size === 0) return;
-    const selectedWords = items
-      .filter((_, i) => selectedIndices.has(i))
-      .map(item => item.korean)
-      .join(' ');
-    onDownload(selectedWords);
+      const selectedWords = items
+        .filter((_, i) => selectedIndices.has(i))
+        .map(item => item.korean)
+        .join('\n');
+      onDownload(selectedWords);
   };
 
   return (
