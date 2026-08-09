@@ -4,7 +4,11 @@
     "guestProgress": "Tiến trình của Khách",
     "guestProgressSub": "(Tiến trình của tôi)",
     "todayChecked": "Hôm nay - đã kiểm tra",
-    "history": "Lịch sử Hangul"
+    "history": "Lịch sử Hangul",
+    "menuHistory": "Lịch sử Hangeul",
+    "menuCategory": "Văn hóa & Đời sống Hàn Quốc",
+    "menuMyName": "Viết tên của tôi",
+    "menuLearn": "Học Hangeul"
   },
   "Hero": {
     "title": "Đồ chữ Hàn mỗi ngày.<br/>Bảng tập viết miễn phí.",

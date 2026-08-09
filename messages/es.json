@@ -4,7 +4,11 @@
     "guestProgress": "Progreso del invitado",
     "guestProgressSub": "(Mi progreso)",
     "todayChecked": "Hoy - comprobado",
-    "history": "Historia del Hangul"
+    "history": "Historia del Hangul",
+    "menuHistory": "Historia del Hangul",
+    "menuCategory": "Cultura y Vida Coreana",
+    "menuMyName": "Escribir Mi Nombre",
+    "menuLearn": "Aprender Hangul"
   },
   "Hero": {
     "title": "Traza coreano a diario.<br/>Hojas de práctica gratuitas.",

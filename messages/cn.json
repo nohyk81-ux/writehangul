@@ -4,7 +4,11 @@
     "guestProgress": "访客进度",
     "guestProgressSub": "(我的进度)",
     "todayChecked": "今日已签到",
-    "history": "韩文历史"
+    "history": "韩文历史",
+    "menuHistory": "韩文的历史",
+    "menuCategory": "韩国文化与生活",
+    "menuMyName": "写我的名字",
+    "menuLearn": "学习韩文"
   },
   "Hero": {
     "title": "每天描红韩语。<br/>免费的书写练习表。",

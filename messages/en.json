@@ -4,7 +4,11 @@
     "guestProgress": "Guest Progress",
     "guestProgressSub": "(My Progress)",
     "todayChecked": "Today - checked",
-    "history": "History of Hangul"
+    "history": "History of Hangul",
+    "menuHistory": "History of Hangul",
+    "menuCategory": "K-Culture & Life",
+    "menuMyName": "Write My Name",
+    "menuLearn": "Learn Hangul"
   },
   "Hero": {
     "title": "Trace Korean daily.<br/>Free writing practice sheets.",

@@ -54,7 +54,7 @@ export default async function HomePage({
         </div>
 
         {/* Column 2: K-Culture & Life */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" id="category">
           <CategoryGrid />
           
           {/* AdSense Placeholder */}
@@ -65,8 +65,12 @@ export default async function HomePage({
 
         {/* Column 3: My Name & Learning Levels */}
         <div className="flex flex-col gap-0">
-          <MiniMyName />
-          <LearningLevels />
+          <div id="my-name">
+            <MiniMyName />
+          </div>
+          <div id="learning-levels">
+            <LearningLevels />
+          </div>
         </div>
 
       </div>

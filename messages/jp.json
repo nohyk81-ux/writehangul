@@ -4,7 +4,11 @@
     "guestProgress": "ゲストの進捗状況",
     "guestProgressSub": "(私の進捗)",
     "todayChecked": "本日のチェック完了",
-    "history": "ハングルの歴史"
+    "history": "ハングルの歴史",
+    "menuHistory": "ハングルの歴史",
+    "menuCategory": "韓国の文化と生活",
+    "menuMyName": "自分の名前を書く",
+    "menuLearn": "ハングルを学ぶ"
   },
   "Hero": {
     "title": "毎日なぞり書き。<br/>無料の韓国語練習シート。",

@@ -1,12 +1,14 @@
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
+import MobileMenu from './MobileMenu';
 export default function Header() {
   const t = useTranslations('Header');
 
   return (
     <header className="relative w-full border-b-2 border-muk/10 bg-white print:hidden">
-      <div className="max-w-7xl mx-auto px-4 py-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 py-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4 relative">
+        <MobileMenu />
         
         {/* Logo Area */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
@@ -22,12 +24,15 @@ export default function Header() {
           <span className="text-2xl ml-2 opacity-80">✍️</span>
         </Link>
         
-        {/* Right Section: Language & Guest Progress */}
-        <div className="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0">
-          <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6">
-            <Link href="/history" className="text-muk hover:text-seal font-bold transition-colors">
-              {t('history')}
-            </Link>
+        {/* Right Section: Language & Navigation */}
+        <div className="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0 w-full md:w-auto">
+          <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 w-full">
+            <nav className="hidden md:flex items-center gap-6 text-muk font-bold">
+              <Link href="/history" className="hover:text-seal transition-colors">{t('menuHistory')}</Link>
+              <Link href="/#category" className="hover:text-seal transition-colors">{t('menuCategory')}</Link>
+              <Link href="/#my-name" className="hover:text-seal transition-colors">{t('menuMyName')}</Link>
+              <Link href="/#learning-levels" className="hover:text-seal transition-colors">{t('menuLearn')}</Link>
+            </nav>
             <div className="absolute top-5 right-4 md:static md:top-auto md:right-auto z-50">
               <LanguageSwitcher />
             </div>

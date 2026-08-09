@@ -4,7 +4,11 @@
     "guestProgress": "Kemajuan Tamu",
     "guestProgressSub": "(Kemajuan Saya)",
     "todayChecked": "Hari ini - diperiksa",
-    "history": "Sejarah Hangul"
+    "history": "Sejarah Hangul",
+    "menuHistory": "Sejarah Hangul",
+    "menuCategory": "Budaya & Kehidupan Korea",
+    "menuMyName": "Menulis Nama Saya",
+    "menuLearn": "Belajar Hangul"
   },
   "Hero": {
     "title": "Lacak bahasa Korea setiap hari.<br/>Lembar latihan menulis gratis.",
