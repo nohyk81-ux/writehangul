@@ -23,14 +23,13 @@ export default function Header() {
         </Link>
         
         {/* Right Section: Language & Guest Progress */}
-        <div className="flex flex-col items-end text-right">
-          <div className="mb-2 flex items-center justify-end gap-4">
+        <div className="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0">
+          <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6">
             <Link href="/history" className="text-muk hover:text-seal font-bold transition-colors">
               {t('history')}
             </Link>
             <LanguageSwitcher />
           </div>
-          
         </div>
       </div>
     </header>
