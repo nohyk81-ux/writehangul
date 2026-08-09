@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import AttendanceAndAd from '@/components/AttendanceAndAd';
 import CategoryGrid from '@/components/CategoryGrid';
@@ -25,8 +26,8 @@ export default async function HomePage({
         <div className="bg-blue-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm border border-blue-200 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-50 -mr-20 -mt-20 pointer-events-none"></div>
           
-          <div className="flex items-center gap-6 relative z-10">
-            <div className="text-8xl">👦🏻</div>
+          <div className="flex items-center gap-4 relative z-10">
+            <Image src="/hero-character.png" alt="Korean Girl Avatar" width={140} height={140} className="object-contain drop-shadow-xl" />
             <div className="text-8xl font-serif font-bold text-muk">ㅎ</div>
           </div>
           
