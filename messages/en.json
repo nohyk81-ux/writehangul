@@ -24,8 +24,8 @@
     "streak0": "Start your daily streak!"
   },
   "MyName": {
-    "title": "내 이름 한글로 만들기",
-    "titleSub": "(My Name Writing)",
+    "title": "내 이름 한글로 쓰기",
+    "titleSub": "(Write My Name)",
     "placeholder": "Enter Your Name",
     "resultsSub": "Hangeul results with pronunciation",
     "translationWait": "Translation will appear here",
@@ -64,7 +64,7 @@
   },
   "LearningLevels": {
     "title": "한글 배우기",
-    "titleSub": "(Learning Levels)",
+    "titleSub": "(Learn Hangul)",
     "starter": "Starter",
     "starterSub": "Consonants & Vowels",
     "basic": "Basic",

@@ -24,8 +24,8 @@
     "streak0": "开始你的连续学习吧!"
   },
   "MyName": {
-    "title": "내 이름 한글로 만들기",
-    "titleSub": "(写我的名字)",
+    "title": "내 이름 한글로 쓰기",
+    "titleSub": "(Write My Name)",
     "placeholder": "请输入您的名字",
     "resultsSub": "韩语发音结果",
     "translationWait": "翻译结果将显示在这里",
@@ -57,7 +57,7 @@
   },
   "LearningLevels": {
     "title": "学习阶段",
-    "titleSub": "(Learning Levels)",
+    "titleSub": "(Learn Hangul)",
     "starter": "入门",
     "starterSub": "辅音和元音",
     "basic": "基础",

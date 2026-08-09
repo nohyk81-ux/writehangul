@@ -24,8 +24,8 @@
     "streak0": "¡Comienza tu racha diaria!"
   },
   "MyName": {
-    "title": "내 이름 한글로 만들기",
-    "titleSub": "(Escribir mi nombre)",
+    "title": "내 이름 한글로 쓰기",
+    "titleSub": "(Write My Name)",
     "placeholder": "Introduce tu nombre",
     "resultsSub": "Resultados en coreano con pronunciación",
     "translationWait": "La traducción aparecerá aquí",
@@ -57,7 +57,7 @@
   },
   "LearningLevels": {
     "title": "Niveles",
-    "titleSub": "(Learning Levels)",
+    "titleSub": "(Learn Hangul)",
     "starter": "Iniciación",
     "starterSub": "Consonantes y Vocales",
     "basic": "Básico",

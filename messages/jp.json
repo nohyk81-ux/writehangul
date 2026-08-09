@@ -24,8 +24,8 @@
     "streak0": "連続学習を始めましょう!"
   },
   "MyName": {
-    "title": "내 이름 한글로 만들기",
-    "titleSub": "(私の名前を書く)",
+    "title": "내 이름 한글로 쓰기",
+    "titleSub": "(Write My Name)",
     "placeholder": "お名前を入力してください",
     "resultsSub": "ハングルの結果と発音",
     "translationWait": "翻訳結果がここに表示されます",
@@ -57,7 +57,7 @@
   },
   "LearningLevels": {
     "title": "学習レベル",
-    "titleSub": "(Learning Levels)",
+    "titleSub": "(Learn Hangul)",
     "starter": "入門",
     "starterSub": "子音と母音",
     "basic": "基礎",

@@ -24,8 +24,8 @@
     "streak0": "Mulai rekor harianmu!"
   },
   "MyName": {
-    "title": "내 이름 한글로 만들기",
-    "titleSub": "(Menulis nama saya)",
+    "title": "내 이름 한글로 쓰기",
+    "titleSub": "(Write My Name)",
     "placeholder": "Masukkan Nama Anda",
     "resultsSub": "Hasil Hangeul dengan pengucapan",
     "translationWait": "Terjemahan akan muncul di sini",
@@ -57,7 +57,7 @@
   },
   "LearningLevels": {
     "title": "Tingkat Belajar",
-    "titleSub": "(Learning Levels)",
+    "titleSub": "(Learn Hangul)",
     "starter": "Pemula Awal",
     "starterSub": "Konsonan & Vokal",
     "basic": "Dasar",
