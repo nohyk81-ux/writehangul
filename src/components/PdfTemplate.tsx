@@ -185,7 +185,7 @@ export default function PdfTemplate() {
                           />
                         )}
                         {char && isTracing && (
-                          <span className="font-sans font-medium text-[40pt] relative z-10 -translate-y-5" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
+                          <span className="font-pen text-[60pt] relative z-10 -translate-y-4" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
                             {char}
                           </span>
                         )}
