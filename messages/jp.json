@@ -159,5 +159,17 @@
     "section4Text": "ハングルにとどまらず、世宗の時代には様々な分野で大きな発展が見られました。法律を整備し、天文機器を用いて科学を発展させ、農業を改良し、音楽を向上させました。この安定的で進歩的な環境が、輝かしい文化ルネサンスの基盤を築きました。",
     "copyrightTitle": "著作権と出典",
     "copyrightText": "この資料は国立ハングル博物館アーカイブによって提供されています。公共ヌリ（KOGL）第1類型（出典表示）に基づき、自由にご利用いただけます。"
+  },
+  "AlphabetPractice": {
+    "title": "子音・母音の練習",
+    "subtitle": "練習したい文字を選んで、自分だけの練習帳を作りましょう。",
+    "basicConsonants": "基本子音",
+    "basicVowels": "基本母音",
+    "complexVowels": "合成母音",
+    "selectionLimit": "選択された文字 (最大 {max}個)",
+    "generatePdf": "選択した文字でPDFを作成",
+    "pdfHeaderTitle": "ハングル文字練習",
+    "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
+    "clearAll": "すべてクリア"
   }
 }

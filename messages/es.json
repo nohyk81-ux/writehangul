@@ -159,5 +159,17 @@
     "section4Text": "Más allá del Hangul, la era del Rey Sejong vio avances masivos en varios campos. Reformó leyes, avanzó en la ciencia con instrumentos astronómicos, mejoró la agricultura y elevó la música. Este entorno estable y progresista sentó las bases para el glorioso renacimiento cultural de Corea.",
     "copyrightTitle": "Derechos de Autor y Fuente",
     "copyrightText": "Este material es proporcionado por el Archivo del Museo Nacional Hangeul. Está disponible libremente bajo la Licencia Abierta del Gobierno de Corea (KOGL) Tipo 1 (Se requiere atribución)."
+  },
+  "AlphabetPractice": {
+    "title": "Práctica del Alfabeto",
+    "subtitle": "Selecciona las letras que deseas practicar y crea tu propio cuaderno.",
+    "basicConsonants": "Consonantes Básicas",
+    "basicVowels": "Vocales Básicas",
+    "complexVowels": "Vocales Complejas",
+    "selectionLimit": "Letras seleccionadas (Máx {max})",
+    "generatePdf": "Generar PDF con las letras",
+    "pdfHeaderTitle": "Práctica del Alfabeto Coreano",
+    "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
+    "clearAll": "Borrar todo"
   }
 }

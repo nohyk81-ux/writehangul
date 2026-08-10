@@ -1,111 +1,125 @@
 'use client';
 
+import React from 'react';
 import { usePracticeStore } from '@/store';
 import { useTranslations } from 'next-intl';
 import { Check, Download, AlertCircle } from 'lucide-react';
 
-const CONSONANTS = ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
-const BASIC_VOWELS = ['ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ', 'ㅠ', 'ㅡ', 'ㅣ'];
-const COMPLEX_VOWELS = ['ㅐ', 'ㅒ', 'ㅔ', 'ㅖ', 'ㅚ', 'ㅟ', 'ㅢ', 'ㅘ', 'ㅝ', 'ㅙ', 'ㅞ'];
+const basicConsonants = ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
+const basicVowels = ['ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ', 'ㅠ', 'ㅡ', 'ㅣ'];
+const complexVowels = ['ㅐ', 'ㅒ', 'ㅔ', 'ㅖ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅢ'];
 
 export default function AlphabetPractice() {
-  // We can add namespace 'Alphabet' later, for now we can use existing keys or fallback
-  const t = useTranslations();
+  const t = useTranslations('AlphabetPractice');
   
   const alphabetSelection = usePracticeStore(state => state.alphabetSelection || []);
   const toggleAlphabetSelection = usePracticeStore(state => state.toggleAlphabetSelection);
   const setTemplateStyle = usePracticeStore(state => state.setTemplateStyle);
   const setPdfGenerating = usePracticeStore(state => state.setPdfGenerating);
+  const clearAlphabetSelection = usePracticeStore(state => state.clearAlphabetSelection);
 
   const handleGeneratePdf = () => {
     if (alphabetSelection.length === 0) {
-      alert("글자를 하나 이상 선택해 주세요."); // TODO: i18n
+      alert("Please select at least one character.");
       return;
     }
     setTemplateStyle('alphabet-practice');
     setPdfGenerating(true);
   };
 
-  const renderGrid = (letters: string[]) => (
-    <div className="flex flex-wrap gap-3">
-      {letters.map((char) => {
-        const isSelected = alphabetSelection.includes(char);
-        const isMaxedOut = !isSelected && alphabetSelection.length >= 5;
-        
-        return (
-          <button
-            key={char}
-            onClick={() => toggleAlphabetSelection(char)}
-            disabled={isMaxedOut}
-            className={`
-              w-12 h-12 md:w-14 md:h-14 rounded-xl text-2xl font-serif font-bold transition-all relative
-              ${isSelected 
-                ? 'bg-seal text-white shadow-md scale-105 border-2 border-seal' 
-                : 'bg-white text-muk border-2 border-muk/10 hover:border-seal/50'
-              }
-              ${isMaxedOut ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer hover:-translate-y-1'}
-            `}
-          >
-            {char}
-            {isSelected && (
-              <div className="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full p-0.5 shadow-sm">
-                <Check size={14} strokeWidth={3} />
-              </div>
-            )}
-          </button>
-        );
-      })}
+  const renderSection = (title: string, characters: string[]) => (
+    <div className="mb-10">
+      <h2 className="text-xl font-bold font-serif text-muk mb-4 flex items-center gap-2">
+        <div className="w-1.5 h-6 bg-seal rounded-full"></div>
+        {title}
+      </h2>
+      <div className="grid grid-cols-5 md:grid-cols-7 gap-3">
+        {characters.map((char) => {
+          const isSelected = alphabetSelection.includes(char);
+          return (
+            <button
+              key={char}
+              onClick={() => toggleAlphabetSelection(char)}
+              className={`
+                aspect-square rounded-2xl text-2xl md:text-3xl font-medium font-sans flex items-center justify-center transition-all relative
+                ${isSelected 
+                  ? 'bg-seal text-white shadow-md shadow-seal/20 scale-105 border-none' 
+                  : 'bg-white text-muk/80 border-2 border-muk/10 hover:border-seal/40 hover:text-seal'}
+              `}
+            >
+              <span className={isSelected ? '' : 'translate-y-[-2px]'}>{char}</span>
+              {isSelected && (
+                <div className="absolute -top-1 -right-1 bg-white text-seal rounded-full p-0.5 shadow-sm">
+                  <Check size={14} strokeWidth={3} />
+                </div>
+              )}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 
   return (
-    <div className="max-w-4xl mx-auto w-full flex flex-col gap-8 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-muk/10">
-      
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div>
-          <h2 className="text-2xl font-bold font-serif text-muk mb-2">자음/모음 쓰기 (Alphabet Practice)</h2>
-          <p className="text-muk/70">인쇄용 PDF에 추가할 글자를 선택하세요. (최대 5개)</p>
+    <div className="w-full max-w-4xl mx-auto">
+      {/* Header */}
+      <div className="text-center mb-10 relative">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-seal/5 rounded-full blur-2xl -z-10"></div>
+        <h1 className="text-3xl md:text-4xl font-serif font-bold text-muk mb-4">{t('title')}</h1>
+        <p className="text-muk/70 font-medium max-w-lg mx-auto">{t('subtitle')}</p>
+      </div>
+
+      {/* Main Content */}
+      <div className="bg-white/60 backdrop-blur-md border border-muk/5 rounded-3xl p-6 md:p-10 shadow-sm relative overflow-hidden mb-32">
+        {renderSection(`${t('basicConsonants')} (14)`, basicConsonants)}
+        {renderSection(`${t('basicVowels')} (10)`, basicVowels)}
+        {renderSection(`${t('complexVowels')} (11)`, complexVowels)}
+      </div>
+
+      {/* Floating Action Bar */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 md:p-6 z-40 pointer-events-none flex justify-center">
+        <div className="bg-white/95 backdrop-blur-xl border border-muk/10 shadow-2xl rounded-2xl p-4 flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full max-w-3xl pointer-events-auto transform transition-transform translate-y-0">
+          
+          <div className="flex-1 w-full flex items-center justify-between md:justify-start gap-4">
+            <div>
+              <div className="text-sm font-bold text-muk/60 mb-1 flex items-center gap-1.5">
+                <AlertCircle size={14} />
+                {t('selectionLimit', { max: 5 })}
+              </div>
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <div 
+                    key={i} 
+                    className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg border-2 transition-colors
+                      ${alphabetSelection[i] 
+                        ? 'bg-seal/10 border-seal text-seal' 
+                        : 'bg-gray-50 border-gray-100 text-gray-300'}`}
+                  >
+                    {alphabetSelection[i] || ''}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {alphabetSelection.length > 0 && (
+              <button 
+                onClick={clearAlphabetSelection}
+                className="text-xs font-medium text-muk/40 hover:text-seal underline underline-offset-2 px-2"
+              >
+                {t('clearAll')}
+              </button>
+            )}
+          </div>
+
+          <button
+            onClick={handleGeneratePdf}
+            disabled={alphabetSelection.length === 0}
+            className="w-full md:w-auto bg-seal hover:bg-seal/90 text-white disabled:bg-gray-300 disabled:text-gray-500 rounded-xl py-3.5 px-6 font-bold flex items-center justify-center gap-2 transition-colors shadow-sm"
+          >
+            <Download size={20} />
+            {t('generatePdf')}
+          </button>
         </div>
-        
-        <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-4 py-2 rounded-lg font-bold">
-          <span>선택됨:</span>
-          <span className="text-xl">{alphabetSelection.length} / 5</span>
-        </div>
       </div>
-
-      {alphabetSelection.length === 5 && (
-        <div className="flex items-center gap-2 text-seal bg-seal/10 p-3 rounded-lg text-sm font-bold">
-          <AlertCircle size={18} />
-          <span>최대 5개까지만 선택할 수 있습니다. 1장의 PDF에 5줄이 인쇄됩니다.</span>
-        </div>
-      )}
-
-      <div className="flex flex-col gap-4">
-        <h3 className="font-bold text-lg text-muk border-b border-muk/10 pb-2">기본 자음 (Consonants)</h3>
-        {renderGrid(CONSONANTS)}
-      </div>
-
-      <div className="flex flex-col gap-4">
-        <h3 className="font-bold text-lg text-muk border-b border-muk/10 pb-2">기본 모음 (Basic Vowels)</h3>
-        {renderGrid(BASIC_VOWELS)}
-      </div>
-
-      <div className="flex flex-col gap-4">
-        <h3 className="font-bold text-lg text-muk border-b border-muk/10 pb-2">복합 모음 (Complex Vowels)</h3>
-        {renderGrid(COMPLEX_VOWELS)}
-      </div>
-      
-      <div className="mt-4 pt-6 border-t border-muk/10 flex justify-center">
-        <button
-          onClick={handleGeneratePdf}
-          disabled={alphabetSelection.length === 0}
-          className="flex items-center justify-center gap-2 w-full md:w-auto px-12 py-4 bg-muk hover:bg-black text-white font-bold rounded-xl text-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
-        >
-          <Download size={24} />
-          <span>선택한 글자로 PDF 만들기</span>
-        </button>
-      </div>
-
     </div>
   );
 }

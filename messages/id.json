@@ -159,5 +159,17 @@
     "section4Text": "Di luar Hangul, era Raja Sejong melihat kemajuan besar di berbagai bidang. Ia mereformasi hukum, memajukan sains dengan instrumen astronomi, meningkatkan pertanian, dan memajukan musik. Lingkungan yang stabil dan progresif ini meletakkan dasar bagi renaisans budaya yang gemilang di Korea.",
     "copyrightTitle": "Hak Cipta & Sumber",
     "copyrightText": "Materi ini disediakan oleh Arsip Museum Nasional Hangeul. Tersedia secara bebas di bawah Lisensi Terbuka Pemerintah Korea (KOGL) Tipe 1 (Wajib mencantumkan atribusi)."
+  },
+  "AlphabetPractice": {
+    "title": "Latihan Alfabet",
+    "subtitle": "Pilih huruf yang ingin Anda latih dan buat buku latihan Anda sendiri.",
+    "basicConsonants": "Konsonan Dasar",
+    "basicVowels": "Vokal Dasar",
+    "complexVowels": "Vokal Kompleks",
+    "selectionLimit": "Huruf yang dipilih (Maks {max})",
+    "generatePdf": "Buat PDF dengan huruf yang dipilih",
+    "pdfHeaderTitle": "Latihan Alfabet Hangul",
+    "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
+    "clearAll": "Hapus Semua"
   }
 }

@@ -18,6 +18,7 @@ export default function PdfTemplate() {
   // Actually, 'MyName' is loaded on the home page.
   // We can just use the hook.
   const t = useTranslations('MyName');
+  const tAlphabet = useTranslations('AlphabetPractice');
 
   // If there are no characters, render an empty safe zone to prevent errors
   if (characters.length === 0 && templateStyle !== 'alphabet-practice') {
@@ -149,10 +150,10 @@ export default function PdfTemplate() {
               {/* HEADER */}
               <div className="text-center mb-[4mm] w-full flex flex-col items-center">
                 <h1 className="text-2xl font-bold font-sans tracking-widest text-muk mb-1">
-                  자음/모음 쓰기 연습
+                  {tAlphabet('pdfHeaderTitle')}
                 </h1>
                 <h2 className="text-[10px] font-sans tracking-widest text-muk/60 uppercase">
-                  HANGUL ALPHABET PRACTICE
+                  {tAlphabet('pdfHeaderSubtitle')}
                 </h2>
               </div>
               
@@ -200,7 +201,7 @@ export default function PdfTemplate() {
               {/* FOOTER */}
               <div className="flex justify-between items-end w-full">
                 <div className="text-lg font-bold font-sans text-muk tracking-widest flex items-baseline gap-2">
-                  <span>가나다</span>
+                  <span>{tAlphabet('pdfHeaderTitle')}</span>
                 </div>
                 <div className="text-[11px] font-sans font-medium text-muk/60 whitespace-nowrap">
                   {t('pdfSource')}

@@ -159,5 +159,17 @@
     "section4Text": "Bên cạnh Hangul, triều đại của Vua Sejong còn chứng kiến những tiến bộ to lớn trong nhiều lĩnh vực khác. Ông đã cải cách luật pháp, phát triển khoa học bằng các dụng cụ thiên văn, cải tiến nông nghiệp và nâng tầm âm nhạc. Môi trường ổn định và tiến bộ này đã đặt nền móng cho thời kỳ phục hưng văn hóa rực rỡ của Hàn Quốc.",
     "copyrightTitle": "Bản quyền & Nguồn",
     "copyrightText": "Tài liệu này được cung cấp bởi Lưu trữ Bảo tàng Quốc gia Hangeul. Nó được cung cấp miễn phí theo Giấy phép Mở của Chính phủ Hàn Quốc (KOGL) Loại 1 (Yêu cầu ghi rõ nguồn gốc)."
+  },
+  "AlphabetPractice": {
+    "title": "Luyện tập Bảng chữ cái",
+    "subtitle": "Chọn các chữ cái bạn muốn luyện tập và tạo vở bài tập của riêng bạn.",
+    "basicConsonants": "Phụ âm cơ bản",
+    "basicVowels": "Nguyên âm cơ bản",
+    "complexVowels": "Nguyên âm ghép",
+    "selectionLimit": "Chữ cái đã chọn (Tối đa {max})",
+    "generatePdf": "Tạo PDF",
+    "pdfHeaderTitle": "Luyện viết Bảng chữ cái",
+    "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
+    "clearAll": "Xóa tất cả"
   }
 }

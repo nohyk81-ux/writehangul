@@ -159,5 +159,17 @@
     "section4Text": "除了韩文，世宗时代在各个领域都取得了巨大进步。他改革法律，利用天文仪器发展科学，改良农业，并提升了音乐水平。这种稳定而进步的环境为韩国辉煌的文化复兴奠定了基础。",
     "copyrightTitle": "版权与来源",
     "copyrightText": "本资料由国立韩文博物馆档案馆提供。根据韩国公共许可协议（KOGL）第一类（要求署名），本资料可免费使用。"
+  },
+  "AlphabetPractice": {
+    "title": "辅音/元音练习",
+    "subtitle": "选择您想要练习的字母，创建专属练习册。",
+    "basicConsonants": "基本辅音",
+    "basicVowels": "基本元音",
+    "complexVowels": "复合元音",
+    "selectionLimit": "已选字母 (最多 {max}个)",
+    "generatePdf": "生成所选字母的PDF",
+    "pdfHeaderTitle": "韩语字母练习",
+    "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
+    "clearAll": "全部清除"
   }
 }
