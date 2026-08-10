@@ -171,5 +171,10 @@
     "pdfHeaderTitle": "ハングル文字練習",
     "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
     "clearAll": "すべてクリア"
+  },
+  "SEO": {
+    "title": "ハングル書き方 (Write Hangul) | 無料の韓国語書き取り練習",
+    "description": "韓国語を美しく書く練習をしましょう。基本の子音、母音、単語をなぞって学べます。無料のハングル練習帳PDFを作成して印刷できます。",
+    "keywords": "hangul, korean, learn korean, writing practice, pdf, language learning, hangeul"
   }
 }

@@ -171,5 +171,10 @@
     "pdfHeaderTitle": "韩语字母练习",
     "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
     "clearAll": "全部清除"
+  },
+  "SEO": {
+    "title": "韩文书写 (Write Hangul) | 免费韩语书写练习",
+    "description": "学习如何优美地书写韩语。通过描摹基础辅音、元音和单词来学习。生成并打印您自己的免费韩语字帖PDF。",
+    "keywords": "hangul, korean, learn korean, writing practice, pdf, language learning, hangeul"
   }
 }

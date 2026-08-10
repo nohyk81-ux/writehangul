@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono, Nanum_Pen_Script } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages, setRequestLocale} from 'next-intl/server';
+import {getMessages, setRequestLocale, getTranslations} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from '@/components/Header';
@@ -29,10 +29,52 @@ const nanumPen = Nanum_Pen_Script({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Write Hangul",
-  description: "Learn to write Korean beautifully. Create your own practice sheets.",
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  
+  // Use next-intl to get localized SEO data
+  const t = await getTranslations({ locale, namespace: 'SEO' });
+  
+  const title = t('title') || "Write Hangul";
+  const description = t('description') || "Learn to write Korean beautifully. Create your own practice sheets.";
+  const keywords = t('keywords') || "hangul, korean, learn korean, writing practice";
+  
+  return {
+    title,
+    description,
+    keywords,
+    metadataBase: new URL('https://writehangul.com'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        'en': '/en',
+        'ko': '/ko',
+        'ja': '/jp',
+        'zh': '/cn',
+        'es': '/es',
+        'id': '/id',
+        'vi': '/vn',
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://writehangul.com/${locale}`,
+      siteName: 'Write Hangul',
+      locale,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    }
+  };
+}
 
 export default async function RootLayout({
   children,

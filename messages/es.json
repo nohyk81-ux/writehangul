@@ -171,5 +171,10 @@
     "pdfHeaderTitle": "Práctica del Alfabeto Coreano",
     "pdfHeaderSubtitle": "HANGUL ALPHABET PRACTICE",
     "clearAll": "Borrar todo"
+  },
+  "SEO": {
+    "title": "Escribir Hangul | Práctica gratuita de escritura coreana",
+    "description": "Aprende a escribir coreano bellamente. Traza consonantes básicas, vocales y palabras. Genera e imprime tus propias hojas de práctica de coreano gratis.",
+    "keywords": "hangul, korean, learn korean, writing practice, pdf, language learning, hangeul"
   }
 }
