@@ -6,16 +6,19 @@ interface PracticeStore {
   layout: 1 | 2 | 4;
   visitedDates: string[];
   isPdfGenerating: boolean;
-  templateStyle: 'default' | 'my-name' | 'daily-learning' | 'learning-levels';
+  templateStyle: 'default' | 'my-name' | 'daily-learning' | 'learning-levels' | 'alphabet-practice';
   selectedDailyDate: string | null;
+  alphabetSelection: string[];
   addCharacters: (chars: string) => void;
   removeCharacter: (index: number) => void;
   setLayout: (layout: 1 | 2 | 4) => void;
   clearCharacters: () => void;
   checkIn: () => void;
   setPdfGenerating: (isGenerating: boolean) => void;
-  setTemplateStyle: (style: 'default' | 'my-name' | 'daily-learning' | 'learning-levels') => void;
+  setTemplateStyle: (style: 'default' | 'my-name' | 'daily-learning' | 'learning-levels' | 'alphabet-practice') => void;
   setSelectedDailyDate: (dateStr: string) => void;
+  toggleAlphabetSelection: (char: string) => void;
+  clearAlphabetSelection: () => void;
 }
 
 export const usePracticeStore = create<PracticeStore>()(
@@ -27,9 +30,21 @@ export const usePracticeStore = create<PracticeStore>()(
       isPdfGenerating: false,
       templateStyle: 'default',
       selectedDailyDate: null,
+      alphabetSelection: [],
       setPdfGenerating: (isPdfGenerating) => set({ isPdfGenerating }),
       setTemplateStyle: (templateStyle) => set({ templateStyle }),
       setSelectedDailyDate: (selectedDailyDate) => set({ selectedDailyDate }),
+      toggleAlphabetSelection: (char) => set((state) => {
+        const isSelected = state.alphabetSelection.includes(char);
+        if (isSelected) {
+          return { alphabetSelection: state.alphabetSelection.filter(c => c !== char) };
+        }
+        if (state.alphabetSelection.length >= 5) {
+          return { alphabetSelection: state.alphabetSelection };
+        }
+        return { alphabetSelection: [...state.alphabetSelection, char] };
+      }),
+      clearAlphabetSelection: () => set({ alphabetSelection: [] }),
       addCharacters: (chars) => set((state) => {
         const newChars = chars.split('');
         return { characters: [...state.characters, ...newChars] };

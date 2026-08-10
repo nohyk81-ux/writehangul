@@ -40,6 +40,9 @@ export default function MobileMenu() {
           </div>
           
           <nav className="flex flex-col gap-6 text-xl font-bold text-muk">
+            <Link href="/alphabet" onClick={closeMenu} className="hover:text-seal transition-colors border-b border-muk/5 pb-4">
+              {t('menuAlphabet')}
+            </Link>
             <Link href="/history" onClick={closeMenu} className="hover:text-seal transition-colors border-b border-muk/5 pb-4">
               {t('menuHistory')}
             </Link>
