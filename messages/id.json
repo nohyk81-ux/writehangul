@@ -26,7 +26,7 @@
   },
   "MyName": {
     "title": "내 이름 한글로 쓰기",
-    "titleSub": "(Write My Name)",
+    "titleSub": "(Menulis Nama Saya)",
     "placeholder": "Masukkan Nama Anda",
     "resultsSub": "Hasil Hangeul dengan pengucapan",
     "translationWait": "Terjemahan akan muncul di sini",
@@ -58,7 +58,7 @@
   },
   "LearningLevels": {
     "title": "Tingkat Belajar",
-    "titleSub": "(Learn Hangul)",
+    "titleSub": "(Belajar Hangul)",
     "starter": "Pemula Awal",
     "starterSub": "Konsonan & Vokal",
     "basic": "Dasar",

@@ -26,7 +26,7 @@
   },
   "MyName": {
     "title": "내 이름 한글로 쓰기",
-    "titleSub": "(Write My Name)",
+    "titleSub": "(自分の名前を書く)",
     "placeholder": "お名前を入力してください",
     "resultsSub": "ハングルの結果と発音",
     "translationWait": "翻訳結果がここに表示されます",
@@ -58,7 +58,7 @@
   },
   "LearningLevels": {
     "title": "学習レベル",
-    "titleSub": "(Learn Hangul)",
+    "titleSub": "(ハングルを学ぶ)",
     "starter": "入門",
     "starterSub": "子音と母音",
     "basic": "基礎",

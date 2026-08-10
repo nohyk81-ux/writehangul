@@ -26,7 +26,7 @@
   },
   "MyName": {
     "title": "내 이름 한글로 쓰기",
-    "titleSub": "(Write My Name)",
+    "titleSub": "(写我的名字)",
     "placeholder": "请输入您的名字",
     "resultsSub": "韩语发音结果",
     "translationWait": "翻译结果将显示在这里",
@@ -58,7 +58,7 @@
   },
   "LearningLevels": {
     "title": "学习阶段",
-    "titleSub": "(Learn Hangul)",
+    "titleSub": "(学习韩文)",
     "starter": "入门",
     "starterSub": "辅音和元音",
     "basic": "基础",

@@ -26,7 +26,7 @@
   },
   "MyName": {
     "title": "내 이름 한글로 쓰기",
-    "titleSub": "(Write My Name)",
+    "titleSub": "(Viết tên của tôi)",
     "placeholder": "Nhập tên của bạn",
     "resultsSub": "Kết quả Hangeul có phát âm",
     "translationWait": "Bản dịch sẽ xuất hiện ở đây",
@@ -58,7 +58,7 @@
   },
   "LearningLevels": {
     "title": "Cấp độ",
-    "titleSub": "(Learn Hangul)",
+    "titleSub": "(Học Hangul)",
     "starter": "Nhập môn",
     "starterSub": "Phụ âm & Nguyên âm",
     "basic": "Cơ bản",
