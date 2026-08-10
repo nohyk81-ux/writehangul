@@ -174,14 +174,14 @@ export default function PdfTemplate() {
                             <div></div>
                           </div>
                           
-                          {/* Character Content */}
-                          {char && isGuide && hangulSvgs[char] && (
+                          {/* Character Content - ONLY ON FIRST ROW */}
+                          {char && r === 0 && isGuide && hangulSvgs[char] && (
                             <div 
                               className="relative z-10 w-full h-full p-1 opacity-80"
                               dangerouslySetInnerHTML={{ __html: hangulSvgs[char] }}
                             />
                           )}
-                          {char && isTracing && (
+                          {char && r === 0 && isTracing && (
                             <span className="font-sans font-medium text-[40pt] relative z-10 -translate-y-5" style={{ color: 'rgba(44, 62, 80, 0.25)' }}>
                               {char}
                             </span>
