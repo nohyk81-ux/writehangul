@@ -27,12 +27,12 @@ export default function Header() {
         {/* Right Section: Language & Navigation */}
         <div className="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0 w-full md:w-auto">
           <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 w-full">
-            <nav className="hidden md:flex items-center gap-6 text-muk font-bold">
-              <Link href="/alphabet" className="hover:text-seal transition-colors">{t('menuAlphabet')}</Link>
-              <Link href="/history" className="hover:text-seal transition-colors">{t('menuHistory')}</Link>
-              <Link href="/#category" className="hover:text-seal transition-colors">{t('menuCategory')}</Link>
-              <Link href="/#my-name" className="hover:text-seal transition-colors">{t('menuMyName')}</Link>
-              <Link href="/#learning-levels" className="hover:text-seal transition-colors">{t('menuLearn')}</Link>
+            <nav className="hidden lg:flex items-center gap-3 xl:gap-6 text-muk font-bold text-sm xl:text-base">
+              <Link href="/alphabet" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuAlphabet')}</Link>
+              <Link href="/history" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuHistory')}</Link>
+              <Link href="/#category" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuCategory')}</Link>
+              <Link href="/#my-name" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuMyName')}</Link>
+              <Link href="/#learning-levels" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuLearn')}</Link>
             </nav>
             <div className="absolute top-5 right-4 md:static md:top-auto md:right-auto z-50">
               <LanguageSwitcher />
