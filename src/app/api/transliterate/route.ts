@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-export const runtime = 'edge';
 
 // Rate limiting map
 const ipRateLimitMap = new Map<string, { count: number; timestamp: number }>();
