@@ -12,12 +12,10 @@ export default function AlphabetPractice() {
   // We can add namespace 'Alphabet' later, for now we can use existing keys or fallback
   const t = useTranslations();
   
-  const { 
-    alphabetSelection, 
-    toggleAlphabetSelection, 
-    setTemplateStyle, 
-    setPdfGenerating 
-  } = usePracticeStore();
+  const alphabetSelection = usePracticeStore(state => state.alphabetSelection || []);
+  const toggleAlphabetSelection = usePracticeStore(state => state.toggleAlphabetSelection);
+  const setTemplateStyle = usePracticeStore(state => state.setTemplateStyle);
+  const setPdfGenerating = usePracticeStore(state => state.setPdfGenerating);
 
   const handleGeneratePdf = () => {
     if (alphabetSelection.length === 0) {

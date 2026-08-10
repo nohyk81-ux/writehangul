@@ -4,8 +4,10 @@ import { usePracticeStore } from '@/store';
 import { useTranslations, useLocale } from 'next-intl';
 import { dailyContentMap } from '@/data/dailyContent';
 
+import { hangulSvgs } from '@/data/hangulSvgs';
+
 export default function PdfTemplate() {
-  const { characters, layout, templateStyle, selectedDailyDate } = usePracticeStore();
+  const { characters, layout, templateStyle, selectedDailyDate, alphabetSelection = [] } = usePracticeStore();
   const locale = useLocale();
   
   const dateToUse = selectedDailyDate || `${String(new Date().getMonth() + 1).padStart(2, '0')}-${String(new Date().getDate()).padStart(2, '0')}`;
@@ -18,7 +20,7 @@ export default function PdfTemplate() {
   const t = useTranslations('MyName');
 
   // If there are no characters, render an empty safe zone to prevent errors
-  if (characters.length === 0) {
+  if (characters.length === 0 && templateStyle !== 'alphabet-practice') {
     return (
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
         <div id="pdf-content" style={{ width: '210mm', minHeight: '275mm', backgroundColor: '#ffffff', position: 'relative' }}>
@@ -121,8 +123,6 @@ export default function PdfTemplate() {
   }
 
   if (templateStyle === 'alphabet-practice') {
-    const { alphabetSelection } = usePracticeStore();
-    
     // We need up to 8 rows
     const rows = [];
     for (let r = 0; r < 8; r++) {
@@ -135,9 +135,6 @@ export default function PdfTemplate() {
       .stroke-number { fill: #2c3e50; font-family: sans-serif; font-weight: bold; }
       .jamo { fill: none; stroke: #2c3e50; stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
     `;
-
-    // We dynamically require the SVGs to avoid build issues if file is missing initially
-    const { hangulSvgs } = require('@/data/hangulSvgs');
 
     return (
       <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
