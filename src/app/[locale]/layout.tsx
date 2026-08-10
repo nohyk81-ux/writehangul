@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 import PdfGeneratorModal from '@/components/PdfGeneratorModal';
 import PdfTemplate from '@/components/PdfTemplate';
 
-export const runtime = 'edge';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
