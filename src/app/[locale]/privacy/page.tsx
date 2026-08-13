@@ -68,13 +68,26 @@ export default async function PrivacyPage({
 
         <section className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-muk/10 flex gap-4 sm:gap-6 items-start hover:shadow-md transition-shadow">
           <div className="w-12 h-12 sm:w-16 sm:h-16 bg-orange-50 text-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-inner mt-1 sm:mt-0">
-            <Mail size={24} className="sm:hidden" />
-            <Mail size={32} className="hidden sm:block" />
+            <Globe size={24} className="sm:hidden" />
+            <Globe size={32} className="hidden sm:block" />
           </div>
           <div>
             <h2 className="text-xl sm:text-2xl font-bold text-muk mb-2 sm:mb-3">{t('section4Title')}</h2>
             <p className="text-base sm:text-lg text-muk/80 leading-relaxed">
               {t('section4Text')}
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-muk/10 flex gap-4 sm:gap-6 items-start hover:shadow-md transition-shadow">
+          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-50 text-red-600 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-inner mt-1 sm:mt-0">
+            <Mail size={24} className="sm:hidden" />
+            <Mail size={32} className="hidden sm:block" />
+          </div>
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-muk mb-2 sm:mb-3">{t('section5Title')}</h2>
+            <p className="text-base sm:text-lg text-muk/80 leading-relaxed">
+              {t('section5Text')}
             </p>
           </div>
         </section>
