@@ -47,20 +47,12 @@ export default async function HomePage({
         <div className="flex flex-col gap-4">
           <DailyLearningCard />
           
-          {/* AdSense Placeholder */}
-          <div className="bg-gray-100 border border-dashed border-gray-300 w-full h-32 flex items-center justify-center text-gray-400 text-sm rounded-xl">
-            ADVERTISEMENT
-          </div>
         </div>
 
         {/* Column 2: K-Culture & Life */}
         <div className="flex flex-col gap-4" id="category">
           <CategoryGrid />
           
-          {/* AdSense Placeholder */}
-          <div className="bg-gray-100 border border-dashed border-gray-300 w-full h-24 flex items-center justify-center text-gray-400 text-sm rounded-xl">
-            ADVERTISEMENT
-          </div>
         </div>
 
         {/* Column 3: My Name & Learning Levels */}
