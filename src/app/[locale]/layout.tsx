@@ -49,15 +49,15 @@ export async function generateMetadata({
     keywords,
     metadataBase: new URL('https://writehangul.com'),
     alternates: {
-      canonical: '/',
+      canonical: `/${locale}`,
       languages: {
         'en': '/en',
-        'ko': '/ko',
         'ja': '/jp',
-        'zh': '/cn',
+        'zh-Hans': '/cn',
         'es': '/es',
         'id': '/id',
         'vi': '/vn',
+        'x-default': '/en',
       },
     },
     openGraph: {
