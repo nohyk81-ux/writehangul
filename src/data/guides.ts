@@ -71,17 +71,41 @@ export const guideArticles: GuideArticle[] = [
           en: [
             'Unlike Latin or Hanzi characters which evolved naturally over millennia from ancient pictograms, Hangul was consciously invented by King Sejong the Great and Hall of Worthies scholars in 1443. The basic consonants were modeled directly after the physical shape of the speech organs when making the sound.',
             'For example, the letter "ㄱ" (g/k) depicts the root of the tongue blocking the throat; "ㄴ" (n) illustrates the tongue tip touching the upper gums; "ㅁ" (m) captures the outline of closed lips; "ㅅ" (s) portrays teeth shape; and "ㅇ" (ng) shows the circular throat opening.',
-            'As sounds become stronger or aspirated, additional strokes are logically added. Adding a horizontal stroke to "ㄱ" produces "ㅋ" (aspirated k), while adding strokes to "ㄴ" yields "ㄷ" (d) and then "ㅌ" (t). This stroke addition principle (Gahi-eum) ensures learners intuitively grasp acoustic relationships simply by looking at the glyphs.'
+            'As sounds become stronger or aspirated, additional strokes are logically added. Adding a horizontal stroke to "ㄱ" produces "ㅋ" (aspirated k), while adding strokes to "ㄴ" yields "ㄷ" and then "ㅌ" (t). This stroke addition principle ensures learners intuitively grasp acoustic relationships simply by looking at the glyphs.'
           ],
-          ko: [
-            '수천 년에 걸쳐 자연 발생적으로 변형되어 온 한자나 로마자와 달리, 한글은 1443년 세종대왕과 집현전 학자들에 의해 치밀하게 기획되어 탄생했습니다. 한글의 기본 자음 다섯 자는 혀, 입술, 이, 목구멍 등 사람의 발음 기관 모양을 그대로 본떠 만들어졌습니다.',
-            '예를 들어 "ㄱ"은 혀뿌리가 목구멍을 막는 모습을 형상화했고, "ㄴ"은 혀끝이 윗잇몸에 닿는 모습을, "ㅁ"은 입술의 닫힌 모양을, "ㅅ"은 이의 날카로운 단면을, "ㅇ"은 둥근 목구멍의 통로를 나타냅니다.',
-            '여기에 소리가 거세질수록 획을 하나씩 덧붙이는 ‘가획(加劃)의 원리’가 적용되었습니다. "ㄱ"에 획을 더하면 "ㅋ"이 되고, "ㄴ"에 획을 더하면 "ㄷ"과 "ㅌ"이 되는 식입니다. 이로 인해 소리의 성질과 글자의 형태가 완벽히 일치하는 음소문자가 완성되었습니다.'
+          jp: [
+            '数千年にわたり自然発生的に変化してきた漢字やラテン文字とは異なり、ハングルは1443年に世宗大王と集賢殿の学者たちによって精密に設計されました。基本的な子音は、音を出す際の人間の調音器官（舌、歯、唇、喉）の形状を直接模っています。',
+            '例えば「ㄱ」は舌の根元が喉を塞ぐ形、「ㄴ」は舌先が上の歯茎に当たる形、「ㅁ」は閉じた唇の輪郭、「ㅅ」は歯の尖った形状、「ㅇ」は丸い喉の輪郭を表しています。',
+            'さらに音が強くなるにつれて規則的に画が追加される「加画の原理」が適用されています。「ㄱ」に一本線を加えれば激音の「ㅋ」になり、「ㄴ」に線を加えれば「ㄷ」、さらに加えれば「ㅌ」になります。文字の形を見ただけで発音の強弱関係が直感的に理解できます。'
+          ],
+          cn: [
+            '与数千年来自然演变的汉字或拉丁字母不同，韩文是1443年由世宗大王及集贤殿学者精心科学规划创制的。其基础辅音直接模拟了发音时发音器官的物理形态。',
+            '例如，“ㄱ”表现舌根闭塞咽喉之状；“ㄴ”表现舌尖抵上齿龈之形；“ㅁ”模拟闭合双唇之轮廓；“ㅅ”呈现尖锐牙齿之切面；“ㅇ”则代表圆形的喉咙通道。',
+            '随着发音力度的加强，字形遵循严谨的“加划原理”。在“ㄱ”上添一横便成为送气音“ㅋ”；在“ㄴ”上加横即为“ㄷ”，再加横为“ㅌ”。学习者仅凭字形便能直观洞悉发音之间的声学联系。'
+          ],
+          es: [
+            'A diferencia de los caracteres latinos o chinos, el Hangul fue inventado deliberadamente por el rey Sejong el Grande en 1443. Las consonantes básicas se modelaron directamente a partir de la forma física de los órganos vocales.',
+            'Por ejemplo, "ㄱ" representa la raíz de la lengua bloqueando la garganta; "ㄴ" la punta de la lengua tocando las encías superiores; "ㅁ" el contorno de los labios; "ㅅ" la forma de los dientes; y "ㅇ" la garganta abierta.',
+            'A medida que los sonidos se vuelven más fuertes o aspirados, se añaden trazos de forma lógica: agregando un trazo a "ㄱ" se obtiene "ㅋ", y agregando trazos a "ㄴ" se obtienen "ㄷ" y "ㅌ".'
+          ],
+          id: [
+            'Tidak seperti huruf Latin yang berkembang secara alami selama ribuan tahun, Hangul secara sadar diciptakan oleh Raja Sejong pada tahun 1443. Konsonan dasar dirancang langsung berdasarkan bentuk fisik organ wicara manusia.',
+            'Misalnya, huruf "ㄱ" menggambarkan pangkal lidah yang menghalangi tenggorokan; "ㄴ" ujung lidah menyentuh gusi atas; "ㅁ" garis bibir yang tertutup; "ㅅ" bentuk gigi; dan "ㅇ" lubang tenggorokan bulat.',
+            'Ketika bunyi menjadi lebih kuat, guratan ditambahkan secara logis: menambahkan guratan pada "ㄱ" menghasilkan "ㅋ", dan menambahkan guratan pada "ㄴ" menghasilkan "ㄷ" lalu "ㅌ".'
+          ],
+          vn: [
+            'Không giống như chữ Latin phát triển tự nhiên qua hàng thiên niên kỷ, Hangul được Vua Sejong sáng tạo vào năm 1443. Các phụ âm cơ bản được mô phỏng trực tiếp theo hình dạng của các cơ quan phát âm.',
+            'Ví dụ: chữ "ㄱ" mô phỏng gốc lưỡi chặn cuống họng; "ㄴ" mô phỏng đầu lưỡi chạm vào nướu trên; "ㅁ" mô phỏng hình dáng đôi môi khép lại; "ㅅ" hình dạng của răng; và "ㅇ" biểu thị cổ họng mở.',
+            'Khi âm thanh trở nên mạnh hơn hoặc bật hơi, các nét được thêm vào một cách logic: thêm nét vào "ㄱ" tạo thành "ㅋ", thêm nét vào "ㄴ" tạo thành "ㄷ" và sau đó là "ㅌ".'
           ]
         },
         keyTakeaway: {
           en: 'Hangul is the only widely used alphabet in history where the graphic shape of letters visually reflects the acoustic phonetics of human articulation.',
-          ko: '한글은 글자의 시각적 형상이 인간의 조음 음성학적 구조를 직접 반영하는 인류 역사상 유일한 자질문자(Featural Alphabet)입니다.'
+          jp: 'ハングルは、文字の視覚的形状が人間の音声学的調音器官の構造を直接反映している人類史上唯一の資質文字です。',
+          cn: '韩文是人类历史上唯一一套字形视觉结构直接反映人体声学调音机制的成熟字母系统。',
+          es: 'El Hangul es el único alfabeto en la historia donde la forma visual refleja la fonética articulatoria humana.',
+          id: 'Hangul adalah satu-satunya alfabet dalam sejarah di mana bentuk huruf mencerminkan fonetik artikulasi manusia.',
+          vn: 'Hangul là bảng chữ cái duy nhất trong lịch sử có hình dạng chữ cái phản ánh trực quan cơ chế phát âm của con người.'
         }
       },
       {
@@ -96,18 +120,46 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'While consonants represent scientific anatomical structures, Hangul vowels embody Eastern cosmology based on the three universal elements (Sancai):',
+            'While consonants represent anatomical articulation, Hangul vowels embody Eastern cosmology based on the three universal elements (Sancai):',
             '• The round dot "•" represents the round sky above (Heaven / Cheon).',
             '• The flat horizontal line "ㅡ" represents the level earth (Earth / Ji).',
             '• The upright vertical line "ㅣ" represents the standing human being (Human / In).',
-            'By combining these three primordial symbols, King Sejong generated the foundational bright (Yang) and dark (Yin) vowels: adding a dot outside gives "ㅏ" (sun rising in the east) and "ㅗ" (sun emerging above earth), while dots inside yield "ㅓ" and "ㅜ". This philosophical system allows anyone to master vowel formation within minutes.'
+            'By combining these three primordial symbols, King Sejong generated foundational bright (Yang) and dark (Yin) vowels: adding a stroke outside gives "ㅏ" and "ㅗ", while strokes inside yield "ㅓ" and "ㅜ". This elegant system allows anyone to understand vowel formation effortlessly.'
           ],
-          ko: [
-            '자음이 과학적 해부학을 따랐다면, 모음은 동양 철학의 핵심인 천지인(天地人) 삼재(三才)를 모티브로 삼았습니다.',
-            '• 둥근 점(•, 아래아)은 둥근 하늘을 상징합니다.',
-            '• 평평한 가로선(ㅡ)은 평평한 땅을 상징합니다.',
-            '• 우뚝 선 세로선(ㅣ)은 하늘과 땅 사이에 서 있는 사람을 상징합니다.',
-            '이 기본 삼재를 조합하여 밝은 양(陽)의 기운인 "ㅏ, ㅗ"와 어두운 음(陰)의 기운인 "ㅓ, ㅜ"를 탄생시켰습니다. 단 세 가지 부호만으로 모든 모음의 체계를 조화롭게 조직해낸 세계적인 발명입니다.'
+          jp: [
+            '子音が解剖学的な科学に基づいているのに対し、母音は東洋哲学の根幹である天地人（天・地・人）の三才を象徴しています。',
+            '• 丸い点（•）は広大な「天」を表します。',
+            '• 平らな横線（ㅡ）は広がる「地」を表します。',
+            '• まっすぐな縦線（ㅣ）はその間に立つ「人」を表します。',
+            'これら3つの基本記号を組み合わせることで、外向きの明るい陽母音（ㅏ, ㅗ）と内向きの落ち着いた陰母音（ㅓ, ㅜ）が体系的に生み出されました。'
+          ],
+          cn: [
+            '如果说辅音遵循了解剖声学原理，那么元音则蕴含了东方哲学核心的天地人三才宇宙观：',
+            '• 圆点（•）象征圆融无限之天；',
+            '• 平直横线（ㅡ）象征平坦宽厚之地；',
+            '• 挺拔立线（ㅣ）象征立于天地之间的人。',
+            '通过这三大初始符号的有机组合，世宗大王构建了明晰的阴阳互补元音体系：朝外发散为阳性元音（ㅏ, ㅗ），朝内收敛为阴性元音（ㅓ, ㅜ）。'
+          ],
+          es: [
+            'Mientras que las consonantes representan la articulación anatómica, las vocales encarnan la cosmología oriental de los tres elementos:',
+            '• El punto "•" representa el Cielo redondo.',
+            '• La línea horizontal "ㅡ" representa la Tierra plana.',
+            '• La línea vertical "ㅣ" representa al Ser Humano en pie.',
+            'Al combinar estos tres símbolos, se crearon las vocales brillantes (Yang) como "ㅏ", "ㅗ" y oscuras (Yin) como "ㅓ", "ㅜ".'
+          ],
+          id: [
+            'Sementara konsonan mewakili artikulasi anatomis, vokal Hangul mewujudkan kosmologi Timur dari tiga elemen universal:',
+            '• Titik bulat "•" mewakili Langit yang bulat.',
+            '• Garis horizontal "ㅡ" mewakili Bumi yang datar.',
+            '• Garis vertikal "ㅣ" mewakili Manusia yang berdiri tegak.',
+            'Dengan menggabungkan ketiga simbol ini, terbentuklah vokal Yang terang (ㅏ, ㅗ) dan vokal Yin gelap (ㅓ, ㅜ).'
+          ],
+          vn: [
+            'Trong khi các phụ âm đại diện cho sự phát âm giải phẫu, các nguyên âm Hangul lại thể hiện vũ trụ quan phương Đông dựa trên thuyết Tam Tài:',
+            '• Dấu chấm tròn "•" đại diện cho Trời tròn.',
+            '• Đường ngang bằng phẳng "ㅡ" đại diện cho Đất bằng.',
+            '• Đường thẳng đứng "ㅣ" đại diện cho Người đứng thẳng giữa trời đất.',
+            'Bằng cách kết hợp ba biểu tượng này, hệ thống nguyên âm Dương tươi sáng (ㅏ, ㅗ) và nguyên âm Âm trầm lắng (ㅓ, ㅜ) đã ra đời.'
           ]
         }
       },
@@ -123,14 +175,34 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'Most alphabetic languages arrange letters strictly sequentially in a one-dimensional line (e.g., K-O-R-E-A). Hangul, however, groups consonants and vowels into 2-dimensional geometric syllable blocks called "Geulja".',
-            'Each syllable block always contains an initial consonant (Choseong), a central vowel (Jungseong), and optionally an ending consonant (Jongseong/Batchim). For instance, H + A + N combine into the unified glyph "한" (HAN).',
-            'This structural innovation provides enormous reading speed because readers perceive full phonological beats at a glance rather than decoding letter-by-letter, combining the phonetic flexibility of an alphabet with the visual information density of logograms.'
+            'Most alphabets arrange letters strictly in a one-dimensional line (e.g. K-O-R-E-A). Hangul groups consonants and vowels into 2-dimensional modular syllable blocks called "Geulja".',
+            'Each syllable block contains an initial consonant (Choseong), a middle vowel (Jungseong), and optionally a final consonant (Jongseong/Batchim). For instance, H + A + N combine into "한" (HAN).',
+            'This structural design enables high reading speed because the brain processes full syllables as compact visual units rather than decoding individual letters sequentially.'
           ],
-          ko: [
-            '대부분의 알파벳은 문자를 1차원적으로 일렬로 늘어놓는 풀어쓰기(예: K-O-R-E-A)를 채택합니다. 반면 한글은 초성(첫소리 자음), 중성(가운뎃소리 모음), 종성(끝소리 받침)을 네모난 격자 틀 안에 2차원 블록 형태로 결합하는 ‘모아쓰기’를 취합니다.',
-            '예를 들어 ㅎ + ㅏ + ㄴ이 합쳐져 하나의 덩어리 "한"이라는 글자가 완성됩니다. 이러한 모아쓰기 구조는 독서 속도를 비약적으로 높여주며, 음절 단위로 의미와 소리를 한눈에 파악할 수 있게 해줍니다.',
-            '네모난 격자칸(원고지) 안에서 글자의 균형과 배치를 익히는 손글씨 연습이 한국어 학습에서 그토록 강조되는 이유가 바로 이 모아쓰기 구조 때문입니다.'
+          jp: [
+            '一般的なアルファベットは文字を一列に横に並べますが、ハングルは初声（子音）、中声（母音）、終声（パッチム）を正方形のブロックの中に立体的に組み合わせて1つの文字（音節）を作ります。',
+            '例えば ㅎ + ㅏ + ㄴ が組み合わさって1つのまとまり「한（HAN）」になります。',
+            'この2次元ブロック構造により、読者は音節単位で意味と音を瞬時に把握でき、圧倒的な読書スピードと視覚的情報密度を実現しています。'
+          ],
+          cn: [
+            '绝大多数拼音文字采用一维线性平铺书写，而韩文则将初声（起音辅音）、中声（中间元音）与终声（收音辅音）组合在标准的二维方块字格中。',
+            '例如，辅音 ㅎ + 元音 ㅏ + 收音 ㄴ 紧凑组合，构成一个完整的音节字块“한”（HAN）。',
+            '这种拼字法将拼音文字的表音灵活性与方块文字的视觉信息识别速度完美结合，读者能以音节为单位一目十行迅速理解文意。'
+          ],
+          es: [
+            'A diferencia de los alfabetos lineales, el Hangul agrupa consonantes y vocales en bloques silábicos bidimensionales llamados "Geulja".',
+            'Cada bloque contiene una consonante inicial, una vocal media y, opcionalmente, una consonante final (Batchim). Por ejemplo, H + A + N forman "한" (HAN).',
+            'Este diseño permite una lectura veloz, ya que el cerebro procesa sílabas completas como unidades visuales compactas.'
+          ],
+          id: [
+            'Sebagian besar alfabet menyusun huruf dalam satu garis lurus. Hangul mengelompokkan huruf ke dalam blok suku kata 2 dimensi yang disebut "Geulja".',
+            'Setiap blok suku kata berisi konsonan awal, vokal tengah, dan konsonan akhir (Batchim). Misalnya, H + A + N bergabung menjadi "한" (HAN).',
+            'Desain ini memungkinkan kecepatan membaca yang tinggi karena otak memproses suku kata utuh sebagai satu unit visual.'
+          ],
+          vn: [
+            'Hầu hết các bảng chữ cái đều xếp chữ theo một đường thẳng. Hangul ghép các phụ âm và nguyên âm thành các khối âm tiết hai chiều gọi là "Geulja".',
+            'Mỗi khối âm tiết luôn bao gồm phụ âm đầu, nguyên âm giữa và phụ âm cuối (Batchim). Ví dụ: H + A + N kết hợp thành "한" (HAN).',
+            'Thiết kế này giúp tăng tốc độ đọc đáng kể vì não bộ tiếp nhận toàn bộ âm tiết như một đơn vị hình ảnh trọn vẹn.'
           ]
         }
       }
@@ -138,15 +210,27 @@ export const guideArticles: GuideArticle[] = [
     relatedTool: {
       title: {
         en: 'Practice the 24 Basic Hangul Letters',
-        ko: '한글 기본 자음·모음 24자 직접 써보기',
+        jp: 'ハングル基本24文字を実際に書いてみる',
+        cn: '亲手练习韩文24个基础字母',
+        es: 'Practica las 24 letras básicas del Hangul',
+        id: 'Latih 24 Huruf Dasar Hangul',
+        vn: 'Luyện viết 24 chữ cái Hangul cơ bản',
       },
       desc: {
         en: 'Apply your understanding of Sejong’s stroke logic by downloading our custom practice sheet.',
-        ko: '세종대왕의 획순 원리가 담긴 고화질 무료 PDF 연습장을 생성하고 손글씨를 연습해보세요.',
+        jp: '世宗大王の創製原理に基づいた高画質PDF練習帳を無料で作成し、正しい筆順で書いてみましょう。',
+        cn: '立即免费生成经过科学校准的练字帖高清PDF，在正方形字格中亲手实践世宗大王的造字逻辑。',
+        es: 'Descarga nuestras hojas de práctica personalizadas y aplica la lógica de los trazos de Sejong.',
+        id: 'Unduh lembar latihan khusus kami untuk mempraktikkan logika guratan Raja Sejong.',
+        vn: 'Tải xuống trang bài tập miễn phí để áp dụng ngay nguyên lý nét viết của Vua Sejong.',
       },
       btn: {
         en: 'Open Alphabet Practice',
-        ko: '자모음 쓰기 연습장 바로가기',
+        jp: '字母練習帳を開く',
+        cn: '前往字母练习帖',
+        es: 'Abrir práctica del alfabeto',
+        id: 'Buka Latihan Alfabet',
+        vn: 'Mở bài luyện chữ cái',
       },
       href: '/alphabet'
     }
@@ -198,19 +282,43 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'All Korean characters, regardless of complexity, adhere to two intuitive directional rules inherited from East Asian brush calligraphy:',
-            'Rule 1: Top to Bottom (위에서 아래로). Vertical stems and descending components are always penned before lower strokes. In the letter "ㄱ", you start across the top before heading down. In "ㅅ", you draw the left descending stroke before balancing it with the right stroke.',
-            'Rule 2: Left to Right (왼쪽에서 오른쪽으로). Horizontal bars and leftmost elements are written first. When writing vowels like "ㅑ" or "ㅕ", you lay down the backbone stem before adding the short crossing ticks.'
+            'All Korean characters, regardless of complexity, adhere to two intuitive directional rules: Top to Bottom, and Left to Right.',
+            'Rule 1 (Top to Bottom): Upper components and vertical stems are penned first. When writing "ㄱ", start along the top before bending downward. In "ㅅ", draw the left descending stroke before balancing with the right.',
+            'Rule 2 (Left to Right): Horizontal strokes and leftmost elements take precedence. In "ㅂ", draw the left vertical pillar first, then the right pillar, then connect the horizontals.'
           ],
-          ko: [
-            '복잡해 보이는 한글 글자라도 단 두 가지 기본 원칙만 기억하면 모든 획의 순서를 자연스럽게 찾아낼 수 있습니다.',
-            '제1원칙: 위에서 아래로(Top to Bottom). 모든 세로 획이나 상단 요소는 항상 아래쪽보다 먼저 쓰여집니다. "ㄱ"을 쓸 때 윗변을 긋고 아래로 꺾어 내리며, "ㅅ"을 쓸 때도 위쪽 정점에서 왼쪽 대각선을 먼저 긋고 오른쪽을 받쳐줍니다.',
-            '제2원칙: 왼쪽에서 오른쪽으로(Left to Right). 가로 획과 왼쪽에 위치한 자음/모음이 우선합니다. "ㅂ"을 쓸 때도 왼쪽 기둥을 먼저 세우고 오른쪽 기둥을 세운 뒤 가로선을 채웁니다.'
+          jp: [
+            'どんなに複雑に見えるハングルの文字でも、たった2つの不変の原則を守れば自然と正しい順序で書くことができます。',
+            '第1原則：上から下へ（Top to Bottom）。縦線や上部にある要素は必ず先に書かれます。「ㄱ」は上の横線を引いてから下へ折れ、「ㅅ」も頂点から左下へ払い、右側を添えます。',
+            '第2原則：左から右へ（Left to Right）。横線や左側にある要素が優先されます。「ㅂ」を書く際も左の柱を立ててから右の柱を立て、中と下の横線を埋めます。'
+          ],
+          cn: [
+            '韩文看似复杂，但只要遵循两大永恒法则，运笔便能如行云流水：',
+            '第一法则：从上到下（Top to Bottom）。所有字块的上方组件和竖直笔画必须先于下方完成。书写“ㄱ”时先拉横再折下；书写“ㅅ”时从顶部顶点先撇左下，再捺右下。',
+            '第二法则：从左到右（Left to Right）。位于左侧的部件与横向笔画优先。书写“ㅂ”时，先立左侧竖柱，再立右侧竖柱，最后自上而下封闭内部横画。'
+          ],
+          es: [
+            'Todos los caracteres coreanos siguen dos reglas intuitivas: de arriba a abajo y de izquierda a derecha.',
+            'Regla 1 (Arriba a Abajo): Los trazos superiores se escriben primero. Al escribir "ㄱ", comienza arriba antes de doblar hacia abajo.',
+            'Regla 2 (Izquierda a Derecha): Los elementos de la izquierda se escriben primero. En "ㅂ", dibuja la columna izquierda, luego la derecha, y finalmente las líneas horizontales.'
+          ],
+          id: [
+            'Semua karakter Korea mengikuti dua aturan terarah yang intuitif: Dari Atas ke Bawah, dan Dari Kiri ke Kanan.',
+            'Aturan 1 (Atas ke Bawah): Guratan atas ditulis terlebih dahulu. Saat menulis "ㄱ", tarik garis atas sebelum menekuk ke bawah.',
+            'Aturan 2 (Kiri ke Kanan): Guratan kiri ditulis lebih dulu. Pada "ㅂ", buat tiang kiri dulu, lalu tiang kanan, kemudian hubungkan garis horizontal.'
+          ],
+          vn: [
+            'Tất cả các chữ cái tiếng Hàn đều tuân theo hai quy tắc định hướng: Từ trên xuống dưới và Từ trái sang phải.',
+            'Quy tắc 1 (Trên xuống Dưới): Các nét trên được viết trước. Khi viết "ㄱ", hãy kéo nét ngang trên cùng trước khi bẻ gập xuống.',
+            'Quy tắc 2 (Trái sang Phải): Các nét bên trái được ưu tiên viết trước. Với chữ "ㅂ", hãy vẽ nét dọc bên trái trước, rồi đến nét dọc bên phải, sau đó nối các đường ngang.'
           ]
         },
         keyTakeaway: {
-          en: 'Always flow from Top-to-Bottom, Left-to-Right. If a character has enclosing walls like "ㅁ" or "ㅂ", complete the internal strokes before closing the bottom gate.',
-          ko: '모든 획은 ‘위에서 아래로, 왼쪽에서 오른쪽으로’ 흐르며, ‘ㅁ’이나 ‘ㅂ’처럼 닫힌 글자는 안쪽을 먼저 채운 후 맨 마지막에 바닥 획을 닫습니다.'
+          en: 'Always flow from Top-to-Bottom, Left-to-Right. If a character has enclosing walls like "ㅁ", complete the internal area before closing the bottom gate.',
+          jp: 'すべての筆画は「上から下、左から右」へ流れます。「ㅁ」のような囲み文字は、内側を書き終えてから最後に底を閉じます。',
+          cn: '笔画永远遵照“从上至下、从左到右”。遇到如“ㅁ”字包裹结构时，先进内再关门。',
+          es: 'Fluye siempre de arriba a abajo y de izquierda a derecha. Cierra la base al final.',
+          id: 'Selalu mengalir dari Atas ke Bawah, Kiri ke Kanan. Tutup garis bawah paling akhir.',
+          vn: 'Luôn viết từ trên xuống dưới, từ trái sang phải. Viết nét đóng đáy sau cùng.'
         }
       },
       {
@@ -225,41 +333,37 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'The consonant "ㄹ" (r/l) is notorious among beginners who often attempt to draw it in a single zig-zag line like the number "2" or letter "Z". In formal Korean handwriting, "ㄹ" is strictly executed in 3 distinct strokes:',
+            'The consonant "ㄹ" (r/l) is notoriously miswritten in a single cursive zig-zag. In standard Korean handwriting, "ㄹ" is strictly constructed in 3 discrete strokes:',
             '1. Stroke 1: Draw a top "ㄱ" shape (horizontal then vertical bend).',
-            '2. Stroke 2: Draw a middle horizontal line connecting from the vertical bend toward the right.',
-            '3. Stroke 3: Draw a bottom "ㄴ" shape starting from the middle and turning right along the baseline.',
-            'Similarly, "ㅂ" (b/p) is written in 4 distinct strokes: Left vertical pillar down, Right vertical pillar down, Middle horizontal connector, and finally the bottom seal line. Breaking these letters down into discrete strokes ensures proportional square balance.'
+            '2. Stroke 2: Draw a middle horizontal line connecting from the vertical turn.',
+            '3. Stroke 3: Draw a bottom "ㄴ" shape starting down and turning right along the floor baseline.',
+            'Separating these strokes ensures the character sits squarely and proudly without toppling over.'
           ],
-          ko: [
-            '초보자들이 가장 흔하게 저지르는 실수는 "ㄹ"을 숫자 "2"나 영어 "Z"처럼 한 붓에 지그재그로 그려버리는 것입니다. 정석 한글 필기에서 "ㄹ"은 정확히 3획으로 나뉩니다:',
-            '1. 1획: 맨 위 ‘ㄱ’ 모양을 그립니다 (가로로 가다 아래로 꺾기).',
-            '2. 2획: 가운데 가로선을 왼쪽에서 오른쪽으로 긋습니다.',
-            '3. 3획: 가운데 선에서 시작하여 아래로 내려온 뒤 바닥을 받치는 ‘ㄴ’ 모양으로 마무리합니다.',
-            '‘ㅂ’ 역시 네 번에 걸쳐 씁니다: 왼쪽 기둥(1) → 오른쪽 기둥(2) → 가운데 가로선(3) → 맨 아래 바닥 닫기(4). 이렇게 분할해서 써야 사각형 틀 안에서 글자가 찌그러지지 않고 당당한 형태를 갖추게 됩니다.'
-          ]
-        }
-      },
-      {
-        heading: {
-          en: '3. Why Stroke Order Impacts Legibility and Speed',
-          ko: '3. 획순이 가독성과 필기 속도에 미치는 결정적 차이',
-          jp: '3. 筆順が可読性と筆記速度に及ぼす決定的な影響',
-          cn: '3. 笔顺对易读性和书写速度的决定性影响',
-          es: '3. Por qué el orden de los trazos afecta la legibilidad y la velocidad',
-          id: '3. Mengapa Urutan Guratan Mempengaruhi Keterbacaan dan Kecepatan',
-          vn: '3. Tại sao thứ tự nét ảnh hưởng đến tính dễ đọc và tốc độ viết',
-        },
-        paragraphs: {
-          en: [
-            'Why does stroke order matter if the final printed character looks similar? The answer lies in pen momentum and kinetic ergonomics.',
-            'When you write with correct stroke order, the tip of your pen naturally glides across minimal distance from the end of one stroke to the start of the next. This fluid continuity reduces hand fatigue by over 40% during long handwriting sessions.',
-            'Furthermore, as your handwriting speeds up into cursive or semi-cursive forms, correct stroke order ensures the ligatures and soft bends remain instantly recognizable to native Korean speakers.'
+          jp: [
+            '学習者が最も崩しやすいのが「ㄹ」です。数字の「2」や英語の「Z」のように一筆でジグザグに書いてしまいがちですが、正しくはきっちり3画で書きます。',
+            '1. 第1画：上部の「ㄱ」を書きます（横に引いて下に折る）。',
+            '2. 第2画：中央の横線を左から右へ引きます。',
+            '3. 第3画：中央から下へ下ろし、床を支える「ㄴ」の形で引き締めます。',
+            'このように段階的に書くことで、四角い枠の中で字が歪まず均整の取れたプロポーションが完成します。'
           ],
-          ko: [
-            '결과물만 비슷하게 나오면 되지 굳이 순서를 지켜야 할까요? 그 이유는 손의 운동역학과 필기 피로도에 있습니다.',
-            '바른 획순을 따르면 한 획이 끝난 펜촉의 위치가 다음 획이 시작될 위치와 가장 가깝게 배치됩니다. 동선의 낭비가 없어지므로 장시간 글을 써도 손목과 손가락 관절의 피로도가 40% 이상 줄어듭니다.',
-            '나아가 글씨를 빠르게 흘려 쓰는 필기체 단계로 넘어갈 때, 정석 획순을 지킨 글씨만이 한국인들이 한눈에 오독 없이 알아볼 수 있는 유려한 필체를 유지할 수 있습니다.'
+          cn: [
+            '初学者最容易将“ㄹ”像阿拉伯数字“2”或字母“Z”那样一笔连写画完，这是严重的笔顺错误。规范韩文书写中，“ㄹ”严格分为3笔：',
+            '1. 第一笔：书写顶部“ㄱ”形（横折下）；',
+            '2. 第二笔：从折点左端向右书写中间横线；',
+            '3. 第三笔：自中段向下延伸，并向右拉平托底的“ㄴ”形。',
+            '通过三笔分写，字形在方格中重心稳如泰山，端庄利落。'
+          ],
+          es: [
+            'La consonante "ㄹ" a menudo se escribe mal de un solo trazo. En la caligrafía estándar, se escribe en 3 trazos distintos: un "ㄱ" superior, una línea media horizontal y un "ㄴ" inferior.',
+            'Dividir estos trazos garantiza que el carácter mantenga su proporción cuadrada.'
+          ],
+          id: [
+            'Konsonan "ㄹ" sering kali keliru ditulis dalam satu tarikan zig-zag. Dalam standar Korea, "ㄹ" ditulis tepat dalam 3 guratan: bentuk "ㄱ" atas, garis horizontal tengah, dan bentuk "ㄴ" bawah.',
+            'Memisahkan guratan ini memastikan huruf tetap seimbang di dalam kotak.'
+          ],
+          vn: [
+            'Phụ âm "ㄹ" thường bị viết sai thành một nét zíc-zắc duy nhất. Trong chữ viết chuẩn, "ㄹ" được viết chính xác trong 3 nét: hình "ㄱ" ở trên, nét ngang ở giữa và hình "ㄴ" ở đáy.',
+            'Viết tách 3 nét này giúp chữ đứng vững và vuông vắn trong ô kẻ.'
           ]
         }
       }
@@ -267,15 +371,27 @@ export const guideArticles: GuideArticle[] = [
     relatedTool: {
       title: {
         en: 'Try Step-by-Step Stroke Tracing Sheets',
-        ko: '화살표와 번호가 표시된 획순 연습장 체험하기',
+        jp: '矢印と番号付きの筆順練習帳を試す',
+        cn: '体验带箭头与序号的笔顺字帖',
+        es: 'Prueba las hojas de trazado paso a paso',
+        id: 'Coba Lembar Jiplak Guratan Langkah demi Langkah',
+        vn: 'Trải nghiệm trang luyện nét có mũi tên và số thứ tự',
       },
       desc: {
         en: 'Our Alphabet Practice sheets feature precise directional arrows and stroke numbers for every Korean letter.',
-        ko: '모든 자음과 모음에 번호와 방향 화살표가 표시된 획순 가이드 PDF를 지금 무료로 생성해보세요.',
+        jp: 'すべての字母に方向を示す矢印と順番番号が明記されたPDF練習帳を無料で作成できます。',
+        cn: '每张字母字帖均配备精细的笔画方向箭头与笔顺编号，助您零基础轻松掌握。',
+        es: 'Nuestras hojas de práctica incluyen flechas de dirección y números de trazo precisos.',
+        id: 'Lembar latihan kami menampilkan panah arah dan nomor guratan untuk setiap huruf.',
+        vn: 'Trang bài tập của chúng tôi có mũi tên chỉ hướng và số thứ tự rõ ràng cho từng nét chữ.',
       },
       btn: {
         en: 'Generate Stroke Practice PDF',
-        ko: '획순 연습장 생성하러 가기',
+        jp: '筆順PDFを生成する',
+        cn: '即刻生成笔顺练习PDF',
+        es: 'Generar PDF de trazos',
+        id: 'Buat PDF Latihan Guratan',
+        vn: 'Tạo PDF luyện nét viết',
       },
       href: '/alphabet'
     }
@@ -299,7 +415,7 @@ export const guideArticles: GuideArticle[] = [
     subtitle: {
       en: 'Learn how foreign vowels, consonants, and consonant clusters are adapted into Hangul syllables.',
       ko: '영어, 일본어, 유럽권 이름의 발음이 한글의 음절 구조로 자연스럽게 변환되는 원리와 팁.',
-      jp: '英語やその他の外国語の名前がハングルの音節構造に自然に適応するルール。',
+      jp: '英語や外国語の名前がハングルの音節構造に自然に適応するルール。',
       cn: '外语名字如何根据发音地道转换为具有韵律感的韩文字块。',
       es: 'Aprende cómo las vocales y consonantes extranjeras se adaptan a las sílabas del Hangul.',
       id: 'Pelajari bagaimana nama asing diadaptasikan ke dalam suku kata Hangul.',
@@ -327,17 +443,29 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'In English and many European languages, multiple consonants can clump together without vowels (e.g., "Str-" in "Street" or "-mps" in "Glimpse"). In Korean, however, every consonant MUST attach to a vowel to form a syllable block.',
-            'When translating a foreign name with a consonant cluster, Korean inserts the neutral vowel "ㅡ" (eu) under lone consonants. For example, "Chris" becomes "크리스" (Keu-ri-seu) across three syllable blocks, and "Smith" becomes "스미스" (Seu-mi-seu).'
+            'In English and European languages, consonants often cluster without vowels (e.g. "Str-" in "Street" or "-s" in "Chris"). In Korean, every consonant must attach to a vowel to form a syllable block.',
+            'When translating a name with consonant clusters, Korean inserts the neutral vowel "ㅡ" (eu). For example, "Chris" becomes "크리스" (Keu-ri-seu) across 3 syllable blocks, and "Smith" becomes "스미스" (Seu-mi-seu).'
           ],
-          ko: [
-            '영어권이나 유럽권 언어에서는 모음 없이 자음 여러 개가 연달아 발음되는 ‘자음군(Consonant Cluster)’이 흔합니다 (예: "Strike"의 Str). 하지만 한국어는 반드시 자음과 모음이 만나야 하나의 소리를 이룹니다.',
-            '따라서 모음 없이 홀로 남는 자음 뒤에는 가장 중립적인 모음인 "ㅡ(eu)"를 받쳐주어 독립된 음절 블록을 형성합니다. 예를 들어 "Chris"는 크-리-스(3음절)가 되고, "Smith"는 스-미-스(3음절)가 됩니다.'
+          jp: [
+            'ヨーロッパ諸言語では母音を挟まず子音が連続することが日常茶飯事ですが、韓国語では必ず母音と子音が結びついて音を構成します。',
+            'そのため、単独で残る子音の後ろには最も中立的な母音である「ㅡ（eu）」を補い、独立した音節を作ります。「Chris」が「크리스（ク・リ・ス）」となり、「Smith」が「스미스（ス・ミ・ス）」になるのはこのためです。'
+          ],
+          cn: [
+            '印欧语系中常见无元音辅音连缀现象，但韩文中辅音不能脱离元音独立发声。',
+            '因此，遇到连续辅音时会补入最中性的元音“ㅡ”，使其形成独立音节字块。例如“Chris”转写为三音节的“크리스”，“Smith”转写为“스미스”。'
+          ],
+          es: [
+            'En coreano, cada consonante debe unirse a una vocal para formar un bloque silábico.',
+            'Al traducir nombres con grupos consonánticos, el coreano inserta la vocal neutra "ㅡ" (eu). Por ejemplo, "Chris" se convierte en "크리스" (Keu-ri-seu) y "Smith" en "스미스" (Seu-mi-seu).'
+          ],
+          id: [
+            'Dalam bahasa Korea, setiap konsonan harus melekat pada vokal untuk membentuk blok suku kata.',
+            'Ketika menerjemahkan nama dengan gugus konsonan, diselipkan vokal netral "ㅡ" (eu). Misalnya, "Chris" menjadi "크리스" dan "Smith" menjadi "스미스".'
+          ],
+          vn: [
+            'Trong tiếng Hàn, mọi phụ âm đều phải gắn với một nguyên âm để tạo thành một khối âm tiết.',
+            'Khi dịch tên có cụm phụ âm đứng liền nhau, tiếng Hàn sẽ chèn thêm nguyên âm trung tính "ㅡ" (eu). Ví dụ: "Chris" trở thành "크리스" và "Smith" trở thành "스미스".'
           ]
-        },
-        keyTakeaway: {
-          en: 'If your name has adjacent consonants like "St", "Br", or "Cl", expect them to expand with the neutral vowel "ㅡ" (eu).',
-          ko: '이름에 연속된 자음이 있다면 중립 모음 ‘ㅡ’가 결합되어 글자 수가 늘어나는 것이 가장 자연스러운 한국어 표기법입니다.'
         }
       },
       {
@@ -352,16 +480,40 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'Korean phonology does not possess fricatives like /f/, /v/, or dental /θ/ (th). Decades of official linguistic standards map these sounds to the closest Korean equivalents:',
-            '• F is converted to ㅍ (P): "Flora" → "플로라" (Peul-lo-ra), "Frank" → "프랭크" (Peu-raeng-keu).',
-            '• V is converted to ㅂ (B): "Victoria" → "빅토리아" (Bik-to-ri-a), "David" → "데이비드" (De-i-bi-deu).',
-            '• TH is converted to ㅅ (S) or ㄷ (D): "Thomas" → "토마스", "Ethan" → "이선" or "이든".'
+            'Korean phonology maps absent sounds to their closest equivalents according to official standards:',
+            '• F converts to ㅍ (P): "Flora" → "플로라", "Frank" → "프랭크".',
+            '• V converts to ㅂ (B): "Victoria" → "빅토리아", "David" → "데이비드".',
+            '• TH converts to ㅅ (S) or ㄷ (D): "Smith" → "스미스", "Ethan" → "이든".'
           ],
-          ko: [
-            '한국어에는 입술과 치아를 마찰시키는 F, V 발음이나 혀를 무는 TH 발음이 없습니다. 국립국어원 외래어 표기법 표준에 따라 가장 음향적으로 유사한 한글 자음으로 매핑됩니다:',
-            '• [F] 발음은 거센소리 ‘ㅍ’으로 치환됩니다: "Flora" → "플로라", "Frank" → "프랭크".',
-            '• [V] 발음은 양순 파열음 ‘ㅂ’으로 치환됩니다: "Victoria" → "빅토리아", "David" → "데이비드".',
-            '• [TH] 발음은 마찰음 ‘ㅅ’ 또는 파열음 ‘ㄷ’으로 적습니다: "Smith" → "스미스", "Ethan" → "이든".'
+          jp: [
+            '韓国語にはF、V、THの発音が存在しないため、韓国国立国語院の標準により最も音響的に類似した字母が当てられます。',
+            '• [F] は激音の「ㅍ」に置換：「Flora」→「플로라」、「Frank」→「프랭크」',
+            '• [V] は破裂音の「ㅂ」に置換：「Victoria」→「빅토리아」、「David」→「데이비드」',
+            '• [TH] は摩擦音「ㅅ」または破裂音「ㄷ」に置換：「Smith」→「스미스」、「Ethan」→「이든」'
+          ],
+          cn: [
+            '韩语标准外来语表记法对缺失音素进行了极为严谨的音系对齐：',
+            '• [F] 音对应送气音“ㅍ”：“Flora” → “플로라”，“Frank” → “프랭크”；',
+            '• [V] 音对应双唇破裂音“ㅂ”：“Victoria” → “빅토리아”，“David” → “데이비드”；',
+            '• [TH] 音对应摩擦音“ㅅ”或破裂音“ㄷ”：“Smith” → “스미스”，“Ethan” → “이든”。'
+          ],
+          es: [
+            'La fonología coreana asigna los sonidos inexistentes a sus equivalentes más cercanos:',
+            '• F se convierte en ㅍ (P): "Flora" → "플로라".',
+            '• V se convierte en ㅂ (B): "Victoria" → "빅토리아".',
+            '• TH se convierte en ㅅ (S) o ㄷ (D): "Smith" → "스미스".'
+          ],
+          id: [
+            'Fonologi Korea memetakan bunyi yang tidak ada ke padanan terdekatnya:',
+            '• F menjadi ㅍ (P): "Flora" → "플로라".',
+            '• V menjadi ㅂ (B): "Victoria" → "빅토리아".',
+            '• TH menjadi ㅅ (S) atau ㄷ (D): "Smith" → "스미스".'
+          ],
+          vn: [
+            'Ngữ âm tiếng Hàn chuyển đổi các âm còn thiếu sang các âm tương đương gần nhất:',
+            '• F chuyển thành ㅍ (P): "Flora" → "플로라".',
+            '• V chuyển thành ㅂ (B): "Victoria" → "빅토리아".',
+            '• TH chuyển thành ㅅ (S) hoặc ㄷ (D): "Smith" → "스미스".'
           ]
         }
       }
@@ -369,15 +521,27 @@ export const guideArticles: GuideArticle[] = [
     relatedTool: {
       title: {
         en: 'Translate & Practice Your Korean Name',
-        ko: '내 이름을 한국어로 변환하고 손글씨로 써보기',
+        jp: '自分の名前を韓国語に変換して手書き練習する',
+        cn: '将您的名字转换为韩文并亲笔练习',
+        es: 'Traduce y practica tu nombre en coreano',
+        id: 'Terjemahkan & Latih Nama Korea Anda',
+        vn: 'Dịch và luyện viết tên tiếng Hàn của bạn',
       },
       desc: {
         en: 'Type your English or foreign name to see its natural Korean rendering and print a custom name sheet.',
-        ko: '영어 또는 외국어 이름을 입력하면 가장 자연스러운 한글 표기를 찾아서 맞춤형 PDF 연습장을 만들어드립니다.',
+        jp: '外国語の名前を入力するだけで、最も自然なハングル表記を見つけてカスタマイズされたPDF練習帳を作成します。',
+        cn: '输入您的外语姓名，系统将自动匹配最规范地道的韩文发音并生成专属练字帖。',
+        es: 'Escribe tu nombre para ver su forma en coreano e imprimir una hoja personalizada.',
+        id: 'Ketik nama Anda untuk melihat bentuk Koreanya dan cetak lembar latihan khusus.',
+        vn: 'Nhập tên của bạn để xem cách viết tiếng Hàn tự nhiên và in bài luyện tập riêng.',
       },
       btn: {
         en: 'Try Write My Name Tool',
-        ko: '내 이름 쓰기 생성기 바로가기',
+        jp: 'お名前練習帳を開く',
+        cn: '体验姓名生成器',
+        es: 'Probar conversor de nombres',
+        id: 'Coba Alat Tulis Nama',
+        vn: 'Thử công cụ viết tên',
       },
       href: '/my-name'
     }
@@ -429,17 +593,37 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'When you type a letter on a keyboard, your finger performs the exact same uniform motion whether you press "A", "G", or "한". The brain receives no tactile differentiation about the physical geometry of the symbol.',
-            'In contrast, physically writing Hangul requires continuous tactile feedback, visual trajectory tracking, and fine-motor adjustments. Each unique stroke path carves a physical motor memory trace in the brain’s parietal and frontal lobes, creating a dual-layered cognitive anchor: visual shape plus motor memory.'
+            'When you type on a keyboard, your finger performs the exact same uniform motion whether you press "A", "G", or "한". The brain receives no tactile differentiation about the physical geometry of the symbol.',
+            'Physically writing Hangul, however, requires continuous tactile feedback, stroke direction shifts, and pressure control. This fine-motor engagement carves physical motor memory traces in the brain, dramatically strengthening active recall.'
           ],
-          ko: [
-            '스마트폰 화면이나 컴퓨터 키보드로 글자를 칠 때, 손가락은 "ㄱ"을 누르든 "ㅎ"을 누르든 동일하게 단순한 수직 누르기 동작만을 반복합니다. 뇌는 글자의 물리적 형태에 대한 어떠한 감각적 차이도 학습하지 못합니다.',
-            '반면 펜을 쥐고 종이 위에 한글을 쓸 때는 손끝의 미세 근육 조절, 획의 방향 전환, 필압, 시각적 궤적 추적이 동시에 작동합니다. 이 복합적인 감각 피드백은 뇌의 두정엽과 전두엽에 강력한 ‘운동 기억(Motor Memory)’의 흔적을 남겨 글자를 잊어버리지 않게 만듭니다.'
+          jp: [
+            'キーボードで文字を打つとき、指はどのキーを押しても単なる均一な垂直運動を繰り返すだけで、文字の幾何学的形態に関する触覚フィードバックは得られません。',
+            'しかしペンで紙にハングルを書くときは、指先の微細な筋肉運動、筆圧の調整、方向転換が脳の運動皮質と頭頂葉を同時に刺激し、強固な「運動記憶（Motor Memory）」を形成します。'
+          ],
+          cn: [
+            '在键盘或屏幕上打字时，无论输入哪个字符，手指的按压动作毫无差异，大脑无法接收到任何与字符几何形态相关的触觉神经刺激。',
+            '而握笔在纸上书写韩文时，笔尖的阻尼感、微细肌肉控制、笔锋转向与压力调节，共同在大脑顶叶与运动皮层烙下独特的运动记忆印记，使记忆留存率成倍提升。'
+          ],
+          es: [
+            'Al teclear, el dedo realiza el mismo movimiento uniforme para cualquier letra. El cerebro no recibe retroalimentación táctil de la forma geométrica.',
+            'Escribir Hangul a mano activa la motricidad fina, creando recuerdos motores duraderos en la corteza cerebral.'
+          ],
+          id: [
+            'Saat mengetik di keyboard, jari melakukan gerakan yang sama untuk huruf apa pun. Otak tidak menerima perbedaan bentuk fisik simbol.',
+            'Menulis Hangul secara fisik melatih motorik halus, menanamkan jejak memori kuat di otak untuk mengingat huruf lebih lama.'
+          ],
+          vn: [
+            'Khi gõ bàn phím, ngón tay chỉ lặp lại một chuyển động nhấn đồng đều cho mọi ký tự mà không nhận được cảm giác xúc giác về hình dạng chữ.',
+            'Ngược lại, viết tay chữ Hangul đòi hỏi điều khiển cơ bắp tinh tế, tạo nên dấu ấn trí nhớ vận động sâu đậm trong não bộ.'
           ]
         },
         keyTakeaway: {
-          en: 'Handwriting bridges the gap between passive recognition and active recall. Tracing Korean strokes burns their geometric forms into deep long-term memory.',
-          ko: '손글씨는 단순 눈으로 보는 수동적 인식을 넘어 능동적 인출 기억을 형성하는 가장 확실한 외국어 학습 도구입니다.'
+          en: 'Handwriting bridges passive recognition with active recall. Tracing Korean strokes burns their geometric forms into deep long-term memory.',
+          jp: '手書きは受動的な認識を能動的な再生記憶へと変える最も確実な学習法です。',
+          cn: '亲手书写打破了被动记忆的局限，是建立主动长久回忆的最强工具。',
+          es: 'Escribir a mano convierte el reconocimiento pasivo en recuerdo activo.',
+          id: 'Tulisan tangan mengubah pengenalan pasif menjadi ingatan aktif jangka panjang.',
+          vn: 'Viết tay biến sự nhận biết thụ động thành trí nhớ chủ động lâu dài.'
         }
       },
       {
@@ -454,12 +638,28 @@ export const guideArticles: GuideArticle[] = [
         },
         paragraphs: {
           en: [
-            'Traditional Korean handwriting education relies on "Wongoji" (squared manuscript paper with crosshair guidelines). This is not just tradition—it is pedagogical ergonomics.',
-            'Because Hangul characters are modular 2D blocks containing up to four components, practicing within 4-quadrant guideline boxes trains learners to instinctively balance negative space, center of gravity, and stroke thickness. Write Hangul’s printable PDF templates are precisely calibrated with universal grid ratios to reproduce this exact learning advantage.'
+            'Traditional Korean handwriting education relies on "Wongoji" (squared manuscript paper with crosshair guidelines). This is pedagogical ergonomics.',
+            'Because Hangul characters are modular 2D blocks containing up to 4 components, practicing within 4-quadrant guideline boxes trains learners to instinctively balance negative space, center of gravity, and stroke thickness. Write Hangul’s printable PDF templates are precisely calibrated with universal grid ratios to reproduce this exact learning advantage.'
           ],
-          ko: [
-            '한국의 전통 필기 교육은 십자 점선 가이드가 들어간 사각 원고지(Wongoji)를 기반으로 합니다. 이는 단순한 옛 관습이 아닌 치밀한 시각-공간 인지 훈련법입니다.',
-            '한글은 최대 4개의 자모음이 한 네모 칸에 집약되는 모아쓰기 구조를 가지므로, 4분할 십자 가이드라인 안에서 연습할 때 글자의 무게중심과 여백의 비율을 가장 완벽하게 체득할 수 있습니다. Write Hangul의 PDF 템플릿이 정밀한 십자 격자를 채택한 이유가 바로 여기에 있습니다.'
+          jp: [
+            '韓国の伝統的な筆記教育では、十字線が入った四角い原稿用紙（Wongoji）が使われます。これは空間認知科学に基づいた理想的な学習環境です。',
+            '1つのマスの中に複数の子音・母音が組み合わさるハングルは、4象限のガイドラインの中で練習することで、余白の美学と重心の安定を最も速く体得できます。'
+          ],
+          cn: [
+            '传统的韩国书写教育高度依赖带有十字参考线的方格原稿纸（Wongoji），这完全符合视空间认知工态学。',
+            '韩文在一个方块中容纳多个子母部件，在4象限交叉线中练字，能让初学者以最快速度本能地掌握留白对称性与重心平衡感。'
+          ],
+          es: [
+            'La educación coreana tradicional se basa en el papel cuadriculado "Wongoji" con líneas guía cruzadas.',
+            'Practicar dentro de cuadrículas de cuatro cuadrantes entrena a los estudiantes para equilibrar instintivamente el espacio negativo y el centro de gravedad.'
+          ],
+          id: [
+            'Pendidikan menulis Korea bertumpu pada kertas naskah berpetak "Wongoji" dengan garis panduan silang.',
+            'Berlatih dalam kotak 4 kuadran melatih keseimbangan ruang dan pusat gravitasi huruf secara alami.'
+          ],
+          vn: [
+            'Phương pháp luyện chữ truyền thống của Hàn Quốc dựa trên giấy ô vuông "Wongoji" có đường căn chữ thập.',
+            'Luyện tập trong ô vuông 4 phần giúp học viên nhanh chóng cảm nhận được sự cân đối và trọng tâm của từng con chữ.'
           ]
         }
       }
@@ -467,15 +667,27 @@ export const guideArticles: GuideArticle[] = [
     relatedTool: {
       title: {
         en: 'Print Free Universal Grid Practice Sheets',
-        ko: '과학적인 사각 격자 PDF 연습장 무료 인쇄하기',
+        jp: '科学的な四角原稿用紙PDFを無料で印刷する',
+        cn: '免费打印经过科学校准的方格练字帖PDF',
+        es: 'Imprime hojas de práctica de cuadrícula universales gratis',
+        id: 'Cetak Lembar Latihan Berpetak Universal Gratis',
+        vn: 'In miễn phí trang luyện chữ ô vuông chuẩn quốc tế',
       },
       desc: {
         en: 'Download our standard A4/US Letter worksheets to train your motor memory today.',
-        ko: '전 세계 A4 및 US Letter 용지 규격에 완벽히 호환되는 정밀 격자 한글 연습장을 무료로 생성해보세요.',
+        jp: 'A4およびUS Letterサイズに100%適合した練習帳をダウンロードして、今すぐ手書きを始めましょう。',
+        cn: '下载完全匹配 A4 与 US Letter 纸张的标准字帖，即刻开始训练您的肌肉记忆。',
+        es: 'Descarga nuestras hojas de trabajo A4/Letter para entrenar tu memoria motora hoy mismo.',
+        id: 'Unduh lembar kerja A4/Letter kami untuk melatih memori motorik Anda hari ini.',
+        vn: 'Tải xuống trang bài tập chuẩn A4/Letter để rèn luyện trí nhớ cơ bắp ngay hôm nay.',
       },
       btn: {
         en: 'Go to Daily Practice',
-        ko: '오늘의 한글 쓰기 연습장 바로가기',
+        jp: '今日の練習帳へ進む',
+        cn: '前往今日练字帖',
+        es: 'Ir a la práctica diaria',
+        id: 'Ke Latihan Harian',
+        vn: 'Đi tới bài luyện hàng ngày',
       },
       href: '/#category'
     }

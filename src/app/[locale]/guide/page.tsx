@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { guideArticles } from '@/data/guides';
+import { guideUiData } from '@/data/multilingualEducational';
 import { BookOpen, Clock, Tag, ArrowRight, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -10,15 +11,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isKo = locale === 'ko';
+  const getLoc = (obj: any) => obj[locale] || obj['en'] || Object.values(obj)[0] || '';
 
   return {
-    title: isKo 
-      ? '한글 학습 가이드 & 필기 비법 컬렉션 - Write Hangul' 
-      : 'Hangul Learning Guides & Handwriting Mastery - Write Hangul',
-    description: isKo
-      ? '한글의 과학적 창제 원리부터 바른 획순, 외국어 이름 한글 표기법, 손글씨의 뇌과학적 효과까지 깊이 있는 한국어 학습 아티클을 확인해보세요.'
-      : 'Comprehensive educational guides on the scientific principles of Hangul, stroke order rules, Korean name transliteration, and handwriting neuroscience.',
+    title: `${getLoc(guideUiData.headerTitle)} - Write Hangul`,
+    description: getLoc(guideUiData.headerDesc),
   };
 }
 
@@ -40,15 +37,13 @@ export default async function GuidePage({
       <section className="text-center mb-12 md:mb-16 relative">
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-800 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wide uppercase mb-4 shadow-sm">
           <Sparkles size={16} className="text-blue-600" />
-          Write Hangul Educational Library
+          {getLocalized(guideUiData.headerBadge)}
         </div>
         <h1 className="text-3xl md:text-5xl font-bold font-serif text-muk mb-4 tracking-tight leading-tight">
-          {locale === 'ko' ? '한글 배움터 & 필기 과학 가이드' : 'Hangul Learning & Handwriting Guides'}
+          {getLocalized(guideUiData.headerTitle)}
         </h1>
         <p className="text-muk/70 text-base md:text-xl max-w-3xl mx-auto font-medium leading-relaxed">
-          {locale === 'ko'
-            ? '세종대왕의 창제 원리부터 손끝으로 익히는 바른 획순, 외국어 이름 표기법까지 언어학과 인지과학이 담긴 전문 가이드를 만나보세요.'
-            : 'Explore in-depth articles on King Sejong’s phonetic genius, stroke order ergonomics, name transliteration, and the cognitive power of physical handwriting.'}
+          {getLocalized(guideUiData.headerDesc)}
         </p>
         <div className="w-24 h-1 bg-seal mx-auto mt-6 rounded-full opacity-80"></div>
       </section>
@@ -116,7 +111,7 @@ export default async function GuidePage({
                   href={`/guide/${article.slug}`}
                   className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-1 transition-all"
                 >
-                  <span>{locale === 'ko' ? '전문 읽기' : 'Read Article'}</span>
+                  <span>{getLocalized(guideUiData.readArticle)}</span>
                   <ArrowRight size={16} />
                 </Link>
               </div>
@@ -129,12 +124,10 @@ export default async function GuidePage({
       <section className="bg-gradient-to-br from-blue-900 to-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-2xl">
           <h3 className="text-2xl md:text-3xl font-bold font-serif mb-3">
-            {locale === 'ko' ? '이론을 배웠다면, 이제 손끝으로 체득해보세요.' : 'Mastered the theory? Put pen to paper.'}
+            {getLocalized(guideUiData.bottomBannerTitle)}
           </h3>
           <p className="text-blue-100/80 text-sm md:text-base leading-relaxed">
-            {locale === 'ko'
-              ? 'Write Hangul은 누구나 무료로 고화질 한국어 손글씨 연습장을 만들 수 있는 열린 교육 도구입니다. 지금 바로 나만의 맞춤형 PDF를 생성해보세요.'
-              : 'Write Hangul provides free, calibrated manuscript PDFs designed to accelerate muscle memory and clean stroke aesthetics. Completely free for learners and educators worldwide.'}
+            {getLocalized(guideUiData.bottomBannerDesc)}
           </p>
         </div>
         <div className="shrink-0 flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -142,13 +135,13 @@ export default async function GuidePage({
             href="/alphabet"
             className="bg-white text-blue-900 hover:bg-blue-50 font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md text-center"
           >
-            {locale === 'ko' ? '자모음 획순 연습장' : 'Alphabet Practice'}
+            {getLocalized(guideUiData.btnAlphabet)}
           </Link>
           <Link
             href="/#my-name"
             className="bg-blue-700 hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md text-center border border-blue-500/30"
           >
-            {locale === 'ko' ? '내 이름 쓰기' : 'Write My Name'}
+            {getLocalized(guideUiData.btnMyName)}
           </Link>
         </div>
       </section>

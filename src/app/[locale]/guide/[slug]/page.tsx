@@ -2,8 +2,9 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { guideArticles } from '@/data/guides';
+import { guideUiData } from '@/data/multilingualEducational';
 import { routing } from '@/i18n/routing';
-import { ArrowLeft, Clock, Calendar, Tag, CheckCircle2, ArrowRight, Share2, Sparkles } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, Tag, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export async function generateStaticParams() {
@@ -78,7 +79,7 @@ export default async function ArticleDetailPage({
           className="inline-flex items-center gap-2 text-sm font-bold text-muk/60 hover:text-muk transition-colors bg-white px-4 py-2 rounded-full border border-muk/10 shadow-sm"
         >
           <ArrowLeft size={16} />
-          <span>{locale === 'ko' ? '가이드 목록으로 돌아가기' : 'Back to All Guides'}</span>
+          <span>{getLocalized(guideUiData.backToGuides)}</span>
         </Link>
       </div>
 
@@ -115,11 +116,11 @@ export default async function ArticleDetailPage({
             </div>
             <div>
               <span className="font-bold text-muk">Write Hangul Editorial Board</span>
-              <span className="block text-[11px]">Peer-Reviewed Linguistic & Educational Content</span>
+              <span className="block text-[11px]">{getLocalized(guideUiData.editorialBadge)}</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="hidden sm:inline">Certified Content</span>
+            <span className="hidden sm:inline">{getLocalized(guideUiData.certified)}</span>
             <CheckCircle2 size={16} className="text-emerald-500" />
           </div>
         </div>
@@ -129,7 +130,7 @@ export default async function ArticleDetailPage({
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50/50 border-l-4 border-blue-600 rounded-r-2xl p-6 md:p-8 mb-12 shadow-sm">
         <h2 className="text-xs font-bold text-blue-800 uppercase tracking-wider mb-2 flex items-center gap-2">
           <Sparkles size={14} />
-          {locale === 'ko' ? '핵심 요약 (Executive Summary)' : 'Executive Summary'}
+          {getLocalized(guideUiData.execSummary)}
         </h2>
         <p className="text-muk/90 text-base md:text-lg leading-relaxed font-medium">
           {summary}
@@ -164,7 +165,7 @@ export default async function ArticleDetailPage({
                   </div>
                   <div>
                     <span className="font-bold text-xs uppercase tracking-wider text-seal block mb-0.5">
-                      {locale === 'ko' ? '학습 포인트' : 'Key Takeaway'}
+                      {getLocalized(guideUiData.keyTakeaway)}
                     </span>
                     <p className="text-sm md:text-base text-muk/80 font-medium">
                       {takeaway}
@@ -183,7 +184,7 @@ export default async function ArticleDetailPage({
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <span className="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">
-              {locale === 'ko' ? '실습 도구 연계' : 'Integrated Practice Tool'}
+              {getLocalized(guideUiData.integratedTool)}
             </span>
             <h3 className="text-2xl md:text-3xl font-bold font-serif text-muk mb-2">
               {relatedTitle}
@@ -205,7 +206,7 @@ export default async function ArticleDetailPage({
       {/* Explore More Articles */}
       <section className="border-t border-muk/10 pt-12">
         <h3 className="text-xl md:text-2xl font-bold font-serif text-muk mb-6">
-          {locale === 'ko' ? '다른 추천 가이드 읽어보기' : 'Continue Reading'}
+          {getLocalized(guideUiData.continueReading)}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {otherArticles.map((other) => {
