@@ -5,6 +5,7 @@ import CategoryGrid from '@/components/CategoryGrid';
 import DailyLearningCard from '@/components/DailyLearningCard';
 import MiniMyName from '@/components/MiniMyName';
 import LearningLevels from '@/components/LearningLevels';
+import HomeEducationalContent from '@/components/HomeEducationalContent';
 import { Download } from 'lucide-react';
 
 export default async function HomePage({
@@ -66,6 +67,9 @@ export default async function HomePage({
         </div>
 
       </div>
+
+      {/* Rich Educational Content & FAQ for AdSense & SEO */}
+      <HomeEducationalContent locale={locale} />
     </main>
   );
 }

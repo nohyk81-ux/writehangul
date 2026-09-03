@@ -28,6 +28,7 @@ export default function Header() {
         <div className="flex flex-col items-center md:items-end text-center md:text-right mt-2 md:mt-0 w-full md:w-auto">
           <div className="flex items-center justify-center md:justify-end gap-4 md:gap-6 w-full">
             <nav className="hidden lg:flex items-center gap-3 xl:gap-6 text-muk font-bold text-sm xl:text-base">
+              <Link href="/guide" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuGuide')}</Link>
               <Link href="/alphabet" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuAlphabet')}</Link>
               <Link href="/history" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuHistory')}</Link>
               <Link href="/#category" className="hover:text-seal transition-colors whitespace-nowrap">{t('menuCategory')}</Link>
