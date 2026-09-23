@@ -39,7 +39,7 @@ export async function generateMetadata({
       title,
       description: summary,
       type: 'article',
-      url: `https://writehangul.com/${locale}/guide/${slug}`,
+      url: `https://www.writehangul.com/${locale}/guide/${slug}`,
     }
   };
 }

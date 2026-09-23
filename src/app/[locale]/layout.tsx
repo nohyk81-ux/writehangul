@@ -47,7 +47,7 @@ export async function generateMetadata({
     title,
     description,
     keywords,
-    metadataBase: new URL('https://writehangul.com'),
+    metadataBase: new URL('https://www.writehangul.com'),
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -63,7 +63,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://writehangul.com/${locale}`,
+      url: `https://www.writehangul.com/${locale}`,
       siteName: 'Write Hangul',
       locale,
       type: 'website',
@@ -108,18 +108,6 @@ export default async function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2696979963987135"
           crossOrigin="anonymous"
           strategy="afterInteractive"
-        />
-        {/* GA4 Placeholder */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `
-          }}
         />
         {/* MS Clarity Placeholder */}
         <script

@@ -1,17 +1,21 @@
 import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { guideArticles } from '@/data/guides';
+import vocabulary from '@/data/vocabulary.json';
 
-const host = 'https://writehangul.com';
+const host = 'https://www.writehangul.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const guideRoutes = guideArticles.map((a) => `/guide/${a.slug}`);
+  const categoryRoutes = vocabulary.categories.map((c) => `/category/${c.id}`);
 
   const staticRoutes = [
     '',
     '/guide',
     ...guideRoutes,
+    ...categoryRoutes,
     '/alphabet',
+    '/my-name',
     '/history',
     '/about',
     '/contact',

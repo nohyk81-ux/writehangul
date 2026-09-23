@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://writehangul.com/sitemap.xml',
+    sitemap: 'https://www.writehangul.com/sitemap.xml',
   };
 }

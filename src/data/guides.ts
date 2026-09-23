@@ -692,4 +692,942 @@ export const guideArticles: GuideArticle[] = [
       href: '/#category'
     }
   }
+,
+{
+  "slug": "korean-honorifics-guide",
+  "category": "Grammar & Social Etiquette",
+  "readTime": "6 min read",
+  "date": "September 2026",
+  "icon": "🙇",
+  "tags": [
+    "Honorifics",
+    "Korean Politeness",
+    "Jondaetmal",
+    "Banmal"
+  ],
+  "title": {
+    "en": "The Complete Guide to Korean Honorifics: Jondaetmal vs Banmal Explained",
+    "ko": "한국어 존댓말과 반말 완벽 가이드: 상황별 예의와 언어 예절",
+    "jp": "韓国語の敬語（チョンデッマル）とタメ口（パンマル）完全ガイド",
+    "cn": "韩语敬语与非敬语完全指南：社交礼仪与语境辨析",
+    "es": "Guía completa de honoríficos coreanos: Jondaetmal vs Banmal",
+    "id": "Panduan Lengkap Tingkat Kesopanan Korea: Jondaetmal vs Banmal",
+    "vn": "Hướng dẫn đầy đủ về kính ngữ tiếng Hàn: Jondaetmal và Banmal"
+  },
+  "subtitle": {
+    "en": "How to navigate Korean politeness levels confidently without offending elders or friends.",
+    "ko": "어른이나 처음 만난 사람에게 실례를 범하지 않고 자연스럽게 대화하는 한국어 높임법의 핵심.",
+    "jp": "目上の人や初対面の相手に失礼にならないための韓国語の敬語マナー。",
+    "cn": "如何准确得体地使用韩语敬语，在职场与人际交往中展现良好的礼仪素养。",
+    "es": "Cómo dominar los niveles de cortesía en coreano sin ofender a nadie.",
+    "id": "Cara menguasai tingkat kesopanan Korea dengan percaya diri dalam berbagai situasi.",
+    "vn": "Cách sử dụng các mức độ lịch sự trong tiếng Hàn một cách tự nhiên và chuẩn mực."
+  },
+  "summary": {
+    "en": "Korean society embeds hierarchical relationships directly into grammar through honorific endings like -yo and -sumnida. Understanding age dynamics and social proximity is essential for authentic fluency.",
+    "ko": "한국어는 문법 체계 자체에 상대방에 대한 존중과 친밀도를 담아냅니다. 존댓말(-요, -습니다)과 반말의 기준을 이해하면 한국 문화의 본질을 파악할 수 있습니다.",
+    "jp": "韓国語は文法そのものに相手への敬意と距離感が組み込まれています。「〜ヨ」「〜スムニダ」の使い分けを学ぶことで、韓国の人間関係を深く理解できます。",
+    "cn": "韩语在词尾语法中直接蕴含了对交谈对象的敬重与距离感。掌握“-요”与“-습니다”的使用情境，是通往流利韩语的必经之路。",
+    "es": "El coreano refleja las relaciones de respeto directamente en su gramática mediante terminaciones formales.",
+    "id": "Bahasa Korea menanamkan hubungan hierarkis langsung ke dalam tata bahasa melalui akhiran formal.",
+    "vn": "Tiếng Hàn phản ánh mối quan hệ tôn trọng trực tiếp vào ngữ pháp thông qua các đuôi câu kính ngữ."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. The Two Main Speech Levels: Polite (-yo) vs Formal (-sumnida)",
+        "ko": "1. 존댓말의 양대 축: 해요체(-요)와 하십시오체(-습니다)",
+        "jp": "1. 敬語の二大基本形：ヘヨ体（-요）とハムニダ体（-습니다）",
+        "cn": "1. 敬语的两大支柱：非格式体（-요）与格式体（-습니다）",
+        "es": "1. Los dos niveles corteses principales: Haeyo (-yo) y Hasipsio (-sumnida)",
+        "id": "1. Dua Tingkat Kesopanan Utama: Haeyo (-yo) dan Hasipsio (-sumnida)",
+        "vn": "1. Hai hình thức kính ngữ chính: Đuôi câu -yo và Đuôi câu -sumnida"
+      },
+      "paragraphs": {
+        "en": [
+          "Informal Polite (Haeyo-che / 해요체): Ends in -a/eo-yo. This is the most versatile speech style in modern Korea. It is warm, polite, and universally suitable for colleagues, service staff, and casual acquaintances.",
+          "Formal Polite (Hapsio-che / 하십시오체): Ends in -sumnida/-sumnikka. This register is reserved for television broadcasts, company presentations, military communication, and customer announcements."
+        ],
+        "jp": [
+          "「ヘヨ体（해요체）」は文末が「〜ア／オ・ヨ」で終わる親しみやすい敬語です。カフェやレストラン、職場の同僚など、日常のあらゆる場面で最も頻繁に使われます。",
+          "「ハムニダ体（하십시오체）」は「〜スムニダ」で終わる格式高い最高敬語です。ニュース報道、公式スピーチ、面接、ビジネスの重要会議などで使われます。"
+        ],
+        "cn": [
+          "非格式体敬语（해요체）：以“-아요/어요”结尾，语气亲切温和，广泛适用于日常生活、咖啡厅点餐以及普通同事社交。",
+          "格式体敬语（하십시오체）：以“-습니다/십니까”结尾，具有高度严谨的正式感，用于新闻联播、公开演讲、商务洽谈及军队纪律语境。"
+        ],
+        "es": [
+          "El estilo Haeyo (-yo) es cortés y cálido, ideal para el día a día.",
+          "El estilo Hasipsio (-sumnida) es formal y riguroso, reservado para presentaciones y ámbitos corporativos."
+        ],
+        "id": [
+          "Haeyo-che (-yo) adalah gaya sopan yang hangat dan paling sering digunakan sehari-hari.",
+          "Hasipsio-che (-sumnida) adalah gaya formal yang digunakan dalam situasi resmi dan kantor."
+        ],
+        "vn": [
+          "Haeyo-che (-yo) là đuôi câu lịch sự thân mật, dùng phổ biến nhất trong đời sống thường ngày.",
+          "Hasipsio-che (-sumnida) là đuôi câu trang trọng, dùng trong các bài phát biểu, phỏng vấn và công sở."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "When in doubt, always use Haeyo-che (-yo). It is never rude and avoids feeling excessively distant.",
+        "jp": "迷ったら常に「〜ヨ（해요）」を使いましょう。失礼にならず、相手に親しみやすい好印象を与えます。",
+        "cn": "若对语境把握不准，优先使用“-요”句尾。既不失礼貌，又倍感亲切自然。",
+        "es": "Ante la duda, usa siempre la terminación -yo.",
+        "id": "Jika ragu, selalu gunakan akhiran -yo karena sopan dan ramah.",
+        "vn": "Khi phân vân, hãy luôn sử dụng đuôi câu -yo để vừa lịch sự vừa gần gũi."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Practice Polite Greetings in Hangul",
+      "jp": "丁寧な挨拶表現を手書きで練習する",
+      "cn": "亲手练习常用礼貌敬语字帖",
+      "es": "Practica saludos de cortesía en Hangul",
+      "id": "Latih Salam Sopan dalam Hangul",
+      "vn": "Luyện viết các câu chào lịch sự bằng tiếng Hàn"
+    },
+    "desc": {
+      "en": "Print out handwriting sheets for essential polite expressions like Gamsahamnida and Annyeonghaseyo.",
+      "jp": "「감사합니다」「안녕하세요」など、心温まる敬語の練習帳を無料で印刷できます。",
+      "cn": "免费生成“감사합니다”、“안녕하세요”等高频敬语的高清方格练字帖。",
+      "es": "Imprime hojas de práctica con expresiones de cortesía fundamentales.",
+      "id": "Cetak lembar latihan untuk ungkapan sopan seperti Gamsahamnida.",
+      "vn": "In trang luyện viết các mẫu câu kính ngữ thiết yếu như Gamsahamnida."
+    },
+    "btn": {
+      "en": "Open Greetings Category",
+      "jp": "挨拶カテゴリーへ",
+      "cn": "前往问候语字帖",
+      "es": "Ver saludos",
+      "id": "Buka Kategori Salam",
+      "vn": "Mở mục chào hỏi"
+    },
+    "href": "/category/greetings"
+  }
+},
+{
+  "slug": "kpop-kdrama-essential-phrases",
+  "category": "Pop Culture & Media",
+  "readTime": "5 min read",
+  "date": "September 2026",
+  "icon": "🎬",
+  "tags": [
+    "K-Pop",
+    "K-Drama",
+    "Korean Dramas",
+    "Subtitles"
+  ],
+  "title": {
+    "en": "50 Essential Korean Phrases Heard in Every K-Drama and K-Pop Song",
+    "ko": "K-드라마와 K-POP에 매일 나오는 필수 관용 표현 50선",
+    "jp": "韓国ドラマとK-POPに毎日登場する必須フレーズ50選",
+    "cn": "韩剧与K-Pop中每集必现的50个高频核心表达",
+    "es": "50 frases esenciales de K-Drama y K-Pop que debes conocer",
+    "id": "50 Ungkapan Penting K-Drama & K-Pop yang Sering Muncul",
+    "vn": "50 cụm từ tiếng Hàn phổ biến nhất trong phim K-Drama và nhạc K-Pop"
+  },
+  "subtitle": {
+    "en": "Decode dramatic plot twists and romantic lyrics without looking down at subtitles.",
+    "ko": "자막을 보지 않고도 주인공의 감정선과 노래 가사를 마음 깊이 공감하는 비법.",
+    "jp": "字幕を追わずにドラマの感動的なセリフや歌詞をそのまま味わうための近道。",
+    "cn": "摆脱下视字幕的束缚，直接沉浸于韩剧角色的真情流露与动人旋律。",
+    "es": "Disfruta de tus series y canciones coreanas favoritas comprendiendo su idioma original.",
+    "id": "Nikmati drama dan lagu Korea favorit Anda tanpa harus selalu membaca subtitle.",
+    "vn": "Cảm nhận trọn vẹn cảm xúc của phim và bài hát mà không cần nhìn phụ đề."
+  },
+  "summary": {
+    "en": "From dramatic exclamations like \"Jinjja?\" (Really?) and \"Eotteoke?\" (What do I do?) to poetic words like \"Gieok\" (Memory) and \"Unmyeong\" (Destiny), these core terms form the emotional backbone of Korean storytelling.",
+    "ko": "“진짜?”, “어떻게?”, “보고 싶어” 같은 감정 표현부터 “기억”, “운명” 같은 노랫말 단어까지, 한국 대중문화의 감성을 관통하는 핵심 어휘들을 완벽 정리합니다.",
+    "jp": "「チンチャ？（本当に？）」「オットケ？（どうしよう？）」などの感情表現から、「記憶」「運命」といった歌詞の定番単語までを徹底解説します。",
+    "cn": "从感叹词“진짜?（真的吗？）”、“어떻게?（怎么办？）”到抒情词汇“기억（回忆）”、“운명（命运）”，全面解锁韩流叙事背后的情感密码。",
+    "es": "Aprende los términos emocionales y dramáticos más frecuentes en las series de televisión coreanas.",
+    "id": "Pelajari kata-kata dramatis dan emosional yang menjadi ciri khas penceritaan media Korea.",
+    "vn": "Tìm hiểu các cụm từ giàu cảm xúc xuất hiện liên tục trong các bộ phim truyền hình Hàn Quốc."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. Dramatic Exclamations & Question Tags",
+        "ko": "1. 극적인 감정을 터뜨리는 감탄사와 질문형 어휘",
+        "jp": "1. 感情を揺さぶる感嘆詞と問いかけ表現",
+        "cn": "1. 烘托剧情张力的感叹词与语气追问",
+        "es": "1. Exclamaciones dramáticas y preguntas frecuentes",
+        "id": "1. Seruan Dramatis & Kata Tanya Spontan",
+        "vn": "1. Các câu cảm thán kịch tính và câu hỏi tu từ"
+      },
+      "paragraphs": {
+        "en": [
+          "\"Jinjja?\" (진짜?) or \"Jeongmal?\" (정말?): Translates to \"Really?!\" or \"For real?!\". Used constantly when characters discover shocking secrets.",
+          "\"Hul\" (헐): An internet-era exclamation expressing disbelief, shock, or exasperation. Similar to \"OMG!\" or \"No way!\".",
+          "\"Daebak\" (대박): Originally meaning a jackpot, now used universally to mean \"Epic!\", \"Incredible!\", or \"Mind-blowing!\"."
+        ],
+        "jp": [
+          "「チンチャ？（진짜?）」／「チョンマル？（정말?）」：劇中で衝撃的な事実が明かされた際、「本当に？！」と驚く決まり文句です。",
+          "「ホル（헐）」：予想外の展開に言葉を失ったときの「えっ…」「マジで…」というリアルなリアクションです。",
+          "「テバク（대박）」：元々は大当たりを意味し、現在では「ヤバい！」「最高！」という意味で広く使われます。"
+        ],
+        "cn": [
+          "“진짜?（真假的？）”与“정말?（确实吗？）”：当角色遭遇反转真相时的第一本能反应。",
+          "“헐（天哪/无语）”：当代年轻人在极度震惊、哭笑不得时发出的拟声感叹词。",
+          "“대박（太赞了/绝了）”：原指中头彩，如今是表达极致赞叹与佩服的国民级流行语。"
+        ],
+        "es": [
+          "\"Jinjja?\" significa \"¿De verdad?\". Es la reacción clásica ante cualquier revelación dramática.",
+          "\"Daebak\" se utiliza para describir algo asombroso o increíble."
+        ],
+        "id": [
+          "\"Jinjja?\" berarti \"Benarkah?\". Sering diucapkan saat mendengar kabar mengejutkan.",
+          "\"Daebak\" berarti luar biasa atau mengagumkan."
+        ],
+        "vn": [
+          "\"Jinjja?\" có nghĩa là \"Thật sao?!\". Đây là câu cửa miệng trong mọi tình huống kịch tính.",
+          "\"Daebak\" mang ý nghĩa là tuyệt vời, đỉnh cao."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Intonation matters enormously. Raising the pitch turns statements into emotional queries.",
+        "jp": "韓国語は抑揚（イントネーション）が命です。語尾を上げ下げすることでニュアンスが劇的に変化します。",
+        "cn": "语调至关重要。尾音的上扬或平坠直接决定了情绪是关切、质疑还是感叹。",
+        "es": "La entonación cambia por completo el significado y la intención de la palabra.",
+        "id": "Intonasi suara sangat menentukan emosi dan makna dalam percakapan Korea.",
+        "vn": "Ngữ điệu rất quan trọng; lên giọng ở cuối câu sẽ biến câu nói thành câu hỏi đầy cảm xúc."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Print K-Pop Vocabulary Practice Sheets",
+      "jp": "K-POP単語の練習帳を印刷する",
+      "cn": "打印K-Pop热门歌词词汇练习帖",
+      "es": "Imprime hojas de práctica de K-Pop",
+      "id": "Cetak Lembar Latihan Kosakata K-Pop",
+      "vn": "In bài luyện viết từ vựng K-Pop"
+    },
+    "desc": {
+      "en": "Write out memorable lyrical words like Sarang, Chueok, and Kkum in beautiful squared grids.",
+      "jp": "「사랑（愛）」「추억（思い出）」「꿈（夢）」などの名詞をマス目練習帳で手書きしてみましょう。",
+      "cn": "在标准方格字帖中亲手书写歌词中反复吟唱的经典词汇。",
+      "es": "Escribe términos líricos emblemáticos en cuadrículas calibradas.",
+      "id": "Tulis kata-kata lirik lagu favorit dalam kertas berpetak.",
+      "vn": "Luyện viết các từ vựng âm nhạc ý nghĩa trong ô kẻ chuẩn."
+    },
+    "btn": {
+      "en": "Go to K-Pop Category",
+      "jp": "K-POPカテゴリーへ",
+      "cn": "前往K-Pop专区",
+      "es": "Ver K-Pop",
+      "id": "Ke Kategori K-Pop",
+      "vn": "Xem mục K-Pop"
+    },
+    "href": "/category/kpop"
+  }
+},
+{
+  "slug": "korean-numbers-sino-native",
+  "category": "Linguistics & Counting",
+  "readTime": "7 min read",
+  "date": "September 2026",
+  "icon": "🔢",
+  "tags": [
+    "Korean Numbers",
+    "Sino-Korean",
+    "Native Korean",
+    "Counters"
+  ],
+  "title": {
+    "en": "The Dual Number System of Korea: Native vs Sino-Korean Explained",
+    "ko": "한국어의 두 가지 숫자 체계: 고유어(하나, 둘)와 한자어(일, 이) 완벽 정리",
+    "jp": "韓国語の2つの数字体系：固有数詞（ハナ、トゥル）と漢数詞（イル、イ）",
+    "cn": "韩语两大数字系统完全解析：固有词与汉字词的用法分工",
+    "es": "El sistema numérico dual de Corea: números nativos vs sino-coreanos",
+    "id": "Sistem Angka Ganda Korea: Angka Asli vs Sino-Korea",
+    "vn": "Hệ thống số đếm kép của tiếng Hàn: Số thuần Hàn và Số Hán Hàn"
+  },
+  "subtitle": {
+    "en": "Why telling time in Korean requires using both number systems in the exact same sentence.",
+    "ko": "몇 시 몇 분을 말할 때 왜 두 가지 숫자를 동시에 섞어 써야 할까?",
+    "jp": "「3時20分」と言うときに、なぜ2種類の数字を混ぜて使うのか？",
+    "cn": "为什么报时表达“几点几分”时，必须在一句话里同时混合两种数字系统？",
+    "es": "Descubre por qué decir la hora en coreano requiere combinar ambos sistemas.",
+    "id": "Pelajari mengapa menyebutkan waktu dalam bahasa Korea menggabungkan kedua sistem angka.",
+    "vn": "Tìm hiểu lý do tại sao nói giờ trong tiếng Hàn lại kết hợp cả hai hệ thống số."
+  },
+  "summary": {
+    "en": "Korean uniquely maintains two parallel numbering systems: Native Korean (Hana, Dul, Set) for counting items, people, and clock hours; and Sino-Korean (Il, I, Sam) for money, phone numbers, minutes, and measurements.",
+    "ko": "한국어는 물건, 나이, 시간을 셀 때 쓰는 ‘고유어 수사’와 가격, 전화번호, 분(minute)을 셀 때 쓰는 ‘한자어 수사’가 엄격히 구분되어 있어 외국인 학습자가 꼭 마스터해야 하는 필수 관문입니다.",
+    "jp": "韓国語には、年齢や個数を数える「固有数詞」と、お金や電話番号、分（分単位）を数える「漢数詞」の2系統が存在します。",
+    "cn": "韩语拥有独特的双轨数字系统：数个数、年龄与点钟使用“固有数词”；计算金钱、电话号码、日期与分钟使用“汉字数词”。",
+    "es": "El coreano cuenta con números nativos (para personas y horas) y sino-coreanos (para dinero y minutos).",
+    "id": "Bahasa Korea memiliki angka asli untuk menghitung barang dan jam, serta angka Sino-Korea untuk uang dan menit.",
+    "vn": "Tiếng Hàn có số thuần Hàn để đếm đồ vật, giờ và số Hán Hàn để đếm tiền, phút và số điện thoại."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. The Golden Rule of Telling Time",
+        "ko": "1. 시간 말하기의 황금 법칙: 시(고유어) + 분(한자어)",
+        "jp": "1. 時間を言うときの鉄則：時（固有数詞）＋分（漢数詞）",
+        "cn": "1. 报时表达黄金法则：点钟（固有词） + 分钟（汉字词）",
+        "es": "1. La regla de oro para decir la hora: Horas (Nativo) + Minutos (Sino)",
+        "id": "1. Aturan Emas Menyebutkan Jam: Jam (Asli) + Menit (Sino)",
+        "vn": "1. Quy tắc vàng khi nói giờ: Giờ (Thuần Hàn) + Phút (Hán Hàn)"
+      },
+      "paragraphs": {
+        "en": [
+          "The single best way to memorize both systems is telling the time:",
+          "• The Hour is always Native Korean: 1 o’clock is \"Han-si\" (한 시), 2 o’clock is \"Du-si\" (두 시), 3 o’clock is \"Se-si\" (세 시).",
+          "• The Minutes are always Sino-Korean: 15 minutes is \"Sibo-bun\" (십오 분), 30 minutes is \"Samsip-bun\" (삼십 분).",
+          "Therefore, 3:30 is \"Se-si Samsip-bun\" (세 시 삼십 분). Practicing this sentence daily cements both systems seamlessly."
+        ],
+        "jp": [
+          "2つの数字体系をマスターする最も確実な練習法は「時計の時刻」を口に出すことです。",
+          "• 「〜時」は固有数詞：1時は「ハン・シ（한 시）」、2時は「トゥ・シ（두 시）」、3時は「セ・シ（세 시）」。",
+          "• 「〜分」は漢数詞：15分は「シボ・ブン（십오 분）」、30分は「サムシプ・ブン（삼십 분）」。",
+          "「3時30分」は「セシ・サムシプブン（세 시 삼십 분）」となります。"
+        ],
+        "cn": [
+          "掌握两大数字系统的最高效捷径便是练习“日常报时”：",
+          "• “点钟”必须使用固有词：1点为“한 시”、2点为“두 시”、3点为“세 시”；",
+          "• “分钟”必须使用汉字词：15分为“십오 분”、30分为“삼십 분”；",
+          "例如“3点30分”即为“세 시 삼십 분”。每日练习看表报时，两大系统自然融会贯通。"
+        ],
+        "es": [
+          "Para decir las 3:30 se dice \"Se-si Samsip-bun\", mezclando horas nativas y minutos sino-coreanos.",
+          "Practicar la hora a diario es la mejor manera de dominar ambos sistemas."
+        ],
+        "id": [
+          "Pukul 3:30 disebut \"Se-si Samsip-bun\", menggabungkan jam asli dan menit Sino-Korea.",
+          "Mempraktikkan cara membaca jam adalah cara tercepat menguasai kedua sistem."
+        ],
+        "vn": [
+          "Ví dụ 3 giờ 30 phút sẽ nói là \"Se-si Samsip-bun\", kết hợp số thuần Hàn cho giờ và số Hán Hàn cho phút.",
+          "Luyện tập xem đồng hồ mỗi ngày là cách tốt nhất để ghi nhớ cả hai hệ thống số."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Hours take Native numbers; Minutes and Money take Sino numbers.",
+        "jp": "「時間（時）」は固有数詞、「分とお金」は漢数詞。これだけ覚えておけば日常生活で困りません。",
+        "cn": "记住口诀：“点钟用固有，分钟与金钱用汉字”。",
+        "es": "Horas con números nativos; Minutos y dinero con números sino-coreanos.",
+        "id": "Jam menggunakan angka asli; Menit dan uang menggunakan angka Sino-Korea.",
+        "vn": "Giờ dùng số thuần Hàn; Phút và tiền bạc dùng số Hán Hàn."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Practice Korean Number Syllables",
+      "jp": "ハングルの数字を手書き練習する",
+      "cn": "练习韩文数字方格字帖",
+      "es": "Practica los caracteres numéricos en Hangul",
+      "id": "Latih Karakter Angka Hangul",
+      "vn": "Luyện viết chữ số bằng Hangul"
+    },
+    "desc": {
+      "en": "Write out Il, I, Sam, Sa and Hana, Dul, Set in standard crosshair grids.",
+      "jp": "「일, 이, 삼, 사」と「하나, 둘, 셋」をマス目練習帳で丁寧に手書きしてみましょう。",
+      "cn": "在标准十字原稿纸字帖中手写韩文基础数字。",
+      "es": "Escribe los números en nuestras plantillas en cuadrícula.",
+      "id": "Tulis angka dalam kertas berpetak untuk mengasah ketepatan bentuk huruf.",
+      "vn": "Luyện viết số đếm trên trang bài tập ô vuông chuẩn."
+    },
+    "btn": {
+      "en": "Go to Alphabet & Numbers",
+      "jp": "字母練習帳へ",
+      "cn": "前往字母与数字练习",
+      "es": "Ir a práctica",
+      "id": "Ke Lembar Latihan",
+      "vn": "Đi tới bài luyện"
+    },
+    "href": "/alphabet"
+  }
+},
+{
+  "slug": "korean-weather-four-seasons",
+  "category": "Nature & Seasonal Culture",
+  "readTime": "6 min read",
+  "date": "September 2026",
+  "icon": "🌸",
+  "tags": [
+    "Four Seasons",
+    "Weather Expressions",
+    "Korean Nature",
+    "Spring Autumn"
+  ],
+  "title": {
+    "en": "The Poetics of Korean Weather: Four Distinct Seasons & Emotional Vocabulary",
+    "ko": "한국의 뚜렷한 사계절과 날씨를 노래하는 서정적 어휘 사전",
+    "jp": "韓国の四季と天気を彩る叙情的な言葉たち",
+    "cn": "韩国分明的四季之美与天气抒情词汇图鉴",
+    "es": "Las cuatro estaciones en Corea y el vocabulario del clima",
+    "id": "Keindahan Empat Musim di Korea & Kosakata Cuaca yang Puitis",
+    "vn": "Vẻ đẹp bốn mùa rõ rệt của Hàn Quốc và từ vựng thời tiết giàu cảm xúc"
+  },
+  "subtitle": {
+    "en": "How Korea’s dramatic climate shifts from cherry blossoms to snow-capped mountains inspire language.",
+    "ko": "봄의 벚꽃부터 겨울의 설경까지, 날씨를 표현하는 아름다운 한국어 단어들.",
+    "jp": "春の桜から冬の白雪まで、季節の移ろいを繊細に表現する韓国語の美学。",
+    "cn": "从春樱烂漫到冬雪纷飞，用最富意境的韩语词汇描绘大自然的四季交响。",
+    "es": "Cómo el clima coreano y sus estaciones inspiran expresiones llenas de poesía.",
+    "id": "Bagaimana perubahan iklim Korea yang dinamis menginspirasi bahasa yang kaya.",
+    "vn": "Cách khí hậu bốn mùa rõ rệt của Hàn Quốc tạo nên những từ vựng miêu tả thiên nhiên thi vị."
+  },
+  "summary": {
+    "en": "Korea experiences four distinct seasons (Bom, Yeoreum, Gaeul, Gyeoul). The language possesses rich sensory adjectives to capture warm spring breezes (Ttatteut-hada), crisp autumn skies (Cheongmyeong-hada), and freezing winter chills (Ssalssal-hada).",
+    "ko": "한국은 봄, 여름, 가을, 겨울의 사계절이 뚜렷하여 계절마다 느끼는 온도를 형용하는 감각어가 매우 풍부하게 발달했습니다. 날씨 어휘를 통해 한국어 특유의 섬세한 표현력을 배워보세요.",
+    "jp": "韓国は春（ポム）、夏（ヨルム）、秋（カウル）、冬（キョウル）の四季が非常に際立っており、肌で感じる気温や空気を描写する形容詞が豊かに発達しています。",
+    "cn": "韩国拥有极为分明的春夏秋冬。春之明媚、夏之葱郁、秋之高爽、冬之静谧，孕育出丰富细腻的感官形容词。",
+    "es": "Corea disfruta de cuatro estaciones marcadas, lo que enriquece su vocabulario sensorial.",
+    "id": "Korea memiliki empat musim yang jelas, menghasilkan banyak kata sifat deskriptif.",
+    "vn": "Hàn Quốc có bốn mùa Xuân, Hạ, Thu, Đông rõ rệt với kho từ vựng miêu tả cảm giác phong phú."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. The Four Seasons in Hangul",
+        "ko": "1. 한국의 사계절 명칭과 계절별 대표 풍경",
+        "jp": "1. ハングルで書く四季の名称と風物詩",
+        "cn": "1. 四季名称与代表性风物景致",
+        "es": "1. Las cuatro estaciones en Hangul",
+        "id": "1. Nama Empat Musim dalam Bahasa Korea",
+        "vn": "1. Tên gọi bốn mùa bằng tiếng Hàn"
+      },
+      "paragraphs": {
+        "en": [
+          "• Spring (Bom / 봄): Associated with rebirth, cherry blossoms (Beot-kkot), and pleasant warmth (Ttatteut-hada).",
+          "• Summer (Yeoreum / 여름): Lush green mountains, monsoons (Jangma), and beach retreats to Busan or Gangneung.",
+          "• Autumn (Gaeul / 가을): Fiery crimson maple leaves (Danpung), crisp blue skies (Cheongmyeong-han haneul), and the Chuseok harvest thanksgiving.",
+          "• Winter (Gyeoul / 겨울): Crisp white snow (Noon), hot street food like Bungeoppang, and skiing in Gangwon province."
+        ],
+        "jp": [
+          "• 春（ポム / 봄）：桜の花（ポッコッ）が咲き誇る、暖かく心地よい季節。",
+          "• 夏（ヨルム / 여름）：新緑と海、そして恵みの雨をもたらす梅雨（チャンマ）の季節。",
+          "• 秋（カウル / 가을）：山々を赤く染める紅葉（タンプン）と、秋夕（チュソク）の収穫の喜び。",
+          "• 冬（キョウル / 겨울）：白銀の雪景色と、屋台の温かいタイ焼き（プンオッパン）が恋しくなる季節。"
+        ],
+        "cn": [
+          "• 春（봄 / Bom）：樱花（벚꽃）烂漫，微风和煦，万物复苏；",
+          "• 夏（여름 / Yeoreum）：郁郁葱葱，海滨度假与梅雨（장마）的时节；",
+          "• 秋（가을 / Gaeul）：红枫（단풍）漫山遍野，秋高气爽，喜迎中秋（추석）丰收；",
+          "• 冬（겨울 / Gyeoul）：银装素裹，街头热气腾腾的鲷鱼烧（붕어빵）温暖人心。"
+        ],
+        "es": [
+          "Las cuatro estaciones (Bom, Yeoreum, Gaeul, Gyeoul) representan el ciclo de la naturaleza.",
+          "El otoño es famoso por el follaje rojizo (Danpung) y el cielo azul despejado."
+        ],
+        "id": [
+          "Empat musim (Bom, Yeoreum, Gaeul, Gyeoul) memiliki keunikan pemandangan masing-masing.",
+          "Musim gugur terkenal dengan daun merah (Danpung) dan langit yang cerah."
+        ],
+        "vn": [
+          "Bốn mùa (Bom, Yeoreum, Gaeul, Gyeoul) mang vẻ đẹp thiên nhiên kỳ ảo.",
+          "Mùa thu nổi tiếng với lá phong đỏ (Danpung) và bầu trời trong xanh."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Single-syllable nouns like \"봄\" (Spring) and \"눈\" (Snow) are foundational vocabulary for poetic calligraphy.",
+        "jp": "「봄（春）」や「눈（雪）」のような一文字の名詞は、筆文字（カリグラフィー）の練習に最も適しています。",
+        "cn": "如“봄（春）”、“눈（雪）”这类单音节纯正韩语词汇，是书法题字与明信片书写的经典选词。",
+        "es": "Las palabras cortas como \"봄\" son ideales para iniciarse en la caligrafía artística.",
+        "id": "Kata bersuku kata tunggal seperti \"봄\" sangat bagus untuk melatih estetika tulisan tangan.",
+        "vn": "Các từ đơn như \"봄\" (Xuân) và \"눈\" (Tuyết) rất thích hợp để luyện viết thư pháp nghệ thuật."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Print Weather Vocabulary Worksheets",
+      "jp": "天気と季節の単語練習帳を印刷する",
+      "cn": "打印天气与自然词汇练字帖",
+      "es": "Hojas de práctica sobre el clima",
+      "id": "Lembar Latihan Kosakata Cuaca",
+      "vn": "Bài tập luyện viết từ vựng thời tiết"
+    },
+    "desc": {
+      "en": "Practice seasonal characters in calibrated square practice sheets.",
+      "jp": "季節を彩る美しい単語を手書きして、ハングルの表現力を磨きましょう。",
+      "cn": "在四角方格练习帖中书写描写季节温度的优美词汇。",
+      "es": "Practica palabras sobre las estaciones en nuestras hojas de trabajo.",
+      "id": "Latih kata-kata musim dalam lembar latihan berpetak.",
+      "vn": "Luyện viết các từ vựng bốn mùa trên trang kẻ ô chuẩn."
+    },
+    "btn": {
+      "en": "Explore Vocabulary",
+      "jp": "単語一覧へ",
+      "cn": "查看全部分类",
+      "es": "Ver vocabulario",
+      "id": "Lihat Kosakata",
+      "vn": "Xem từ vựng"
+    },
+    "href": "/#category"
+  }
+},
+{
+  "slug": "korean-restaurant-ordering-guide",
+  "category": "Travel & Culinary Realities",
+  "readTime": "6 min read",
+  "date": "September 2026",
+  "icon": "🍲",
+  "tags": [
+    "Restaurant Korean",
+    "Food Ordering",
+    "Travel Tips",
+    "Dining Etiquette"
+  ],
+  "title": {
+    "en": "How to Order Food in Korea Like a Local: Survival Phrases for Dining Out",
+    "ko": "한국 식당에서 현지인처럼 당당하게 주문하는 실전 회화 가이드",
+    "jp": "韓国の食堂でローカルのように注文する実践サバイバル会話",
+    "cn": "在韩国餐厅像本地人一样地道点餐的实用指南",
+    "es": "Cómo pedir comida en Corea como un local: frases útiles para restaurantes",
+    "id": "Cara Memesan Makanan di Restoran Korea Seperti Penduduk Lokal",
+    "vn": "Cách gọi món tại nhà hàng Hàn Quốc như người bản xứ: Cẩm nang thực tế"
+  },
+  "subtitle": {
+    "en": "From pressing table call buttons to requesting extra side dishes without embarrassment.",
+    "ko": "테이블 호출 벨부터 \"이모님 여기 반찬 더 주세요!\"까지 막힘없는 식당 회화.",
+    "jp": "呼び出しベルの使い方から「おかずのお代わり」まで、迷わず使える食堂の韓国語。",
+    "cn": "从按桌角呼叫铃到爽朗呼唤“阿姨，请再加点小菜”，餐厅实操全流程解析。",
+    "es": "Domina las frases esenciales para ordenar y disfrutar de la comida en Corea.",
+    "id": "Kuasai percakapan penting saat makan di luar di restoran Korea.",
+    "vn": "Nắm vững các câu nói thông dụng khi đi ăn tại các quán ăn Hàn Quốc."
+  },
+  "summary": {
+    "en": "Dining in Korea is interactive and lively. Learning essential phrases like \"Jeogiyo\" (Excuse me), \"~Inbun juseyo\" (Please give me X servings), and \"Gyesan-hae juseyo\" (The bill, please) guarantees smooth, delicious meals.",
+    "ko": "한국의 식당은 정겹고 역동적입니다. 점원을 부르는 “저기요!”, 인분 수량을 말하는 “~인분 주세요”, 계산할 때 쓰는 “계산해 주세요” 세 가지만 알면 전국 어디서나 당당하게 맛집을 탐방할 수 있습니다.",
+    "jp": "店員さんを呼ぶ「チョギヨ！（あの〜）」、人数分を注文する「〜インブン・ジュセヨ」、お会計の「ケサネ・ジュセヨ」。この3つを覚えれば韓国旅行の食事は完璧です。",
+    "cn": "韩国餐饮氛围热烈亲切。牢记呼叫店员的“저기요!（打扰一下）”、份量单位“~인분 주세요（请给来X人份）”以及结账表达“계산해 주세요（请买单）”，走遍全韩美食店无阻。",
+    "es": "Aprende cómo llamar a los camareros y pedir raciones con naturalidad en cualquier restaurante coreano.",
+    "id": "Ketahui cara memanggil pelayan dan memesan porsi makanan dengan percaya diri.",
+    "vn": "Học cách gọi phục vụ và gọi suất ăn một cách tự nhiên tại bất kỳ nhà hàng nào ở Hàn Quốc."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. The 3 Essential Magic Phrases",
+        "ko": "1. 식당에서 통하는 3대 마법의 표현",
+        "jp": "1. 食堂で絶対に役立つ3大マジックフレーズ",
+        "cn": "1. 餐厅畅行无阻的三大魔法句型",
+        "es": "1. Las 3 frases mágicas en el restaurante",
+        "id": "1. Tiga Kalimat Ajaib di Restoran",
+        "vn": "1. Ba câu thần chú trong quán ăn"
+      },
+      "paragraphs": {
+        "en": [
+          "1. \"Jeo-gi-yo!\" (저기요!): Meaning \"Over here!\" or \"Excuse me!\". Never be shy; in Korea, raising your hand and calling out politely is standard etiquette if there is no call button.",
+          "2. \"~In-bun ju-se-yo\" (~인분 주세요): Specifying portions. In barbecue spots, meat is ordered by portions: \"Samgyeopsal i-inbun juseyo\" (2 servings of pork belly, please).",
+          "3. \"Mul jom ju-se-yo\" (물 좀 주세요): \"Water, please!\". In most Korean casual spots, cold water and cups are self-service (Self / 셀프)."
+        ],
+        "jp": [
+          "1. 「チョギヨ！（저기요!）」：呼び出しボタンがない店では、手を挙げて明るく「チョギヨ〜」と声をかけるのがマナーです。",
+          "2. 「〜インブン・ジュセヨ（~인분 주세요）」：焼肉店などでは人数分（人前）で注文します。「サムギョプサル 2人前ください（이인분 주세요）」のように使います。",
+          "3. 「ムル チョム ジュセヨ（물 좀 주세요）」：お水を頼む言葉ですが、韓国の食堂ではお水はセルフサービス（셀프）の店も多いので確認しましょう。"
+        ],
+        "cn": [
+          "1. “저기요!（打扰一下/服务员！）”：若桌上无电子呼叫铃，微笑着轻举手并清晰呼唤是标准的就餐礼仪。",
+          "2. “~인분 주세요（请给X人份）”：在烤肉店必须按人份点单，例如“삼겹살 2인분 주세요（请来两份五花肉）”。",
+          "3. “물 좀 주세요（请给点水）”：许多亲民小馆提供凉水自取（셀프 / Self），可根据店内标牌自行取用。"
+        ],
+        "es": [
+          "\"Jeogiyo\" es la forma educada de llamar la atención del personal.",
+          "Las porciones de carne en barbacoa se piden con la palabra \"inbun\" (raciones)."
+        ],
+        "id": [
+          "\"Jeogiyo\" adalah cara sopan memanggil pelayan.",
+          "Porsi daging biasanya dipesan dengan satuan \"inbun\"."
+        ],
+        "vn": [
+          "\"Jeogiyo\" là cách lịch sự để gọi nhân viên.",
+          "Các món thịt nướng thường được gọi theo đơn vị suất \"inbun\"."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Side dishes (Banchan) are almost always free and refillable. Simply say \"Banchan deo juseyo!\" (More side dishes, please!).",
+        "jp": "韓国の食堂ではおかず（パンチャン）のお代わりは無料です。「パンチャン ト ジュセヨ（반찬 더 주세요）」と笑顔で伝えましょう。",
+        "cn": "绝大多数传统餐馆的小菜（Banchan）均可免费无限续添，只需礼貌地说一声“반찬 더 주세요!”即可。",
+        "es": "Las guarniciones (Banchan) suelen ser gratuitas y recargables.",
+        "id": "Lauk pauk pendamping (Banchan) hampir selalu gratis dan boleh nambah.",
+        "vn": "Các món ăn kèm (Banchan) hầu hết đều miễn phí và có thể xin thêm thoải mái."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Print Korean Food Handwriting Sheets",
+      "jp": "韓国料理の単語練習帳を印刷する",
+      "cn": "打印韩国美食单字与菜单练字帖",
+      "es": "Hojas de práctica sobre comida coreana",
+      "id": "Lembar Latihan Menu Makanan Korea",
+      "vn": "Bài tập luyện viết từ vựng món ăn Hàn"
+    },
+    "desc": {
+      "en": "Practice writing dishes like Bibimbap, Kimchi, and Tteokbokki before your next culinary trip.",
+      "jp": "ビビンバ、キムチ、トッポッキなどの料理名を手書きして、メニューをスラスラ読めるようにしましょう。",
+      "cn": "亲手书写石锅拌饭、泡菜、辣炒年糕等招牌料理的韩文写法。",
+      "es": "Practica la caligrafía de platos populares coreanos.",
+      "id": "Latih tulisan nama-nama hidangan terkenal seperti Bibimbap dan Kimchi.",
+      "vn": "Luyện viết tên các món ăn nổi tiếng như Bibimbap và Tteokbokki."
+    },
+    "btn": {
+      "en": "Go to Food Category",
+      "jp": "料理カテゴリーへ",
+      "cn": "前往美食字帖",
+      "es": "Ver comida",
+      "id": "Ke Kategori Makanan",
+      "vn": "Xem mục ẩm thực"
+    },
+    "href": "/category/food"
+  }
+},
+{
+  "slug": "topik-writing-high-score-tips",
+  "category": "Exam Preparation & Academics",
+  "readTime": "7 min read",
+  "date": "September 2026",
+  "icon": "📝",
+  "tags": [
+    "TOPIK",
+    "Korean Test",
+    "Writing Section",
+    "Exam Tips"
+  ],
+  "title": {
+    "en": "How to Score High on the TOPIK Writing Section: Manuscript Rules & Essay Strategy",
+    "ko": "TOPIK(한국어능력시험) 쓰기 영역 고득점 전략과 원고지 작성법 완벽 가이드",
+    "jp": "TOPIK（韓国語能力試験）作文・筆記セクションで高得点を取る原稿用紙テクニック",
+    "cn": "TOPIK（韩国语能力考试）写作部分高分全攻略与方格原稿纸书写规范",
+    "es": "Cómo obtener una alta puntuación en la sección de escritura del TOPIK",
+    "id": "Cara Meraih Skor Tinggi pada Bagian Menulis Ujian TOPIK",
+    "vn": "Bí quyết đạt điểm cao phần thi Viết TOPIK và quy tắc dùng giấy kẻ ô Wongoji"
+  },
+  "subtitle": {
+    "en": "Master the strict spacing, punctuation, and structural rules of the official Wongoji exam sheets.",
+    "ko": "띄어쓰기, 문장 부호, 문단 첫 칸 띄우기 등 감점을 피하는 원고지 작성의 모든 것.",
+    "jp": "分かち書き、句読点、段落の字下げなど、減点を防ぐ原稿用紙ルールの要点。",
+    "cn": "掌握空格分写、标点符号规范及段首缩进准则，彻底告别原稿纸失分盲区。",
+    "es": "Domina las estrictas reglas de puntuación y espaciado en las hojas oficiales de examen.",
+    "id": "Kuasai aturan spasi dan tanda baca dalam lembar ujian resmi agar tidak kehilangan nilai.",
+    "vn": "Nắm vững các quy tắc ngắt từ và dấu câu trên giấy thi kẻ ô chính thức để tránh bị trừ điểm."
+  },
+  "summary": {
+    "en": "The Test of Proficiency in Korean (TOPIK II) writing test requires candidates to write directly on squared Wongoji paper. Candidates frequently lose valuable points not from poor vocabulary, but from violating basic manuscript formatting rules.",
+    "ko": "TOPIK II 쓰기 영역은 실제 십자 사각 원고지에 직접 손으로 답안을 작성해야 합니다. 많은 수험생들이 어휘력이 부족해서가 아니라, 원고지 띄어쓰기와 문장 부호 사용 규칙을 몰라 억울하게 감점을 당합니다.",
+    "jp": "TOPIK IIの作文試験は、指定の原稿用紙に直接手書きで記述します。文法や語彙だけでなく、原稿用紙の書き方ルール（マス目の使い方）を熟知しているかが合否を大きく左右します。",
+    "cn": "TOPIK II写作科目要求考生直接在方格原稿纸上亲手书写作答。许多考生并非因语法词汇不足，而是因忽视了分段缩进与标点规则而造成惨重失分。",
+    "es": "En el examen TOPIK II, saber utilizar correctamente el papel cuadriculado Wongoji es tan importante como la gramática.",
+    "id": "Dalam ujian TOPIK II, pemahaman tentang tata cara penulisan di kertas Wongoji sangat krusial.",
+    "vn": "Trong kỳ thi TOPIK II, việc nắm rõ quy cách viết trên giấy ô vuông Wongoji quan trọng không kém gì ngữ pháp."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. Golden Manuscript Rules for TOPIK",
+        "ko": "1. TOPIK 수험생이 반드시 지켜야 할 원고지 3대 규칙",
+        "jp": "1. TOPIK受験者が厳守すべき原稿用紙の3大原則",
+        "cn": "1. TOPIK考生必须恪守的原稿纸三大黄金法则",
+        "es": "1. Reglas fundamentales de la hoja de examen",
+        "id": "1. Tiga Aturan Penting Kertas Ujian Wongoji",
+        "vn": "1. Ba quy tắc cốt lõi trên giấy thi Wongoji"
+      },
+      "paragraphs": {
+        "en": [
+          "1. Paragraph Indentation: Always leave the very first square of a new paragraph empty. Never indent intermediate lines within the same paragraph.",
+          "2. One Punctuation per Box: Periods (.) and commas (,) take their own individual square, placed in the bottom-left corner of the box.",
+          "3. Two Numbers per Box: In Arabic numbers (like 2026), place two digits into a single square (20 in one box, 26 in the next)."
+        ],
+        "jp": [
+          "1. 段落の字下げ：新しい段落の最初のマスは必ず1マス空けます。同一段落の途中の行頭は空けてはいけません。",
+          "2. 句読点の配置：句点（.）や読点（,）はマス目の左下に打ちます。ただし、行の最初のマスに句読点が来てはいけません。",
+          "3. 数字の記入：アラビア数字は1マスに2桁ずつ（例：「20」「26」）記入するのがルールです。"
+        ],
+        "cn": [
+          "1. 段首空格：每个新自然段的第一格必须严格空出。段落内部换行时顶格书写，切勿多余缩进。",
+          "2. 标点位置：句号（.）和逗号（,）独占一格并居于左下角。行首第一格绝对不能出现句逗标点。",
+          "3. 阿拉伯数字：凡遇到年份或多位数字，按“一格两字”原则填写（如“20”占一格，“26”占下一格）。"
+        ],
+        "es": [
+          "Deja siempre la primera casilla del párrafo vacía.",
+          "Los números arábigos se escriben de a dos por cada casilla."
+        ],
+        "id": [
+          "Kosongkan selalu kotak pertama pada awal paragraf baru.",
+          "Tulis dua digit angka Arab dalam satu kotak berpetak."
+        ],
+        "vn": [
+          "Luôn để trống ô đầu tiên khi bắt đầu một đoạn văn mới.",
+          "Các chữ số Ả Rập được viết hai chữ số trong cùng một ô vuông."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Practicing on authentic Wongoji sheets prior to exam day is the best insurance against format deductions.",
+        "jp": "試験本番前に本物の原稿用紙で何度も練習しておくことが、減点を防ぐ最大の秘訣です。",
+        "cn": "考前在经过科学校准的方格原稿纸上进行全真模拟手写，是确保写作高分的最坚实保障。",
+        "es": "Practicar en hojas oficiales antes del examen evita deducciones innecesarias.",
+        "id": "Berlatih di kertas naskah sebelum hari ujian adalah cara terbaik mengamankan skor.",
+        "vn": "Luyện tập trên giấy ô vuông thực tế trước ngày thi là cách tốt nhất để không bị trừ điểm oan."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Download Free Official Wongoji Templates",
+      "jp": "公式仕様の原稿用紙PDFを無料でダウンロード",
+      "cn": "免费下载考级标准方格原稿纸PDF",
+      "es": "Descarga plantillas de papel cuadriculado Wongoji",
+      "id": "Unduh Lembar Latihan Kotak Wongoji Resmi",
+      "vn": "Tải miễn phí mẫu giấy thi ô vuông Wongoji chuẩn"
+    },
+    "desc": {
+      "en": "Write Hangul generates calibrated 200-character and 400-character squared sheets ready for printing.",
+      "jp": "Write Hangulでは、TOPIK本番と同一のマス目比率を持つ高解像度練習用紙をワンクリックで印刷できます。",
+      "cn": "本站自动生成与TOPIK真实考场纸张规格完全一致的高清格线练习帖，即开即打。",
+      "es": "Genera hojas cuadriculadas con proporciones idénticas a las del examen real.",
+      "id": "Buat lembar berpetak yang proporsinya sama persis dengan lembar ujian.",
+      "vn": "Tạo các trang bài tập có tỷ lệ ô kẻ tương đương bài thi thật chỉ với một cú nhấp chuột."
+    },
+    "btn": {
+      "en": "Open Sheet Generator",
+      "jp": "練習用紙を作成する",
+      "cn": "即刻生成练字帖",
+      "es": "Crear plantilla",
+      "id": "Buat Lembar Kerja",
+      "vn": "Tạo trang bài tập"
+    },
+    "href": "/#category"
+  }
+},
+{
+  "slug": "korean-titles-oppa-unnie-hyung",
+  "category": "Kinship & Social Dynamics",
+  "readTime": "6 min read",
+  "date": "September 2026",
+  "icon": "👥",
+  "tags": [
+    "Korean Titles",
+    "Oppa",
+    "Unnie",
+    "Hyung",
+    "Noona"
+  ],
+  "title": {
+    "en": "The Culture of Korean Kinship Titles: How to Use Oppa, Unnie, Hyung, and Noona",
+    "ko": "한국의 호칭 문화 완벽 정리: 오빠, 언니, 형, 누나의 올바른 사용법과 에티켓",
+    "jp": "韓国の呼び方文化：オッパ、オンニ、ヒョン、ヌナの正しい使い方とマナー",
+    "cn": "韩国称谓文化大揭秘：欧巴、欧尼、兄、努那的正确用法与社交界限",
+    "es": "Cultura de títulos en Corea: cómo usar Oppa, Unnie, Hyung y Noona",
+    "id": "Budaya Panggilan Akrab di Korea: Cara Menggunakan Oppa, Unnie, Hyung, dan Noona",
+    "vn": "Văn hóa xưng hô trong tiếng Hàn: Cách dùng Oppa, Unnie, Hyung và Noona chuẩn xác"
+  },
+  "subtitle": {
+    "en": "Understand how age, gender, and social distance dictate how Koreans address friends and elders.",
+    "ko": "나이와 성별에 따라 결정되는 호칭의 미묘한 뉘앙스와 외국인이 흔히 하는 실수.",
+    "jp": "年齢や性別によって決まる韓国独特の呼称ルールと、知っておくべき境界線。",
+    "cn": "由年龄与性别严密界定的称谓规则：避免初学者常见尴尬误区的社交宝典。",
+    "es": "Aprende las reglas de parentesco social que determinan cómo dirigirte a tus amigos en Corea.",
+    "id": "Pahami bagaimana usia dan jenis kelamin menentukan panggilan yang tepat untuk teman.",
+    "vn": "Hiểu rõ các quy tắc xưng hô dựa trên tuổi tác và giới tính để giao tiếp tinh tế hơn."
+  },
+  "summary": {
+    "en": "Unlike English where anyone can be called by their first name, Korean culture uses relational kinship titles even among friends: a female calls an older male \"Oppa\" and an older female \"Unnie\", while a male calls an older male \"Hyung\" and an older female \"Noona\".",
+    "ko": "한국에서는 동갑이 아닌 이상 친구 사이라도 나이에 따라 호칭이 달라집니다. 여성이 연상의 남성을 부르는 ‘오빠’, 여성을 부르는 ‘언니’, 남성이 연상의 남성을 부르는 ‘형’, 여성을 부르는 ‘누나’의 체계는 한국 사회의 유대감을 나타내는 핵심입니다.",
+    "jp": "韓国では同い年でない限り、親しい間柄でも年齢差に応じて呼び名が変わります。女性から年上男性への「オッパ」、年上女性への「オンニ」、男性から年上男性への「ヒョン」、年上女性への「ヌナ」の使い分けを学びましょう。",
+    "cn": "在韩国人际交往中，除同龄朋友外，长幼秩序决定了亲密称呼：女性称年长男性为“오빠（欧巴）”，称年长女性为“언니（欧尼）”；男性称年长男性为“형（兄）”，称年长女性为“누나（努那）”。",
+    "es": "En Corea, la edad y el género determinan el título que usas para dirigirte a alguien mayor que tú.",
+    "id": "Di Korea, usia dan jenis kelamin menentukan sebutan untuk teman yang lebih tua.",
+    "vn": "Ở Hàn Quốc, việc gọi tên phụ thuộc vào tuổi tác và giới tính của cả người nói lẫn người nghe."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. The 2x2 Matrix of Kinship Titles",
+        "ko": "1. 성별과 나이로 정리하는 2x2 호칭 매트릭스",
+        "jp": "1. 性別と年齢で分かる呼称の基本マトリックス",
+        "cn": "1. 基于性别与长幼的2x2称谓速查矩阵",
+        "es": "1. La matriz 2x2 de títulos de cortesía",
+        "id": "1. Matriks 2x2 Sebutan Berdasarkan Usia & Gender",
+        "vn": "1. Bảng phân loại xưng hô 2x2 chuẩn xác"
+      },
+      "paragraphs": {
+        "en": [
+          "• If YOU are FEMALE: An older male friend is \"Oppa\" (오빠); an older female friend is \"Unnie\" (언니).",
+          "• If YOU are MALE: An older male friend is \"Hyung\" (형); an older female friend is \"Noona\" (누나).",
+          "• Crucial Etiquette Tip: Never use these titles with strangers or in formal business settings. In business, always use full names followed by \"-ssi\" (씨) or professional job titles like \"Daeri-nim\" or \"Gwajang-nim\"."
+        ],
+        "jp": [
+          "• あなたが「女性」の場合：年上の親しい男性は「オッパ（오빠）」、年上の親しい女性は「オンニ（언니）」。",
+          "• あなたが「男性」の場合：年上の親しい男性は「ヒョン（형）」、年上の親しい女性は「ヌナ（누나）」。",
+          "• マナーの注意点：初対面の人やビジネスの場では絶対に使ってはいけません。職場では「名前＋シ（〜씨）」や「役職名＋ニム（〜님）」を使います。"
+        ],
+        "cn": [
+          "• 若“发言者为女性”：年长男性朋友称“오빠（Oppa）”；年长女性朋友称“언니（Unnie）”；",
+          "• 若“发言者为男性”：年长男性朋友称“형（Hyung）”；年长女性朋友称“누나（Noona）”；",
+          "• 社交界限警示：切勿对陌生人或在严肃职场中使用这些称呼。职场沟通中一律使用“姓名+씨（某某氏）”或“职务头衔+님（某某长님）”。"
+        ],
+        "es": [
+          "Las mujeres llaman Oppa a hombres mayores y Unnie a mujeres mayores.",
+          "Los hombres llaman Hyung a hombres mayores y Noona a mujeres mayores. Nunca los uses en el trabajo."
+        ],
+        "id": [
+          "Perempuan memanggil pria yang lebih tua Oppa dan wanita yang lebih tua Unnie.",
+          "Pria memanggil pria yang lebih tua Hyung dan wanita yang lebih tua Noona. Hindari penggunaan di lingkungan kerja."
+        ],
+        "vn": [
+          "Nữ giới gọi anh là Oppa, gọi chị là Unnie.",
+          "Nam giới gọi anh là Hyung, gọi chị là Noona. Tránh dùng trong môi trường công sở trang trọng."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "These kinship titles denote emotional closeness. Allow the older person to suggest using them first.",
+        "jp": "これらの呼び方は親密さの証です。通常は年上の相手から「これからはオッパ／オンニと呼んでね」と提案されてから使うのがスマートです。",
+        "cn": "亲昵称谓意味着彼此关系达到极高亲密度。通常应由年长一方主动提议“以后可以叫我欧巴/姐姐”后再行使用。",
+        "es": "Estos títulos denotan cercanía. Es mejor esperar a que la persona mayor sugiera utilizarlos.",
+        "id": "Panggilan ini menunjukkan keakraban. Tunggu hingga orang yang lebih tua mengizinkannya.",
+        "vn": "Các danh xưng này thể hiện sự thân thiết. Hãy để người lớn tuổi hơn gợi ý trước khi xưng hô."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Write Korean Social Vocabulary",
+      "jp": "韓国の呼称単語を手書き練習する",
+      "cn": "手写练习社交称谓字帖",
+      "es": "Practica caligrafía de títulos sociales",
+      "id": "Latih Menulis Panggilan Akrab Korea",
+      "vn": "Luyện viết các danh xưng tiếng Hàn"
+    },
+    "desc": {
+      "en": "Practice writing Oppa, Unnie, Hyung, and Noona with proper stroke balance.",
+      "jp": "オッパ、オンニ、ヒョン、ヌナの文字を正しい筆順で美しく書いてみましょう。",
+      "cn": "在方格字帖中规范书写这几组最具代表性的韩式社交称谓。",
+      "es": "Escribe estos títulos con el equilibrio de trazo adecuado.",
+      "id": "Tulis sebutan-sebutan ini dengan proporsi huruf yang rapi.",
+      "vn": "Luyện viết các từ xưng hô với thứ tự nét chuẩn xác."
+    },
+    "btn": {
+      "en": "Open Practice Tool",
+      "jp": "練習ツールを開く",
+      "cn": "前往练习工具",
+      "es": "Abrir herramienta",
+      "id": "Buka Alat Latihan",
+      "vn": "Mở công cụ luyện viết"
+    },
+    "href": "/#category"
+  }
+},
+{
+  "slug": "hangul-calligraphy-brush-pen-art",
+  "category": "Art & Aesthetics",
+  "readTime": "6 min read",
+  "date": "September 2026",
+  "icon": "🖌️",
+  "tags": [
+    "Calligraphy",
+    "Seoye",
+    "Brush Pen",
+    "Korean Art"
+  ],
+  "title": {
+    "en": "The Art of Hangul Calligraphy: Mastering Brush Pens and Ink Aesthetics",
+    "ko": "한글 캘리그래피 입문: 붓펜과 만년필로 완성하는 손글씨 예술의 세계",
+    "jp": "ハングルカリグラフィー入門：筆ペンと万年筆で楽しむ文字アートの美学",
+    "cn": "韩文书法与艺术字入门：毛笔与软头笔下的线条美学指南",
+    "es": "El arte de la caligrafía Hangul: pincel, tinta y estética moderna",
+    "id": "Seni Kaligrafi Hangul: Menguasai Kuas Pena & Keindahan Tinta",
+    "vn": "Nghệ thuật thư pháp Hangul: Làm chủ bút lông và vẻ đẹp nét mực"
+  },
+  "subtitle": {
+    "en": "How to introduce pressure variations, rhythmic tempo, and creative flourishes to your Korean lettering.",
+    "ko": "필압의 강약, 운필의 리듬, 여백의 미를 살려 나만의 감성 손글씨를 완성하는 팁.",
+    "jp": "筆圧の強弱、運筆のリズム、余白の美しさを活かして心に響くアート文字を書くコツ。",
+    "cn": "如何运用轻重提按、运笔律动与留白韵味，创作独具匠心的韩文手写艺术作品。",
+    "es": "Aprende a controlar la presión y el ritmo para transformar tu escritura en arte visual.",
+    "id": "Cara mengontrol tekanan kuas dan irama untuk menciptakan tulisan tangan yang artistik.",
+    "vn": "Cách điều khiển lực bút và nhịp điệu để biến chữ viết tay thành một tác phẩm nghệ thuật."
+  },
+  "summary": {
+    "en": "Traditional Korean calligraphy (Seoye) harmonizes ink flow, breath control, and structural geometry. Modern brush pen calligraphy adapts these ancient tenets to contemporary stationery, allowing anyone to turn Korean phrases into works of art.",
+    "ko": "한국의 전통 서예는 먹의 농담, 호흡의 조절, 기하학적 균형미를 추구합니다. 현대의 붓펜 캘리그래피는 이러한 서예의 정신을 일상 필기구로 계승하여 누구나 아름다운 감성 손글씨를 창작할 수 있게 돕습니다.",
+    "jp": "韓国の伝統書道（ソイェ）は墨の濃淡、呼吸のコントロール、幾何学的調和を重んじます。現代の筆ペンカリグラフィーはその美学を受け継ぎ、手軽に芸術的な手書き表現を楽しむことができます。",
+    "cn": "韩国传统书法（书艺 / 서예）讲求墨色浓淡、呼吸吐纳与结字几何的深度和谐。现代软笔书法继承了这一经典文脉，让普通书写者也能用日常笔具挥洒诗意。",
+    "es": "La caligrafía coreana combina la fluidez de la tinta con la geometría del Hangul para crear obras expresivas.",
+    "id": "Kaligrafi Korea memadukan aliran tinta dan geometri Hangul untuk menciptakan karya seni bermakna.",
+    "vn": "Thư pháp Hàn Quốc kết hợp giữa nét mực mềm mại và cấu trúc hình học của chữ Hangul để tạo nên vẻ đẹp trang nhã."
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "1. Mastering Line Contrast (Thick vs Thin)",
+        "ko": "1. 굵기의 대비: 누름(필압)과 올림(발묵)의 조화",
+        "jp": "1. 線の抑揚：筆圧のコントロールによる太さと細さの表現",
+        "cn": "1. 线条张力：提按轻重打造的粗细对比",
+        "es": "1. Control del contraste de líneas (gruesas y finas)",
+        "id": "1. Menguasai Kontras Garis (Tebal vs Tipis)",
+        "vn": "1. Làm chủ độ tương phản của nét bút (Dày và Mảnh)"
+      },
+      "paragraphs": {
+        "en": [
+          "The secret to expressive calligraphy lies in contrast. When pulling vertical stems (like the pillar in \"ㅏ\" or \"ㅣ\"), apply firm downward pressure for a bold, confident spine.",
+          "When lifting horizontally or tapering off tails, release hand pressure gently so the stroke resolves into a whisper-thin finish. This dynamic push-and-pull gives the character visual melody."
+        ],
+        "jp": [
+          "文字に生命を吹き込む秘訣は「線の太さのコントラスト」にあります。「ㅏ」や「ㅣ」などの縦の柱を引くときはしっかり筆圧をかけて力強く書き下ろします。",
+          "横線や払いへ移行するときはふっと力を抜いて繊細な細い線へと流します。この押し引きのリズムが、文字に心地よい音楽のような抑揚を与えます。"
+        ],
+        "cn": [
+          "赋予书法艺术生命的秘诀在于极具张力的“粗细对比”。在书写“ㅏ”或“ㅣ”的主干立柱时，沉腕加力，下压出浑厚沉稳的脊梁。",
+          "而在横向出锋或收笔撇捺时，指尖缓缓提笔，化作细腻轻盈的纤毫游丝。这种提按起伏赋予方块字块如音乐般的动人韵律。"
+        ],
+        "es": [
+          "El secreto de la caligrafía radica en el contraste entre trazos gruesos y finos.",
+          "Aplica presión firme en los trazos verticales y suelta suavemente en los horizontales."
+        ],
+        "id": [
+          "Kunci dari kaligrafi yang indah adalah kontras antara garis tebal dan tipis.",
+          "Tekan kuas pada garis vertikal dan kurangi tekanan saat membuat garis halus."
+        ],
+        "vn": [
+          "Bí quyết của thư pháp nằm ở độ tương phản giữa các nét đậm và nét thanh.",
+          "Nhấn mạnh tay vào các nét dọc và thả lỏng nhẹ nhàng ở các nét ngang để tạo nhịp điệu."
+        ]
+      },
+      "keyTakeaway": {
+        "en": "Good posture and steady breathing are just as crucial as the pen in your hand.",
+        "jp": "正しい姿勢と穏やかな呼吸が、ブレのない美しい筆運びを生み出します。",
+        "cn": "端正平稳的坐姿与从容匀称的呼吸，是运笔沉着有力、结构舒展大气的根本所在。",
+        "es": "Una buena postura y respiración constante son tan importantes como el lápiz.",
+        "id": "Postur tubuh yang baik dan napas yang teratur sangat membantu menjaga kestabilan goresan kuas.",
+        "vn": "Tư thế ngồi chuẩn và nhịp thở đều đặn sẽ giúp nét bút đi thẳng và uyển chuyển hơn."
+      }
+    }
+  ],
+  "relatedTool": {
+    "title": {
+      "en": "Print Calligraphy Manuscript Grid Paper",
+      "jp": "カリグラフィー専用マス目練習帳を印刷する",
+      "cn": "打印高精度书法练字帖原稿纸",
+      "es": "Plantillas de caligrafía en papel cuadriculado",
+      "id": "Cetak Lembar Latihan Kaligrafi Berpetak",
+      "vn": "In trang bài tập luyện viết thư pháp chữ Hàn"
+    },
+    "desc": {
+      "en": "Use our calibrated guidelines to perfect your stroke weight, letter balance, and negative space.",
+      "jp": "十字線のガイドが付いた高精細練習用紙で、文字の重心と余白の美しさを極めましょう。",
+      "cn": "借助科学十字线基准，精准训练笔画粗细分配、重心平稳度与留白美学。",
+      "es": "Utiliza nuestras guías para perfeccionar el grosor del trazo y el equilibrio.",
+      "id": "Gunakan panduan kisi kami untuk melatih keseimbangan dan ketebalan huruf.",
+      "vn": "Sử dụng các đường căn chuẩn để hoàn thiện độ đậm nhạt và sự cân đối của chữ viết."
+    },
+    "btn": {
+      "en": "Generate Practice PDF",
+      "jp": "練習PDFを生成する",
+      "cn": "生成书法字帖PDF",
+      "es": "Generar PDF",
+      "id": "Buat PDF Latihan",
+      "vn": "Tạo PDF bài tập"
+    },
+    "href": "/#category"
+  }
+}
 ];
